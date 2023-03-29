@@ -11,20 +11,26 @@ export const info = {
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
-            emoji: '☕',
-            text: 'fueled by coffee'
+            text: 'Theislab, Helmholtz Munich',
+            affiliation: 'Theislab, Helmholtz Munich',
+            link: 'https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab',
+            logo: 'helmholtz'
         },
         {
-            emoji: '🌎',
-            text: 'based in the US'
+            text: 'Wellcome Sanger Institute',
+            affiliation: 'Wellcome Sanger Institute',
+            link: 'https://www.sanger.ac.uk', 
+            logo: 'sanger'
         },
         {
-            emoji: "💼",
-            text: "Systems Engineer at Google"
+            text: "Phd Computational Biology, TUM",
+            affiliation: 'Technical University of Munich',
+            link: 'https://www.tum.de', 
+            logo: 'tum'
         },
         {
-            emoji: "📧",
-            text: "johnsmith@gmail.com"
+            text: "mohammad.loftollahi@helmholtz-muenchen.de",
+            logo: 'email'
         }
     ],
     socials: [
