@@ -11,6 +11,7 @@ Below is a five-minute tutorial how to extends and edit the docs. The sections a
 Run the development server:
 ```bash
 cd my-website
+npm install
 npm run start
 ```
 
