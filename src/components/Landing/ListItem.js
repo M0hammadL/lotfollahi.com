@@ -68,6 +68,7 @@ function ListItem(props) {
             <a
                 target='_blank'
                 rel='noopener noreferrer'
+                style={{ textDecoration: 'none' }}
                 href={link}
             >
                 {text}

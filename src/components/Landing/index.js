@@ -16,7 +16,8 @@ export default function Landing() {
       flexDirection={{ xs: "column", md: "row" }}
       alignItems={"center"}
       justifyContent={"center"}
-      minHeight={"calc(100vh - 3.75rem)"}
+      paddingTop={'15vh'}
+      // minHeight={"calc(100vh - 3.75rem)"}
     >
       <Box
         className={classNames(Style.avatar, Style.shadowed)}
