@@ -20,7 +20,7 @@ export default function Landing() {
       // minHeight={"calc(100vh - 3.75rem)"}
     >
       <Box
-        className={classNames(Style.avatar, Style.shadowed)}
+        // className={classNames(Style.avatar, Style.shadowed)}
         alt={"Image of Mohammad Lotfollahi"}
         component={"img"}
         src={me}
