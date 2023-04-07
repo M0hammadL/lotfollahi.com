@@ -9,8 +9,6 @@ import {Box} from "@mui/material";
 function ListItem(props) {
     const {logo, text, link} = props;
 
-    console.log(link);
-
     return (
         <Box component={'li'} fontSize={'1rem'} display={'flex'} alignItems={'center'} lineHeight={1.5} style={{cursor: 'default'}}>
             {/* Helmholtz Logo */}
