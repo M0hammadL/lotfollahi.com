@@ -144,6 +144,24 @@ The `build` folder is now served at [http://localhost:3000/](http://localhost:30
 
 You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
 
+To deploy to Github Pages, deploy the website by running:
+
+```bash
+docusaurus deploy
+```
+
+Finally, once the deployment branch, ghpages, is created, deploy the website using:
+```bash
+GIT_USER=<GITHUB_USERNAME> yarn deploy
+```
+
+For Windows, use: 
+```bash
+cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
+```
+
+Now, the ghpages should be created and the last step is to set up the settings of Github Pages.
+
 ## 6. Manage Docs Versions
 
 Docusaurus can manage multiple versions of your docs.
