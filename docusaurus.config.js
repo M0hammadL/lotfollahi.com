@@ -66,13 +66,16 @@ const config = {
         items: [
           {to: '/', label: 'Home', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
+          {to: '/research', label: 'Research', position: 'left'},
+          {to: '/publications', label: 'Publications', position: 'left'},
+          {to: '/software', label: 'Software', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'tutorial/intro',
             position: 'left',
             label: 'Tutorial',
-          },
+          }
         ],
       },
       footer: {
