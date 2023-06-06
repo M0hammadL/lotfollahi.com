@@ -6,7 +6,11 @@ import ListItem from "./ListItem";
 import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import {FaLinkedin, FaTwitter, FaGithub, FaGoogleDrive, FaMailBulk} from "react-icons/fa";
+import {SiGooglescholar} from "react-icons/Si";
+import {MdEmail} from "react-icons/all";
+
+
 
 export default function Landing() {
   return (
@@ -35,7 +39,7 @@ export default function Landing() {
         <h1>
           {info.firstName} {info.lastName}
         </h1>
-        <h2 style={{opacity: '50%'}}>{info.position}</h2>
+        <h5 style={{opacity: '100%'}}>{info.position}</h5>
         <Box component={"ul"} p={"0.8rem"}>
           {info.miniBio.map((bio, index) => (
             <ListItem key={index} logo={bio.logo} text={bio.text} link={bio.link} />
@@ -65,14 +69,22 @@ export default function Landing() {
           >
             <FaLinkedin />
           </a>
+           <a
+            target='_blank'
+            aria-label={"Googlescholar"}
+            rel='noopener noreferrer'
+            href={"https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en"}
+          >
+            <SiGooglescholar />
+          </a>
          {/* Github */}
           <a
             target='_blank'
-            aria-label={"github"}
+            aria-label={"email"}
             rel='noopener noreferrer'
-            href={"https://github.com/M0hammadL"}
+            href={"mailto:ml19@sanger.ac.uk"}
           >
-            <FaGithub />
+            <MdEmail/>
           </a>
         </Box>
       </Box>

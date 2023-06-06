@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Mohammad Lotfollahi',
+  title: ' Lotfollahi',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -68,19 +68,17 @@ const config = {
           {to: '/about', label: 'About', position: 'left'},
           {to: '/research', label: 'Research', position: 'left'},
           {to: '/publications', label: 'Publications', position: 'left'},
+          {to: '/blog', label: 'Blog/news', position: 'left'},
           {to: '/software', label: 'Software', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            type: 'doc',
-            docId: 'tutorial/intro',
-            position: 'left',
-            label: 'Tutorial',
-          }
+          {to: '/talks', label: 'Talks', position: 'left'},
+
+
+
         ],
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} Mohammad Lotfollahi. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Mo Lotfollahi.`,
       },
       prism: {
         theme: lightCodeTheme,

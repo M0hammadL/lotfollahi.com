@@ -2,36 +2,35 @@ let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 colors = ["white", "black"]
 
 export const info = {
-    firstName: "Mohammad",
+    firstName: "Mo",
     lastName: "Lotfollahi",
     initials: "ML", // the example uses first and last, but feel free to use three or more if you like.
-    position: "Postdoctoral Researcher",
+    position: "I work on machine learning and Biology",
     selfPortrait: "self", // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
-        {
-            text: 'Theislab, Helmholtz Munich',
-            affiliation: 'Theislab, Helmholtz Munich',
-            link: 'https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab',
-            logo: 'helmholtz'
-        },
+
         {
             text: 'Wellcome Sanger Institute',
             affiliation: 'Wellcome Sanger Institute',
-            link: 'https://www.sanger.ac.uk', 
+            link: 'https://www.sanger.ac.uk',
             logo: 'sanger'
         },
-        {
-            text: "Phd Computational Biology, TUM",
-            affiliation: 'Technical University of Munich',
-            link: 'https://www.tum.de', 
-            logo: 'tum'
+
+         {
+            text: 'Helmholtz Munich',
+            affiliation: 'Theislab, Helmholtz Munich',
+            link: 'https://www.helmholtz-munich.de/en/icb/b',
+            logo: 'helmholtz'
         },
         {
-            text: "mohammad.loftollahi@helmholtz-muenchen.de",
-            logo: 'email'
-        }
+            text: "Technical University of Munich",
+            affiliation: 'Technical University of Munich',
+            link: 'https://www.tum.de',
+            logo: 'tum'
+        },
+
     ],
     socials: [
         {
