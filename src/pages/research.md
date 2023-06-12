@@ -10,8 +10,11 @@ understaning, mapping and predicting cellular biology.
 
 - See a full list of papers on **[Google Scholar](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**.
 
-
-
+<!-- To insert more images, first put them in the static/img folder and then import them as stati/img/img.png -->
+<div style={{display:'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
+    <img src="/img/nature-biotech.jpeg" style={{margin: '10px'}} alt="alt text" width='200' height='300'/>
+    <img src="img/morris-lab-cpa.jpg" style={{margin: '10px'}} alt="alt text" width='200' height='300'/>
+</div>
 
 ## Generative AI for Modeling Single-Cell Perturbation
 
