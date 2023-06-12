@@ -6,15 +6,24 @@
 understaning, mapping and predicting cellular biology.
 - Before 2018 as part of my AI programm master thesis, I developed **[Deep Packet](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**
 , the first neural netowrk architecure on network traffic classification and has become one of the seminal paper in the field.
-
-
-- See a full list of papers on **[Google Scholar](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**.
+- Papers selected as cover:
 
 <!-- To insert more images, first put them in the static/img folder and then import them as stati/img/img.png -->
 <div style={{display:'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
-    <img src="/img/nature-biotech.jpeg" style={{margin: '10px'}} alt="alt text" width='200' height='300'/>
-    <img src="img/morris-lab-cpa.jpg" style={{margin: '10px'}} alt="alt text" width='200' height='300'/>
+    <figure>
+        <img src="/img/nature-biotech.jpeg" style={{margin: '10px'}} alt="NBT" width='300' height='300'/> 
+        <figcaption> <font size="1"> <a href="https://www.nature.com/nbt/volumes/40/issues/1">Lotfollahi et al., Nature Biotechnology (2022)</a>
+</font></figcaption>
+    </figure>
+    <figure>
+        <img src="img/morris-lab-cpa.jpg" style={{margin: '10px'}} alt="alt text" width='300' height='300'/>
+        <figcaption> <font size="1"> <a href="https://www.embopress.org/toc/17444292/2023/19/6">Lotfollahi et al., Molecular Systems Biology (2023)</a>
+        </font></figcaption>
+    </figure>
 </div>
+
+- See a full list of papers on **[Google Scholar](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**.
+
 
 ## Generative AI for Modeling Single-Cell Perturbation
 
