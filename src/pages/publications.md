@@ -9,10 +9,11 @@
 Sikkema, L., Strobl, D., Zappia, L., Madissoon, E., Markov, N. S., Zaragosi, L., Ansari, M., Arguel, M., Apperloo, L., Bécavin, C., Berg, M., Chichelnitskiy, E., Chung, M.,
 Collin, A., Gay, A. C. A., Hooshiar Kashani, B., Jain, M., Kapellos, T., Kole, T. M., …,<u>Lotfollahi. M</u>,...,Theis, F.
 
+[[Nature Medicine (2023)]](https://www.nature.com/articles/s41591-023-02327-2).
 [[code]](https://github.com/LungCellAtlas/HLCA_reproducibility),
 [[Mapping data to HLCA using scArhes]](https://docs.scarches.org/en/latest/hlca_map_classify.html),
-[[Nature Medicine (2023)]](https://www.nature.com/articles/s41591-023-02327-2).
 
+---
 
 ##### Predicting cellular responses to complex perturbations in high‐throughput screens
 
