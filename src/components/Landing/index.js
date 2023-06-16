@@ -56,7 +56,7 @@ export default function Landing() {
             target='_blank'
             aria-label={"twitter"}
             rel='noopener noreferrer'
-            href={"https://twitter.com/Mohlotf"}
+            href={"https://twitter.com/mo_lotfollahi"}
           >
             <FaTwitter />
           </a>
