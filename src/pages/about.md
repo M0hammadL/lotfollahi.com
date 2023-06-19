@@ -1,6 +1,7 @@
 # Biography
 
 I have recently completed my PhD in Computational Biology at the **[Technical University of Munich (TUM)](https://www.tum.de/en/)** and **[Helmholtz Munich](https://www.helmholtz-munich.de/)** under the supervision of **[Fabian Theis](https://www.helmholtz-munich.de/en/icb/pi/fabian-theis)**.
+I am also a member of **[ELLIS](https://ellis.eu/)**.
 
 My research focuses on developing AI/ML algorithms for biomedical data, with a specific emphasis on single-cell technologies for diagnostics, therapeutics, and drug discovery. I have received multiple awards for my research (see [example](https://lotfollahi.com/blog/Bayer%20Foundation%20Early%20Excellence%20in%20Science%20Award)) and have been featured in press/journals (see [research](https://lotfollahi.com/research)). Additionally, I have been awarded multiple fellowships, grants, and scholarships, including those from **[Joachim Hertz](https://www.joachim-herz-stiftung.de/en/)**, **[EMBL](https://www.embl.org/)**, and **[Meta](https://about.meta.com/)**.
 
