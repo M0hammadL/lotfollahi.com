@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://demo.lotfollahi.com/blog</id>
     <title> Lotfollahi Blog</title>
-    <updated>2023-06-13T00:00:00.000Z</updated>
+    <updated>2023-06-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://demo.lotfollahi.com/blog"/>
     <subtitle> Lotfollahi Blog</subtitle>
     <icon>https://demo.lotfollahi.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[I have joined ELLIS]]></title>
+        <id>https://demo.lotfollahi.com/blog/I have joined ELLIS</id>
+        <link href="https://demo.lotfollahi.com/blog/I have joined ELLIS"/>
+        <updated>2023-06-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I am excited to join ELLIS - the European Laboratory for Learning and Intelligent Systems.]]></summary>
+        <content type="html"><![CDATA[<p>I am excited to join <strong><a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS - the European Laboratory for Learning and Intelligent Systems</a></strong>.
+Very grateful to fellows who supported me. </p><p><img loading="lazy" alt="MDSI award." src="/assets/images/ellis-3c6efdafa65814626bef5495ac7ce265.png" width="2402" height="492" class="img_ev3q"></p><p>About ELLIS: </p><blockquote><p>ELLIS is a pan-European AI network of excellence which focuses on fundamental science, technical innovation and societal impact. Founded in 2018, ELLIS builds upon machine learning as the driver for modern AI and aims to secure Europe’s sovereignty in this competitive field by creating a multi-centric AI research laboratory. ELLIS wants to ensure that the highest level of AI research is performed in the open societies of
+Europe and follows a three-pillar strategy to achieve that.</p></blockquote>]]></content>
+        <author>
+            <name>Mo Lotfollahi</name>
+        </author>
+        <category label="Award" term="Award"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CPA goes on the cover!]]></title>
         <id>https://demo.lotfollahi.com/blog/CPA goes on the cover!</id>
