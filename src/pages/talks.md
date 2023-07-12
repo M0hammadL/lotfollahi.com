@@ -1,4 +1,5 @@
-
+- Invited to give a keynote  at the first Sanger machine learning symposium, Cambridge, UK (July 2023).
+- Invited to give a keynote  at the annual retreat for the School of Quantitative Biosciences Munich, Tutzing, Germany (July 2023).
 - Invited lecture at [ELLIS Summer School on Machine Learning for Healthcare and Biology - Manchester Unit](https://ellis.eu/events/ellis-summer-school-on-machine-learning-for-healthcare-and-biology-manchester-unit), Manchester, Uk (June 2023).
 - Invited lecture at Graduate School of Quantitative Biosciences Munich, Ludwig maximilian university of Munich(LMU),  Gene Center Munich (Feb 2023)
 - Invited lecture at [inaugural workshop on Big Model AI in Drug Design](https://mbzuai.ac.ae/news/big-model-ai-in-drug-design/), Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi (Feb 2023). [Video](https://youtu.be/Mb9cPX4UToM?t=2357)
