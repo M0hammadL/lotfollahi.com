@@ -1,3 +1,5 @@
+- Invited to give a talk at [Munich AI meetup](https://www.meetup.com/munchen-artificial-intelligence-meetup/) for entrepreneurs (August 2023).
+- Invited lecture for webinar series from [International Society for Computational Biology (Turkey Branch)](https://twitter.com/RSGTurkey/status/1681258136047349762) (July 2023).
 - Invited to give a keynote  at the first Sanger machine learning symposium, Cambridge, UK (July 2023).
 - Invited to give a keynote  at the annual retreat for the School of Quantitative Biosciences Munich, Tutzing, Germany (July 2023).
 - Invited lecture at [ELLIS Summer School on Machine Learning for Healthcare and Biology - Manchester Unit](https://ellis.eu/events/ellis-summer-school-on-machine-learning-for-healthcare-and-biology-manchester-unit), Manchester, Uk (June 2023).

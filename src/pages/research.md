@@ -100,7 +100,28 @@ Inecik, K., Uhlmann, A., <u>Lotfollahi, M.\*</u>, & Theis, F\*.
 [[spotlight talk ICML WCB 2020]](https://slideslive.com/38931310/outofdistribution-prediction-with-disentangled-representations-for-scrnaseq-data),
 [[code]](https://github.com/theislab/disent)
 
-   
+## Generative AI for modeling high content Microscopy image
+
+Advancements in high-throughput screening, particularly 
+in high-content microscopy, have accelerated drug target identification and mode of 
+action studies by allowing the exploration of complex phenotypic data. 
+However, scaling these experiments to encompass a wide range of drug or
+genetic manipulations is challenging because only a limited number
+of compounds exhibit activity in screenings. 
+![Alt text](../img/img.png?raw=true "Title")
+
+
+**Predicting cell morphological responses to perturbations using generative modeling**
+
+To address this, We developed a generative model, the IMage Perturbation Autoencoder (IMPA), which predicts cellular morphological effects of chemical
+and genetic perturbations using untreated cells as input.
+
+Palma, A., Theis, F. J.\*, <u>Lotfollahi,M\*</u>.
+
+[[bioRxiv (2023)]](https://www.biorxiv.org/content/10.1101/2023.07.17.549216v1).
+[[code]](https://github.com/theislab/impa).
+
+
 ## single-cell reference mapping 
 
 The availability of single-cell reference datasets and mapping algorithms transforms analytical workflows for single-cell sequencing datasets.

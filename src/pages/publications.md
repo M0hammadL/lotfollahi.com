@@ -3,6 +3,15 @@
 
 ### 2023
 
+##### Predicting cell morphological responses to perturbations using generative modeling
+
+Palma, A., Theis, F. J.\*, <u>Lotfollahi,M\*</u>.
+
+[[bioRxiv (2023)]](https://www.biorxiv.org/content/10.1101/2023.07.17.549216v1).
+[[code]](https://github.com/theislab/impa).
+
+
+---
 
 ##### An integrated cell atlas of the human lung in health and disease
 
@@ -170,7 +179,7 @@ Gayoso, A., Weiler, P.,<u> Lotfollahi, M.</u>, Klein, D., Hong, J., Streets, A.,
 
 
 Inecik, K., Uhlmann, A.,
-<u>*Lotfollahi,M.</u>, Theis,F*.
+<u>Lotfollahi,M.* </u>, Theis,F*.
 
 [[ICML Workshop on Computational Biology (WCB) 2022]](https://icml-compbio.github.io/icml-website-2022/),
 [[bioRxv]](https://www.biorxiv.org/content/10.1101/2022.07.08.499049v1),
