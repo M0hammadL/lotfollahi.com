@@ -3,6 +3,14 @@
 
 ### 2023
 
+##### Population-level integration of single-cell datasets enables multi-scale analysis across samples.
+De Donno, C., Hediyeh-Zadeh, S., Wagenstetter, M., Moinfar, A. A., Zappia, L., 
+<u>Lotfollahi, M.* </u>, & Theis, F. J*. 
+
+[[code]](https://github.com/theislab/scArches),
+[[Nature Methods (2023)]](https://www.nature.com/articles/s41592-023-02035-2).
+
+---
 ##### Predicting cell morphological responses to perturbations using generative modeling
 
 Palma, A., Theis, F. J.\*, <u>Lotfollahi,M\*</u>.
