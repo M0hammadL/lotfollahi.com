@@ -11,25 +11,6 @@ export const info = {
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
 
-        {
-            text: 'Wellcome Sanger Institute',
-            affiliation: 'Wellcome Sanger Institute',
-            link: 'https://www.sanger.ac.uk',
-            logo: 'sanger'
-        },
-
-         {
-            text: 'Helmholtz Munich',
-            affiliation: 'Theislab, Helmholtz Munich',
-            link: 'https://www.helmholtz-munich.de/en/icb/b',
-            logo: 'helmholtz'
-        },
-        {
-            text: "Technical University of Munich",
-            affiliation: 'Technical University of Munich',
-            link: 'https://www.tum.de',
-            logo: 'tum'
-        },
 
     ],
     socials: [

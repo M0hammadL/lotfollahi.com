@@ -3,6 +3,13 @@
 
 ### 2023
 
+##### An integrated single-cell reference atlas of the human endometrium.
+
+Marečková, M., Garcia-Alonso, L., Moullet, M., Lorenzi, V., Petryszak, R., Sancho-Serra, C., <u>Lotfollahi,M\*</u> ... &
+Vento-Tormo, R. (2023).
+
+[[bioRxiv (2023)]](https://www.biorxiv.org/content/10.1101/2023.11.03.564728v1.abstract).
+
 ##### Population-level integration of single-cell datasets enables multi-scale analysis across samples.
 De Donno, C., Hediyeh-Zadeh, S., Wagenstetter, M., Moinfar, A. A., Zappia, L., 
 <u>Lotfollahi, M.* </u>, & Theis, F. J*. 
