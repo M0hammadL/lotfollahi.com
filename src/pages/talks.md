@@ -1,3 +1,6 @@
+- Invited talk at [Air Street Munich.AI meetup](https://press.airstreet.com/p/munichai-meetup-22-feb-2024) (Feb 2024).
+- Invited lecture at [Cambridge Centre for AI in Medicine Seminar Series](https://ccaim.cam.ac.uk/), [[Video]](https://www.youtube.com/watch?v=jU9hqOOiiAI&ab_channel=CambridgeCentreforAIinMedicine), Munich (Feb 2024).
+- Invited to give a lecture at [EPFL BioE Talks SERIES](https://memento.epfl.ch/event/epfl-bioe-talks-series-generative-modelling-to-und/) (EPFL, Nov 2023).
 - Invited to give a talk at [Munich AI meetup](https://www.meetup.com/munchen-artificial-intelligence-meetup/) for entrepreneurs (August 2023).
 - Invited lecture for webinar series from [International Society for Computational Biology (Turkey Branch)](https://twitter.com/RSGTurkey/status/1681258136047349762) (July 2023).
 - Invited to give a keynote  at the first Sanger machine learning symposium, Cambridge, UK (July 2023).

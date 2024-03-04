@@ -1,7 +1,7 @@
 # Biography
 
- I am an incoming faculty at **[Wellcome Sanger Institute](https://www.sanger.ac.uk/group/lotfollahi-group/)** and **[CCAIM](https://ccaim.cam.ac.uk/)** at University of Cambridge and
- also director of machine learning research at  **[Relation Therapeutics](https://www.relationrx.com/)** and member of **[ELLIS](https://ellis.eu/)**. 
+ I am an incoming faculty at **[Wellcome Sanger Institute](https://www.sanger.ac.uk/group/lotfollahi-group/)** and **[CCAIM](https://ccaim.cam.ac.uk/)** at University of Cambridge. I was
+  director of machine learning research at  **[Relation Therapeutics](https://www.relationrx.com/)** and also member of **[ELLIS](https://ellis.eu/)**. 
 
 We aim to leverage AI and advanced experimental techniques to engineer cells and modulate their response to disease and perturbations and translated them 
 for diagnostics, therapeutics, and drug discovery. 

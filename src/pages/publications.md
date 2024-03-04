@@ -1,6 +1,17 @@
 - See a full list of papers on **[Google Scholar](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**.
 - Co-first and co-last authors are indicated by + and *, respectively.
 
+
+### 2024
+
+##### Large-scale characterization of cell niches in spatial atlases using bio-inspired graph learning
+
+
+Birk, S., Bonafonte-Pardàs, I., Feriz, A. M.,, ... & <u>Lotfollahi, M.\*</u>.
+
+[[code]](https://github.com/lotfollahi-lab)
+[[bioRxv (2024)]](https://www.biorxiv.org/content/10.1101/2024.02.21.581428v2).
+
 ### 2023
 
 ##### An integrated single-cell reference atlas of the human endometrium.
