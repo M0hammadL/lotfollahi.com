@@ -66,6 +66,7 @@ const config = {
         items: [
           {to: '/', label: 'Home', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
+          {to: '/Lab', label: ' The Lab', position: 'left'},
           {to: '/research', label: 'Research', position: 'left'},
           {to: '/publications', label: 'Publications', position: 'left'},
           {to: '/blog', label: 'Blog/news', position: 'left'},

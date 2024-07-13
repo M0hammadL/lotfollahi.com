@@ -4,6 +4,12 @@
 
 ### 2024
 
+##### Multi-modal generative modeling for joint analysis of single-cell T cell receptor and gene expression data.
+Drost, F., An, Y., Bonafonte-Pardàs, I., Dratva, L. M., Lindeboom, R. G., Haniffa, M., ... , <u>Lotfollahi,M\*</u>, Schubert, B*. 
+
+[[code]](https://github.com/SchubertLab/mvTCR),
+[[Nature Communications (2024)]](https://www.nature.com/articles/s41467-024-49806-9).
+
 ##### Large-scale characterization of cell niches in spatial atlases using bio-inspired graph learning
 
 
