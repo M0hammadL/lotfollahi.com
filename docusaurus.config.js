@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: ' Lotfollahi',
+  title: 'Lotfollahi',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -72,11 +72,8 @@ const config = {
           {to: '/blog', label: 'Blog/news', position: 'left'},
           {to: '/software', label: 'Software', position: 'left'},
           {to: '/talks', label: 'Talks', position: 'left'},
-
-
-
         ],
-      },
+      },  
       footer: {
         style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} Mo Lotfollahi.`,
@@ -85,7 +82,10 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+      image: 'img/lotfollahiLab.jpg',
+    })
+    // image: 'img/social-share.png',
+   
 };
 
 module.exports = config;
