@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklotfollahi_com=self.webpackChunklotfollahi_com||[]).push([[2698],{5046:l=>{l.exports=JSON.parse('{"permalink":"/blog/tags/publication","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
