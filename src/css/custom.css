@@ -1,30 +1,199 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+:root{
+  --ifm-color-primary:#5a4fdc;
+  --ifm-color-primary-dark:#5247cf;
+  --ifm-color-primary-darker:#4a41c2;
+  --ifm-color-primary-darkest:#3b34a2;
+  --ifm-color-primary-light:#6a60e0;
+  --ifm-color-primary-lighter:#7a71e4;
+  --ifm-color-primary-lightest:#9a93ec;
+  --docusaurus-highlighted-code-line-bg:rgba(0,0,0,.06);
+  --card-bg:#ffffff;
+  --surface-1:#221023;
+  --brand:#d802e7;
+  --brand-2:#8e1d3f;
+  --card-border:rgba(127,137,255,.35);
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* layout tuning so 4 cols have more room even with TOC */
+  --toc-width:180px;
+  --ifm-container-width:1200px;
+  --ifm-container-width-xl:1380px;
+
+  /* quick knobs you can tweak */
+  --role-badge-font:.8rem;     /* job title size */
+  --role-badge-pad-y:.5rem;    /* badge vertical padding */
+  --role-badge-pad-x:.9rem;     /* badge horizontal padding */
+  --role-badge-bottom:10px;     /* how high the badge sits from bottom */
+  --overlay-safe:64px;          /* bottom reserve so icons don’t overlap badge */
+  --name-size:1.08rem;          /* member name size */
+  --hero-copy:1.5rem;          /* hero text size */
+  --hero-logo-scale:1.18;       /* < 1.5 to avoid stretching */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme='dark']{
+  --ifm-color-primary:#7f89ff;
+  --ifm-color-primary-dark:#6a73ff;
+  --ifm-color-primary-darker:#5f67ff;
+  --ifm-color-primary-darkest:#4b52ff;
+  --ifm-color-primary-light:#8e97ff;
+  --ifm-color-primary-lighter:#a0a7ff;
+  --ifm-color-primary-lightest:#c6caff;
+  --docusaurus-highlighted-code-line-bg:rgba(255,255,255,.06);
+  --card-bg:#0b0d12;
 }
+
+.navbar__logo img{height:28px;width:auto}
+
+/* ---------- Hero ---------- */
+.lab-hero-card{
+  position:relative;
+  margin:1rem 0 2rem;
+  padding:1.2rem;
+  border-radius:22px;
+  background:linear-gradient(var(--card-bg),var(--card-bg)) padding-box,linear-gradient(135deg,var(--ifm-color-primary),#9a93ec) border-box;
+  border:1.8px solid transparent;
+  box-shadow:0 20px 60px rgba(212, 2, 244, 0.18),0 4px 16px rgba(198, 5, 241, 0.2);
+}
+.lab-hero-grid{
+  display:grid;
+  grid-template-columns:1.35fr 1fr;
+  gap:2rem;
+  align-items:center;
+}
+.lab-col--copy p{
+  margin:.75rem 0;
+  font-size:var(--hero-copy);
+  line-height:1.75;
+}
+.logo-stage{
+  position:relative;
+  border:1.2px solid color-mix(in oklab,var(--ifm-color-primary) 75%,transparent);
+  border-radius:16px;
+  padding:18px;
+  background:radial-gradient(120% 140% at 50% 0%,color-mix(in oklab,var(--ifm-color-primary) 12%,transparent) 0%,transparent 60%);
+  box-shadow:inset 0 0 0 1px rgba(111, 4, 153, 0.06);
+}
+.logo-stage::after{
+  content:"";
+  position:absolute;left:12%;right:12%;bottom:-14px;height:26px;
+  background:radial-gradient(ellipse at center,color-mix(in oklab,var(--ifm-color-primary) 25%,transparent) 0%,transparent 70%);
+  filter:blur(10px);opacity:.8;z-index:-1;
+}
+/* smaller, not stretched */
+.logo-stage img{
+  display:block;
+  width:calc(100% * var(--hero-logo-scale));
+  max-width:100%;
+  height:auto;
+  object-fit:contain;
+  opacity:.98;
+}
+
+.cta-row{display:flex;justify-content:flex-end;margin-top:.4rem}
+.chip{
+  display:inline-flex;align-items:center;gap:.45rem;border-radius:999px;text-decoration:none;border:1.6px solid var(--ifm-color-primary);color:var(--ifm-color-primary);font-weight:700;transition:background .18s ease,color .18s ease,transform .15s ease,box-shadow .15s ease
+}
+.chip--sm{padding:.34rem .68rem;font-size:.92rem}
+.chip:hover{background:var(--ifm-color-primary);color:#ac13e3;transform:translateY(-1px);box-shadow:0 10px 26px rgba(90,79,220,.25)}
+.chip svg{width:1rem;height:1rem}
+
+/* ---------- Sections / titles ---------- */
+.markdown h2{
+  /* bigger section titles (e.g., “Staff”, “Students”) */
+  font-size:clamp(2rem, 1.2rem + 2vw, 3rem);
+  margin-top:.4rem;   /* move up a touch */
+  margin-bottom:.8rem;
+}
+
+/* ---------- Cards ---------- */
+.members-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1.2rem;
+  margin:1.25rem 0 2.5rem;
+}
+
+/* squeeze desktop doc TOC a bit to free space */
+.theme-doc-toc-desktop{flex-basis:var(--toc-width)!important}
+
+.member-card{
+  background:linear-gradient(var(--surface-1),var(--surface-1)) padding-box,linear-gradient(135deg,var(--brand),var(--brand-2)) border-box;
+  border:1.2px solid transparent;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 12px 32px rgba(0,0,0,.35),0 4px 12px rgba(0,0,0,.25);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.member-card:hover{transform:translateY(-4px);box-shadow:0 22px 60px rgba(0,0,0,.45),0 6px 18px rgba(0,0,0,.3)}
+.member-media{position:relative;aspect-ratio:4/5;overflow:hidden}
+.member-media img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* slimmer, single-line, slightly darker purple badge */
+.role-badge{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:var(--role-badge-bottom);
+  /* darker shade than primary to match theme */
+  background: color-mix(in oklab, var(--ifm-color-primary) 80%, #000 20%);
+  color:#fff;
+  font-weight:800;
+  font-size:var(--role-badge-font);
+  letter-spacing:.06em;
+  padding:var(--role-badge-pad-y) var(--role-badge-pad-x);
+  border-radius:12px;
+  white-space:nowrap;
+  max-width:calc(100% - 28px);
+  box-shadow:0 8px 20px rgba(90,79,220,.35)
+}
+
+/* reserve space so hover icons don’t overlap the badge */
+.overlay{
+  position:absolute;inset:0;
+  display:flex;align-items:flex-end;justify-content:center;gap:.6rem;
+  padding:12px 12px var(--overlay-safe);
+  background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(10,10,16,.65) 100%);
+  opacity:0;transition:opacity .25s ease
+}
+.member-card:hover .overlay{opacity:1}
+
+.overlay a{
+  display:grid;place-items:center;width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(140,130,255,.55);color:#e6e6ff;background:rgba(30,30,42,.55);
+  backdrop-filter:blur(4px);transition:transform .15s ease, background .15s ease
+}
+.overlay a:hover{transform:translateY(-2px);background:var(--ifm-color-primary);color:#fff}
+.overlay svg{width:18px;height:18px}
+
+.member-meta{
+  padding:.85rem 1rem 1.1rem;
+  text-align:center;              /* center names */
+}
+.member-meta h3{
+  margin:0;
+  font-weight:800;
+  font-size:var(--name-size);
+  color:#fff;                     /* keep white in light & dark */
+}
+
+/* co-supervision tiny note under the name */
+.co-note{
+  padding:0rem 1rem 1rem;
+  /* margin-top:.2rem; */
+  font-size:0.9rem;
+  color:#cfd2ff;
+  opacity:.9;
+}
+
+/* responsive */
+@media (max-width:1200px){
+  .lab-hero-grid{grid-template-columns:1fr}
+  .members-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:996px){
+  .members-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .members-grid{grid-template-columns:1fr}
+}
+
+.svg-sprite{position:absolute;width:0;height:0;overflow:hidden}
