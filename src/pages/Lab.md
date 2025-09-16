@@ -51,7 +51,16 @@ hide_table_of_contents: true
 
 ## Staff
 
+
 <div class="members-grid">
+
+  <div class="member-card">
+<div class="member-media">
+    <img src="/img/people/Abhishek.jpg" alt="Abhishek Sharma" />
+    <div class="role-badge">Postdoctoral Fellow</div>
+</div>
+<div class="member-meta"><h3>Abhishek Sharma</h3></div>
+</div>
 
   <div class="member-card">
     <div class="member-media">
@@ -87,6 +96,15 @@ hide_table_of_contents: true
     </div>
     <div class="member-meta"><h3>Hazem Kotb</h3></div>
   </div>
+
+<div class="member-card">
+<div class="member-media">
+    <img src="/img/people/Aslan.jpeg" alt="Aslan Bakirov" />
+    <div class="role-badge">Machine Learning Scientist</div>
+</div>
+<div class="member-meta"><h3>Aslan Bakirov</h3></div>
+</div>
+
 
   <div class="member-card">
     <div class="member-media">
@@ -222,14 +240,17 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Mohammad.jpg" alt="Mohammad Vali Sanian" />
+      <img src="/img/people/seb.jpeg" alt="Sebastian Birk" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
-        <a href="https://www.linkedin.com/in/mohammad-vali-sanian-948254140/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-        <a href="https://github.com/MoSuunny" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a href="https://x.com/sebastianbirk_" aria-label="X"><svg><use href="#i-x"/></svg></a>
+        <a href="https://www.linkedin.com/in/sebastian-birk/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/sebastianbirk" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a href="https://www.sebastianbirk.com" aria-label="Website"><svg><use href="#i-globe"/></svg></a>
       </div>
     </div>
-    <div class="member-meta"><h3>Mohammad Vali Sanian</h3></div>
+    <div class="member-meta"><h3>Sebastian Birk</h3></div>
+    <div class="co-note">co-supervised with Carlos Talavera-Lopez</div>
   </div>
 
   <div class="member-card">
@@ -250,11 +271,35 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
+      <img src="/img/people/Marie.jpeg" alt="Marie Moullet" />
+      <div class="role-badge">PhD Candidate</div>
+      <div class="overlay">
+        <a href="https://www.linkedin.com/in/marie-moullet-86b622170/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/mariemoullet" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a href="https://scholar.google.com/citations?user=YtXqmMgAAAAJ&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+      </div>
+    </div>
+    <div class="member-meta"><h3>Marie Moullet</h3></div>
+  </div>
+
+
+  <div class="member-card">
+    <div class="member-media">
       <img src="/img/people/Lloyd.jpg" alt="Lloyd Steele" />
       <div class="role-badge">PhD Candidate</div>
     </div>
     <div class="member-meta"><h3>Lloyd Steele</h3></div>
   </div>
+
+<div class="member-card">
+  <div class="member-media">
+    <img src="/img/people/Kevin.jpeg" alt="Kevin Ly" />
+    <div class="role-badge">PhD Candidate</div>
+  </div>
+  <div class="member-meta"><h3>Kevin Ly</h3></div>
+  <p class="co-note">co-supervised with Gosia Trynka</p>
+</div>
+
 
   <div class="member-card">
     <div class="member-media">
@@ -267,6 +312,17 @@ hide_table_of_contents: true
     </div>
     <div class="member-meta"><h3>Andrea Rubbi</h3></div>
   </div>
+
+<div class="member-card">
+  <div class="member-media">
+    <img src="/img/people/Lisa.jpeg" alt="Lisa Marie Milchsack" /> 
+    <div class="role-badge">PhD Candidate</div>
+
+  </div>
+  <div class="member-meta"><h3>Lisa Marie Milchsack</h3></div>
+  <p class="co-note">co-supervised with Sarah Teichmann</p>
+</div>
+
 
   <div class="member-card">
     <div class="member-media">
@@ -282,33 +338,46 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Ciro Ramírez-Suástegui</h3></div>
   </div>
 
-  <div class="member-card">
-    <div class="member-media">
-      <img src="/img/people/Marie.jpeg" alt="Marie Moullet" />
-      <div class="role-badge">PhD Candidate</div>
-      <div class="overlay">
-        <a href="https://www.linkedin.com/in/marie-moullet-86b622170/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-        <a href="https://github.com/mariemoullet" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
-        <a href="https://scholar.google.com/citations?user=YtXqmMgAAAAJ&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
-      </div>
-    </div>
-    <div class="member-meta"><h3>Marie Moullet</h3></div>
-  </div>
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/seb.jpeg" alt="Sebastian Birk" />
+      <img src="/img/people/Mohammad.jpg" alt="Mohammad Vali Sanian" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
-        <a href="https://x.com/sebastianbirk_" aria-label="X"><svg><use href="#i-x"/></svg></a>
-        <a href="https://www.linkedin.com/in/sebastian-birk/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-        <a href="https://github.com/sebastianbirk" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
-        <a href="https://www.sebastianbirk.com" aria-label="Website"><svg><use href="#i-globe"/></svg></a>
+        <a href="https://www.linkedin.com/in/mohammad-vali-sanian-948254140/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/MoSuunny" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
       </div>
     </div>
-    <div class="member-meta"><h3>Sebastian Birk</h3></div>
-    <div class="co-note">co-supervised with Carlos Talavera-Lopez</div>
+    <div class="member-meta"><h3>Mohammad Vali Sanian</h3></div>
   </div>
+
+
+<div class="member-card">
+  <div class="member-media">
+    <img src="/img/people/Benjamin.jpeg" alt="Benjamin Chang" /> 
+    <div class="role-badge">PhD Candidate</div>
+  </div>
+  <div class="member-meta"><h3>Benjamin Chang</h3></div>
+  <p class="co-note">co-supervised with Tom Rainforth</p>
+</div>
+
+<div class="member-card">
+  <div class="member-media">
+    <img src="/img/people/Joseph.jpeg" alt="Benjamin Chang" /> 
+    <div class="role-badge">PhD Candidate</div>
+  </div>
+  <div class="member-meta"><h3>Joseph Clarke</h3></div>
+  <p class="co-note">co-supervised with Ben Lehner</p>
+</div>
+
+<div class="member-card">
+  <div class="member-media">
+    <img src="/img/people/Huawen.jpg" alt="Huawen Zhong" /> 
+    <div class="role-badge">Visiting PhD Student</div>
+
+  </div>
+  <div class="member-meta"><h3>Huawen Zhong</h3></div>
+</div>
 
   <div class="member-card">
   <div class="member-media">
