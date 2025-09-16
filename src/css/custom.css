@@ -279,6 +279,10 @@
 
 /* ===== Link + underline + icon visibility (dark & light) ===== */
 
+<<<<<<< HEAD
+=======
+/* 0) Make sure we have bright link tokens in both themes */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 :root{
   --ifm-link-color: var(--ifm-color-primary);
   --ifm-link-hover-color: var(--ifm-color-primary-light);
@@ -288,6 +292,10 @@
   --ifm-link-hover-color: var(--ifm-color-primary-lighter);
 }
 
+<<<<<<< HEAD
+=======
+/* 1) All inline links in content areas (pages, docs, blog) */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 :where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
   a:not(.button, .navbar__link, .menu__link){
   color: var(--ifm-link-color) !important;
@@ -296,12 +304,20 @@
   opacity: 1 !important;            /* prevent “dim until hover” */
 }
 
+<<<<<<< HEAD
+=======
+/* 1a) Keep visited links readable too (don’t darken them) */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 :where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
   a:visited:not(.button, .navbar__link, .menu__link){
   color: var(--ifm-link-color) !important;
   opacity: 1 !important;
 }
 
+<<<<<<< HEAD
+=======
+/* 1b) Hover/focus states */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 :where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
   a:hover,
 :where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
@@ -310,12 +326,21 @@
   text-decoration-color: currentColor;
 }
 
+<<<<<<< HEAD
+=======
+/* 2) Underlined text (e.g., <u>Lotfollahi, M.*</u>) stays visible */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 :where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article) u{
   color: var(--text-strong) !important;
   text-decoration-color: currentColor;
   text-underline-offset: .14em;
 }
 
+<<<<<<< HEAD
+=======
+/* 3) Links wrapped by bold and bold wrapped by links already handled above,
+   but ensure they inherit color in all content containers */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 :where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
   strong a,
 :where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
@@ -327,6 +352,10 @@
   color: inherit !important;
 }
 
+<<<<<<< HEAD
+=======
+/* 4) Social/hero icons – make the SVGs use currentColor and be visible */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 :where(.lab-hero-card, .hero, .homepage, main) .social a,
 :where(.lab-hero-card, .hero, .homepage, main) a[aria-label*="Twitter"],
 :where(.lab-hero-card, .hero, .homepage, main) a[aria-label*="LinkedIn"],
@@ -345,6 +374,10 @@
   opacity: .95 !important;
 }
 
+<<<<<<< HEAD
+=======
+/* 5) If any component globally lowers link opacity, neutralize it in dark mode */
+>>>>>>> e0f9db76a6dd096c2ac7a0a5a40d4b3204a71233
 [data-theme='dark'] a{
   opacity: 1 !important;
 }
