@@ -3,8 +3,6 @@ title: Lab members
 hide_table_of_contents: true
 ---
 
-# Lab members
-
 <svg aria-hidden="true" class="svg-sprite">
   <defs>
     <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v.4l10 6.25L22 6.4V6a2 2 0 0 0-2-2Zm2 5.1-10 6.25L0 9.1V18a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V9.1Z"/></symbol>
@@ -42,6 +40,14 @@ hide_table_of_contents: true
     </div>
   </div>
 </div>
+
+<h2 class="section-title">Lab members</h2>
+
+<figure class="lab-wide-figure">
+  <figcaption>Here is a photo of our first lab Christmas dinner at the Anchor Pub in Cambridge.</figcaption>
+  <img src="/img/people/Christmas.jpeg" alt="Lotfollahi Lab Christmas dinner at the Anchor Pub, Cambridge" loading="lazy" />
+</figure>
+
 
 ## Staff
 
@@ -302,7 +308,23 @@ hide_table_of_contents: true
     </div>
     <div class="member-meta"><h3>Sebastian Birk</h3></div>
     <div class="co-note">co-supervised with Carlos Talavera-Lopez</div>
-
   </div>
+
+  <div class="member-card">
+  <div class="member-media">
+    <img src="/img/people/Mahan.jpg" alt="Mahan Veisi" />
+    <div class="role-badge">Undergrad Student</div>
+    <div class="overlay">
+      <a href="https://x.com/MahanVeisi8" aria-label="X"><svg><use href="#i-x"/></svg></a>
+      <a href="https://www.linkedin.com/in/mahanveisi8/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+      <a href="https://github.com/MahanVeisi8" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+      <a href="https://scholar.google.com/citations?user=REPLACE_WITH_ID&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+      <a href="https://mahanveisi8.github.io/" aria-label="Website"><svg><use href="#i-globe"/></svg></a>
+    </div>
+  </div>
+  <div class="member-meta"><h3>Mahan Veisi</h3></div>
+
+</div>
+
 
 </div>
