@@ -18,13 +18,12 @@
   --ifm-container-width:1200px;
   --ifm-container-width-xl:1380px;
 
-  /* quick knobs you can tweak */
   --role-badge-font:.8rem;     /* job title size */
   --role-badge-pad-y:.5rem;    /* badge vertical padding */
   --role-badge-pad-x:.9rem;     /* badge horizontal padding */
   --role-badge-bottom:10px;     /* how high the badge sits from bottom */
   --overlay-safe:64px;          /* bottom reserve so icons don’t overlap badge */
-  --name-size:1.08rem;          /* member name size */
+  --name-size:1.3rem;          /* member name size */
   --hero-copy:1.5rem;          /* hero text size */
   --hero-logo-scale:1.18;       /* < 1.5 to avoid stretching */
 }
@@ -134,7 +133,7 @@
   transform:translateX(-50%);
   bottom:var(--role-badge-bottom);
   /* darker shade than primary to match theme */
-  background: color-mix(in oklab, var(--ifm-color-primary) 80%, #000 20%);
+  background: color-mix(in oklab, var(--ifm-color-primary) 80%, #25142c 50%);
   color:#fff;
   font-weight:800;
   font-size:var(--role-badge-font);
@@ -146,7 +145,6 @@
   box-shadow:0 8px 20px rgba(90,79,220,.35)
 }
 
-/* reserve space so hover icons don’t overlap the badge */
 .overlay{
   position:absolute;inset:0;
   display:flex;align-items:flex-end;justify-content:center;gap:.6rem;
@@ -197,3 +195,165 @@
 }
 
 .svg-sprite{position:absolute;width:0;height:0;overflow:hidden}
+
+/* ---------- Centered section title & hero-photo block ---------- */
+.section-title{
+  text-align:center;
+  font-weight:900;
+  font-size:clamp(2rem, 1.2rem + 2vw, 3rem);
+  margin: .25rem 0 .75rem;
+}
+
+.lab-wide-figure{
+  display:grid;
+  justify-items:center;
+  gap:.5rem;
+  margin: .5rem auto 1.75rem;
+  padding: .25rem;
+}
+.lab-wide-figure img{
+  width:min(100%, 1100px);
+  height:auto;
+  border-radius:14px;
+  box-shadow:0 18px 48px rgba(0,0,0,.35), 0 4px 12px rgba(0,0,0,.25);
+}
+.lab-wide-figure figcaption{
+  text-align:center;
+  font-weight:600;
+  opacity:.9;
+}
+
+:root{ --text-strong: #111; }            /* light */
+[data-theme='dark']{ --text-strong: #fff; }  /* dark */
+
+.markdown strong,
+.markdown b{
+  color:var(--text-strong);
+  font-weight:800;
+}
+
+.markdown strong a,
+.markdown b a{
+  color:inherit;
+  text-decoration:underline;
+}
+
+.member-meta h3{ color:#fff; }
+
+
+:root { --text-strong: #111; }                 /* light */
+[data-theme='dark'] { --text-strong: #fff; }   /* dark */
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  :is(strong, b){
+  color: var(--text-strong) !important;
+  font-weight: 800;
+}
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  strong a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  b a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a strong,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a b{
+  color: inherit !important;
+}
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  u{
+  color: var(--text-strong) !important;
+  text-decoration-color: currentColor;
+  text-underline-offset: .14em;
+}
+
+:root{
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-light);
+}
+[data-theme='dark']{
+  --ifm-link-color: var(--ifm-color-primary-lightest);
+  --ifm-link-hover-color: var(--ifm-color-primary-lighter);
+}
+
+/* ===== Link + underline + icon visibility (dark & light) ===== */
+
+/* 0) Make sure we have bright link tokens in both themes */
+:root{
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-light);
+}
+[data-theme='dark']{
+  --ifm-link-color: var(--ifm-color-primary-lightest);
+  --ifm-link-hover-color: var(--ifm-color-primary-lighter);
+}
+
+/* 1) All inline links in content areas (pages, docs, blog) */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:not(.button, .navbar__link, .menu__link){
+  color: var(--ifm-link-color) !important;
+  text-decoration-color: currentColor;
+  text-underline-offset: .14em;
+  opacity: 1 !important;            /* prevent “dim until hover” */
+}
+
+/* 1a) Keep visited links readable too (don’t darken them) */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:visited:not(.button, .navbar__link, .menu__link){
+  color: var(--ifm-link-color) !important;
+  opacity: 1 !important;
+}
+
+/* 1b) Hover/focus states */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:hover,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:focus-visible{
+  color: var(--ifm-link-hover-color) !important;
+  text-decoration-color: currentColor;
+}
+
+/* 2) Underlined text (e.g., <u>Lotfollahi, M.*</u>) stays visible */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article) u{
+  color: var(--text-strong) !important;
+  text-decoration-color: currentColor;
+  text-underline-offset: .14em;
+}
+
+/* 3) Links wrapped by bold and bold wrapped by links already handled above,
+   but ensure they inherit color in all content containers */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  strong a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  b a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a strong,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a b{
+  color: inherit !important;
+}
+
+/* 4) Social/hero icons – make the SVGs use currentColor and be visible */
+:where(.lab-hero-card, .hero, .homepage, main) .social a,
+:where(.lab-hero-card, .hero, .homepage, main) a[aria-label*="Twitter"],
+:where(.lab-hero-card, .hero, .homepage, main) a[aria-label*="LinkedIn"],
+:where(.lab-hero-card, .hero, .homepage, main) a[aria-label*="Email"],
+:where(.lab-hero-card, .hero, .homepage, main) a[title*="Twitter"],
+:where(.lab-hero-card, .hero, .homepage, main) a[title*="LinkedIn"],
+:where(.lab-hero-card, .hero, .homepage, main) a[title*="Email"]{
+  color: var(--ifm-link-color) !important;
+  opacity: 1 !important;
+}
+
+:where(.lab-hero-card, .hero, .homepage, main) a svg{
+  /* make outline icons and glyph icons visible in both themes */
+  stroke: currentColor !important;
+  fill: currentColor !important;
+  opacity: .95 !important;
+}
+
+/* 5) If any component globally lowers link opacity, neutralize it in dark mode */
+[data-theme='dark'] a{
+  opacity: 1 !important;
+}

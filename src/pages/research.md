@@ -6,8 +6,6 @@
 - Before 2018, as part of my AI program master thesis, I developed **[Deep Packet](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**, the first neural network architecture for network traffic classification, and it has become one of the seminal papers in the field.
 - Papers selected as cover:
 
-
-<!-- To insert more images, first put them in the static/img folder and then import them as stati/img/img.png -->
 <div style={{display:'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
     <figure>
         <img src="/img/nature-biotech.jpeg" style={{margin: '10px'}} alt="NBT" width='300' height='300'/> 
