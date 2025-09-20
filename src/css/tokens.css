@@ -1,0 +1,68 @@
+/* src/css/tokens.css */
+/* Design tokens — one place to tune brand, sizes, spacing */
+
+:root{
+    /* Brand */
+    --ifm-color-primary:#5a4fdc;
+    --ifm-color-primary-dark:#5247cf;
+    --ifm-color-primary-darker:#4a41c2;
+    --ifm-color-primary-darkest:#3b34a2;
+    --ifm-color-primary-light:#6a60e0;
+    --ifm-color-primary-lighter:#7a71e4;
+    --ifm-color-primary-lightest:#9a93ec;
+  
+    /* Surfaces */
+    --card-bg:#ffffff;
+    --surface-1:#221023;       /* card background (dark glazed) */
+    --brand:#d802e7;           /* gradient border color 1 */
+    --brand-2:#8e1d3f;         /* gradient border color 2 */
+    --card-border:rgba(127,137,255,.35);
+  
+    /* Layout / widths */
+    --toc-width:180px;
+    --ifm-container-width:1200px;
+    --ifm-container-width-xl:1380px;
+  
+    /* Typography scales */
+    --role-badge-font:.8rem;
+    --name-size:1.3rem;
+    --hero-copy:1.5rem;
+  
+    /* Member badge & overlay spacing */
+    --role-badge-pad-y:.5rem;
+    --role-badge-pad-x:.9rem;
+    --role-badge-bottom:10px;
+    --overlay-safe:64px;
+  
+    /* Hero logo (square crop) */
+    --hero-logo-size:400px;   /* desktop square size */
+    --hero-logo-zoom:1.20;    /* >1 zooms in a bit */
+    --hero-logo-focus-y:35%;  /* vertical focus point for crop */
+  
+    /* Strong text visibility */
+    --text-strong:#111;
+  
+    /* Links */
+    --ifm-link-color:var(--ifm-color-primary);
+    --ifm-link-hover-color:var(--ifm-color-primary-light);
+  }
+  
+  [data-theme='dark']{
+    --ifm-color-primary:#7f89ff;
+    --ifm-color-primary-dark:#6a73ff;
+    --ifm-color-primary-darker:#5f67ff;
+    --ifm-color-primary-darkest:#4b52ff;
+    --ifm-color-primary-light:#8e97ff;
+    --ifm-color-primary-lighter:#a0a7ff;
+    --ifm-color-primary-lightest:#c6caff;
+  
+    --card-bg:#0b0d12;
+    --text-strong:#fff;
+  
+    --ifm-link-color:var(--ifm-color-primary-lightest);
+    --ifm-link-hover-color:var(--ifm-color-primary-lighter);
+  }
+  
+  /* Small global tweak */
+  .navbar__logo img{ height:28px; width:auto; }
+  
