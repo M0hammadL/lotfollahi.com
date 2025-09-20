@@ -65,7 +65,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Amir.jpg" alt="Amirhossein Vahidi" />
+      <img src="/img/people/amir.jpg" alt="Amirhossein Vahidi" />
       <div class="role-badge">Principal Data Scientist</div>
       <div class="overlay">
         <a href="https://github.com/amirvhd" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
@@ -78,7 +78,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/jonas.jpg" alt="Jonas Maaskola" />
+      <img src="/img/people/Jonas.jpg" alt="Jonas Maaskola" />
       <div class="role-badge">Principal Data Scientist</div>
     </div>
     <div class="member-meta"><h3>Jonas Maaskola</h3></div>
@@ -147,7 +147,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/dabin.jpg" alt="Dabin Jeong" />
+      <img src="/img/people/Dabin.jpg" alt="Dabin Jeong" />
       <div class="role-badge">Senior Bioinformatician</div>
       <div class="overlay">
         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
@@ -316,7 +316,7 @@ hide_table_of_contents: true
 
 <div class="member-card">
   <div class="member-media">
-    <img src="/img/people/Lisa.jpeg" alt="Lisa Marie Milchsack" /> 
+    <img src="/img/people/lisa.jpeg" alt="Lisa Marie Milchsack" /> 
     <div class="role-badge">PhD Candidate</div>
 
   </div>
