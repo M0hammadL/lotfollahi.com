@@ -1,11 +1,14 @@
+/* src/components/Landing/Home.module.css */
 .shadowed {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.4);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 h1 {
   font-size: 2rem;
   text-align: center;
-  @media only screen and (min-width: 940px) {
+}
+@media only screen and (min-width: 940px) {
+  h1 {
     font-size: 3rem;
     text-align: left;
   }
@@ -14,12 +17,13 @@ h1 {
 h2 {
   font-size: 1.25rem;
   text-align: center;
-  @media only screen and (min-width: 940px) {
+}
+@media only screen and (min-width: 940px) {
+  h2 {
     font-size: 2rem;
     text-align: left;
   }
 }
-
 
 .hand {
   animation-name: wave;
@@ -29,23 +33,50 @@ h2 {
   display: inline-block;
 }
 
-a {
-  color: #1f1f1f;
-  transition: color 200ms ease;
-}
-
-a:hover {
-  color: #c9c9c9;
-  transition: color 200ms ease;
-}
-
 @keyframes wave {
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(14.0deg) }
-  20% { transform: rotate(-8.0deg) }
-  30% { transform: rotate(14.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  50% { transform: rotate(10.0deg) }
-  60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* -------------------------------------------------- */
+/* Social icons — theme-aware                          */
+/* -------------------------------------------------- */
+
+.heroSocials {
+  line-height: 0; /* tighter vertical rhythm around big icons */
+}
+
+.heroSocials a {
+  /* Use tokens so it adapts in both themes */
+  color: var(--text-strong);
+  transition: color .18s ease, transform .18s ease;
+  text-decoration: none;
+  display: inline-grid;
+  place-items: center;
+}
+
+.heroSocials a:hover {
+  color: var(--ifm-link-hover-color);
+  transform: translateY(-3px);
+}
+
+/* Make sure SVGs follow link color */
+.heroSocials svg {
+  width: 1em; height: 1em;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* If you prefer explicit dark override, keep this too */
+:global(html[data-theme='dark']) .heroSocials a {
+  color: #fff;
+}
+:global(html[data-theme='dark']) .heroSocials a:hover {
+  color: var(--ifm-color-primary-lightest);
 }

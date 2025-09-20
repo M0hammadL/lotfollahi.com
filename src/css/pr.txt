@@ -1,0 +1,774 @@
+src\css\about.css
+
+```css
+/* src/css/about.css */
+
+/* Remove the right TOC gutter on this page when present */
+.page--about .theme-doc-toc-desktop { display:none !important; }
+
+/* Intro spacing */
+.about-intro{ display:grid; gap:.6rem; margin:.25rem 0 1rem; }
+
+/* ——— Affiliations grid (top logos) ——— */
+.affiliations{ margin:.25rem 0 1.25rem; }
+.affiliations-grid{
+  display:grid;
+  grid-template-columns:repeat(6, minmax(0,1fr));
+  gap:12px;
+}
+@media (max-width:1100px){ .affiliations-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:640px){  .affiliations-grid{ grid-template-columns:repeat(2,1fr); } }
+
+.logo-card{
+  display:grid; justify-items:center; align-content:center; gap:.45rem;
+  padding:14px;
+  border-radius:16px;
+  background:var(--logo-tile-bg, #fff);
+  border:1px solid color-mix(in oklab, var(--ifm-color-primary) 15%, #bbb 25%);
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+  text-decoration:none;
+}
+/* Keep proportions: height rules everything, width auto */
+.logo-card img{
+  height:56px; width:auto; max-width:92%;
+  display:block; margin-inline:auto; object-fit:contain;
+}
+/* Force dark text on white tiles in BOTH themes */
+.logo-card span{ font-weight:700; font-size:.9rem; color:#111; opacity:.95; }
+
+/* Keep logo tiles white in both themes so brand colors stay true */
+:root{ --logo-tile-bg:#fff; }
+[data-theme='dark']{ --logo-tile-bg:#fff; }
+
+/* ——— Funders / institutions compact grid ——— */
+.logos-grid{
+  display:grid;
+  grid-template-columns:repeat(7, minmax(0,1fr));
+  gap:10px;
+  margin:.6rem 0 1.1rem;
+}
+@media (max-width:1100px){ .logos-grid{ grid-template-columns:repeat(4,1fr); } }
+@media (max-width:640px){  .logos-grid{ grid-template-columns:repeat(3,1fr); } }
+
+.logo-tile{
+  background:var(--logo-tile-bg, #fff);
+  display:grid; place-items:center;
+  border-radius:14px;
+  padding:10px;
+  border:1px solid color-mix(in oklab, var(--ifm-color-primary) 15%, #bbb 25%);
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+.logo-tile img{
+  height:56px; width:auto; max-width:92%;
+  display:block; margin-inline:auto; object-fit:contain;
+}
+
+/* ——— Company pills (kept for reference; no longer used on About) ——— */
+.company-pills{
+  display:flex; flex-wrap:wrap; gap:.6rem; margin:.35rem 0 1.2rem;
+}
+.logo-pill{
+  display:inline-flex; align-items:center; gap:.5rem;
+  background:linear-gradient(var(--card-bg),var(--card-bg)) padding-box,
+             linear-gradient(135deg,var(--ifm-color-primary),#9a93ec) border-box;
+  border:1.2px solid transparent;
+  padding:.35rem .7rem;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+  color:var(--text-strong);
+}
+.logo-pill:visited{ color:var(--text-strong); }
+.logo-pill:hover{ transform:translateY(-1px); transition:transform .15s ease; }
+.circle-thumb{
+  width:44px; height:44px; border-radius:50%;
+  background:#fff; display:grid; place-items:center;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);
+}
+.circle-thumb img{ width:72%; height:72%; object-fit:contain; }
+
+/* ——— Industry experience: white cards in “W” (3+2) layout ——— */
+.company-w{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:12px;
+  margin:.6rem 0 1.2rem;
+  align-items:stretch;
+}
+.company-card{
+  display:grid; justify-items:center; align-content:center; gap:.5rem;
+  padding:16px;
+  border-radius:16px;
+  background:#fff;
+  border:1px solid color-mix(in oklab, var(--ifm-color-primary) 15%, #bbb 25%);
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+  text-decoration:none; font-weight:800;
+  color:#111;                    /* readable on white in dark mode */
+}
+.company-card img{ height:40px; width:auto; max-width:90%; display:block; }
+.company-card span{ color:#111; }
+
+/* Place items 4 and 5 under columns 1 and 3 to make the W */
+.company-w > a:nth-child(4){ grid-column:1; }
+.company-w > a:nth-child(5){ grid-column:3; }
+
+/* Responsive: 2 columns, then 1 column */
+@media (max-width:1000px){
+  .company-w{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .company-w > a:nth-child(4){ grid-column:auto; } /* normal flow */
+  .company-w > a:nth-child(5){ grid-column:auto; }
+}
+@media (max-width:640px){
+  .company-w{ grid-template-columns:1fr; }
+}
+
+/* Bottom call-to-action */
+.about-cta{ margin:.75rem 0 1.25rem; }
+
+
+```
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+src\css\custom.css
+```css
+/* src/css/custom.css */
+/* Central entry. Keep all imports here so Docusaurus bundles them. */
+@import './tokens.css';
+@import './typography.css';
+@import './hero.css';
+@import './members.css';
+@import './utilities.css';
+@import './about.css';
+
+```
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+
+src\css\hero.css
+
+```css
+/* src/css/hero.css */
+/* Top hero card + square cropped logo + chips */
+
+.lab-hero-card{
+    position:relative;
+    margin:1rem 0 2rem;
+    padding:1.2rem;
+    border-radius:22px;
+    background:
+      linear-gradient(var(--card-bg),var(--card-bg)) padding-box,
+      linear-gradient(135deg,var(--ifm-color-primary),#9a93ec) border-box;
+    border:1.8px solid transparent;
+    box-shadow:
+      0 20px 60px rgba(212, 2, 244, 0.18),
+      0 4px 16px rgba(198, 5, 241, 0.2);
+  }
+  
+  .lab-hero-grid{
+    display:grid;
+    grid-template-columns:1.35fr 1fr;
+    gap:2rem;
+    align-items:center;
+  }
+  
+  .lab-col--copy p{
+    margin:.75rem 0;
+    font-size:var(--hero-copy);
+    line-height:1.75;
+  }
+  
+  /* Square cropped logo viewport */
+  .logo-stage{
+    position:relative;
+    border:1.2px solid color-mix(in oklab,var(--ifm-color-primary) 75%,transparent);
+    border-radius:16px;
+    padding:0;
+    width:min(var(--hero-logo-size), 44vw);
+    aspect-ratio:1/1;      /* square */
+    overflow:hidden;       /* crop occurs here */
+    background:radial-gradient(120% 140% at 50% 0%,
+                color-mix(in oklab,var(--ifm-color-primary) 12%,transparent) 0%,
+                transparent 60%);
+    box-shadow:inset 0 0 0 1px rgba(111, 4, 153, 0.06);
+  }
+  
+  .logo-stage::after{
+    content:"";
+    position:absolute;left:12%;right:12%;bottom:-14px;height:26px;
+    background:radial-gradient(ellipse at center,
+                color-mix(in oklab,var(--ifm-color-primary) 25%,transparent) 0%,
+                transparent 70%);
+    filter:blur(10px);opacity:.8;z-index:-1;
+  }
+  
+  /* Treat the SVG logo like a photo and crop it */
+  .logo-stage img{
+    width:100%;
+    height:100%;
+    object-fit:cover;                     /* crop */
+    object-position:50% var(--hero-logo-focus-y);
+    transform:scale(var(--hero-logo-zoom));  /* subtle zoom to hide top/bottom */
+    display:block;
+  }
+  
+  /* Chips + apply row */
+  .chip{
+    display:inline-flex;align-items:center;gap:.45rem;
+    border-radius:999px;text-decoration:none;
+    border:1.6px solid var(--ifm-color-primary);
+    color:var(--ifm-color-primary);
+    font-weight:700;
+    transition:background .18s ease,color .18s ease,transform .15s ease,box-shadow .15s ease
+  }
+  .chip--sm{ padding:.34rem .68rem; font-size:.92rem; }
+  .chip:hover{
+    background:var(--ifm-color-primary);color:#ac13e3;
+    transform:translateY(-1px);
+    box-shadow:0 10px 26px rgba(90,79,220,.25)
+  }
+  .chip svg{ width:1rem;height:1rem }
+  
+  .apply-row{
+    display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; margin-top:.75rem;
+  }
+  .apply-row span{ font-weight:600; }
+  
+  /* Make hero single-column on smaller screens */
+  @media (max-width:1200px){ .lab-hero-grid{ grid-template-columns:1fr } }
+  @media (max-width:996px){ :root{ --hero-logo-size:220px; } }
+  
+```
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+
+src\css\members.css
+```css
+src/css/members.css
+/* Members grid/cards + section titles + wide photo */
+
+.markdown h2,
+.section-title{
+  text-align:center;
+  font-weight:900;
+  font-size:clamp(2rem, 1.2rem + 2vw, 3rem);
+  margin:.25rem 0 .85rem;
+}
+
+.members-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1.2rem;
+  margin:1.25rem 0 2.5rem;
+}
+
+/* free a bit more space from the TOC */
+.theme-doc-toc-desktop{ flex-basis:var(--toc-width)!important; }
+
+.member-card{
+  background:
+    linear-gradient(var(--surface-1),var(--surface-1)) padding-box,
+    linear-gradient(135deg,var(--brand),var(--brand-2)) border-box;
+  border:1.2px solid transparent;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 12px 32px rgba(0,0,0,.35),0 4px 12px rgba(0,0,0,.25);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.member-card:hover{ transform:translateY(-4px); box-shadow:0 22px 60px rgba(0,0,0,.45),0 6px 18px rgba(0,0,0,.3) }
+
+.member-media{ position:relative; aspect-ratio:4/5; overflow:hidden; }
+.member-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Slim centered badge */
+.role-badge{
+  position:absolute; left:50%; transform:translateX(-50%);
+  bottom:var(--role-badge-bottom);
+  background:color-mix(in oklab,var(--ifm-color-primary) 80%, #25142c 50%);
+  color:#fff; font-weight:800; font-size:var(--role-badge-font); letter-spacing:.06em;
+  padding:var(--role-badge-pad-y) var(--role-badge-pad-x);
+  border-radius:12px; white-space:nowrap; max-width:calc(100% - 28px);
+  box-shadow:0 8px 20px rgba(90,79,220,.35)
+}
+
+/* Hover socials */
+.overlay{
+  position:absolute; inset:0;
+  display:flex; align-items:flex-end; justify-content:center; gap:.6rem;
+  padding:12px 12px var(--overlay-safe);
+  background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(10,10,16,.65) 100%);
+  opacity:0; transition:opacity .25s ease;
+}
+.member-card:hover .overlay{ opacity:1; }
+
+.overlay a{
+  display:grid; place-items:center; width:38px; height:38px; border-radius:50%;
+  border:1px solid rgba(140,130,255,.55); color:#e6e6ff; background:rgba(30,30,42,.55);
+  backdrop-filter:blur(4px); transition:transform .15s ease, background .15s ease;
+}
+.overlay a:hover{ transform:translateY(-2px); background:var(--ifm-color-primary); color:#fff; }
+.overlay svg{ width:18px; height:18px; stroke:currentColor; fill:currentColor; opacity:.95; }
+
+.member-meta{ padding:.85rem 1rem 1.1rem; text-align:center; }
+.member-meta h3{ margin:0; font-weight:800; font-size:var(--name-size); color:#fff; }
+
+.co-note{ padding:0 1rem 1rem; font-size:.9rem; color:#cfd2ff; opacity:.9; }
+
+/* Group photo block */
+.lab-wide-figure{
+  display:grid; justify-items:center; gap:.5rem;
+  margin:.5rem auto 1.75rem; padding:.25rem;
+}
+.lab-wide-figure img{
+  width:min(100%, 1100px); height:auto;
+  border-radius:14px;
+  box-shadow:0 18px 48px rgba(0,0,0,.35), 0 4px 12px rgba(0,0,0,.25);
+}
+.lab-wide-figure figcaption{ text-align:center; font-weight:600; opacity:.9; }
+
+/* Responsive grid */
+@media (max-width:1200px){ .members-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (max-width:996px){  .members-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:640px){  .members-grid{ grid-template-columns:1fr; } }
+
+```
+
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+src\css\tokens.css
+```css
+/* src/css/publications.css
+   Styling for the publications list: compact readable items + small badges for links
+*/
+
+.pub-wrap {
+    margin: 0 0 2rem;
+    display: block;
+    gap: 1.25rem;
+  }
+  
+  /* Section header (year) */
+  .pub-year {
+    margin-top: 1.75rem;
+    margin-bottom: 0.6rem;
+    font-weight: 900;
+    font-size: clamp(1.35rem, 1rem + 1.2vw, 1.6rem);
+  }
+  
+  /* Each publication row */
+  .pub-list { display: grid; gap: 1.15rem; margin: .6rem 0 1.6rem; }
+  
+  /* Individual item */
+  .pub-item{
+    display:block;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: linear-gradient(var(--card-bg), var(--card-bg));
+    border: 1px solid color-mix(in oklab, var(--ifm-color-primary) 12%, #ddd 20%);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+    line-height: 1.45;
+  }
+  
+  /* Title */
+  .pub-title{
+    font-weight:800;
+    margin: 0 0 6px;
+    color: var(--text-strong);
+    font-size: 1.02rem;
+  }
+  
+  /* Authors & venue line */
+  .pub-meta{
+    margin: 0 0 8px;
+    color: color-mix(in oklab, var(--text-strong) 65%, #000 0%);
+    font-size: .95rem;
+    opacity: .95;
+  }
+  
+  /* Small badge bar (code / journal / preprint links) */
+  .pub-badges{
+    display:flex;
+    gap:.5rem;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  
+  /* badge style */
+  .pub-badge {
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    padding:.28rem .6rem;
+    border-radius:999px;
+    font-weight:700;
+    font-size:.85rem;
+    text-decoration:none;
+    border:1px solid transparent;
+    background: linear-gradient(135deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));
+    color: var(--ifm-link-color);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .pub-badge:hover{ transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0,0,0,0.08); }
+  
+  /* variant for preprints and journals */
+  .pub-badge--code{ background: transparent; border:1px dashed color-mix(in oklab,var(--ifm-color-primary) 40%, #bbb 20%); color:var(--ifm-link-color); }
+  .pub-badge--journal{ background: linear-gradient(135deg,var(--ifm-color-primary-lightest), white); color: #111; border:1px solid rgba(0,0,0,0.06); }
+  .pub-badge--preprint{ background: linear-gradient(135deg, rgba(0,0,0,0.03), transparent); color: var(--ifm-link-color); border:1px solid rgba(0,0,0,0.06); }
+  
+  /* make links always readable in dark mode */
+  [data-theme='dark'] .pub-item { background: #0b0d12; box-shadow: 0 12px 30px rgba(0,0,0,0.5); border: 1px solid color-mix(in oklab,var(--ifm-color-primary) 12%, #111 10%); }
+  [data-theme='dark'] .pub-badge--journal{ color:#fff; background: linear-gradient(135deg,var(--ifm-color-primary),var(--ifm-color-primary-light)); }
+  
+  /* smaller screens: slightly tighter padding */
+  @media (max-width:640px){
+    .pub-item{ padding:12px; }
+    .pub-title{ font-size:1rem; }
+    .pub-badge{ font-size:.82rem; padding:.24rem .5rem; }
+  }
+
+
+```
+
+
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+
+src\css\publications.css:
+
+
+```css
+/* src/css/publications.css */
+/* Styling for the publications list: compact readable items + small badges for links */
+
+.pub-wrap {
+    margin: 0 0 2rem;
+    display: block;
+    gap: 1.25rem;
+  }
+  
+  /* Section header (year) */
+  .pub-year {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 1.2rem + 1.2vw, 1.8rem);
+    border-bottom: 2px solid var(--ifm-color-primary-lightest);
+    padding-bottom: 0.4rem;
+  }
+  
+  /* Each publication row */
+  .pub-list {
+    display: grid;
+    gap: 1.25rem;
+    margin: 0.8rem 0 1.8rem;
+  }
+  
+  /* Individual item */
+  .pub-item {
+    display: block;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: var(--card-bg);
+    border: 1px solid color-mix(in oklab, var(--ifm-color-primary) 12%, #ddd 20%);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+    line-height: 1.55;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .pub-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .pub-title {
+    font-weight: 800;
+    margin: 0 0 8px;
+    color: var(--text-strong);
+    font-size: 1.15rem; /* Increased font size */
+  }
+  
+  /* Authors & venue line */
+  .pub-meta {
+    margin: 0 0 10px;
+    color: color-mix(in oklab, var(--text-strong) 70%, transparent);
+    font-size: 0.98rem;
+    opacity: 0.95;
+  }
+  
+  /* Small badge bar (code / journal / preprint links) */
+  .pub-badges {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  /* badge style */
+  .pub-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    border: 1.2px solid transparent;
+    background: rgba(0, 0, 0, 0.025);
+    color: var(--ifm-link-color);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  }
+  
+  .pub-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.09);
+  }
+  
+  /* variant for preprints and journals */
+  .pub-badge--code {
+    background: transparent;
+    border: 1.2px dashed color-mix(in oklab, var(--ifm-color-primary) 45%, #bbb 20%);
+    color: var(--ifm-link-color);
+  }
+  .pub-badge--journal {
+    background: linear-gradient(135deg, var(--ifm-color-primary-lightest), white);
+    color: #111;
+    border: 1.2px solid rgba(0, 0, 0, 0.06);
+  }
+  .pub-badge--preprint {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.03), transparent);
+    color: var(--ifm-link-color);
+    border: 1.2px solid rgba(0, 0, 0, 0.06);
+  }
+  
+  /* make links always readable in dark mode */
+  [data-theme='dark'] .pub-item {
+    background: #1c1c24;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid color-mix(in oklab, var(--ifm-color-primary) 12%, #111 10%);
+  }
+  [data-theme='dark'] .pub-badge--journal {
+    color: #fff;
+    background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  }
+  [data-theme='dark'] .pub-item:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  }
+  [data-theme='dark'] .pub-year {
+    border-bottom: 2px solid var(--ifm-color-primary-dark);
+  }
+  
+  /* smaller screens: slightly tighter padding */
+  @media (max-width: 640px) {
+    .pub-item {
+      padding: 14px;
+    }
+    .pub-title {
+      font-size: 1.05rem;
+    }
+    .pub-badge {
+      font-size: 0.85rem;
+      padding: 0.28rem 0.55rem;
+    }
+  }
+
+
+```
+
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+
+src\css\tokens.css
+```css
+/* src/css/tokens.css */
+/* Design tokens — one place to tune brand, sizes, spacing */
+
+:root{
+    /* Brand */
+    --ifm-color-primary:#5a4fdc;
+    --ifm-color-primary-dark:#5247cf;
+    --ifm-color-primary-darker:#4a41c2;
+    --ifm-color-primary-darkest:#3b34a2;
+    --ifm-color-primary-light:#6a60e0;
+    --ifm-color-primary-lighter:#7a71e4;
+    --ifm-color-primary-lightest:#9a93ec;
+  
+    /* Surfaces */
+    --card-bg:#ffffff;
+    --surface-1:#221023;       /* card background (dark glazed) */
+    --brand:#d802e7;           /* gradient border color 1 */
+    --brand-2:#8e1d3f;         /* gradient border color 2 */
+    --card-border:rgba(127,137,255,.35);
+  
+    /* Layout / widths */
+    --toc-width:180px;
+    --ifm-container-width:1200px;
+    --ifm-container-width-xl:1380px;
+  
+    /* Typography scales */
+    --role-badge-font:.8rem;
+    --name-size:1.3rem;
+    --hero-copy:1.5rem;
+  
+    /* Member badge & overlay spacing */
+    --role-badge-pad-y:.5rem;
+    --role-badge-pad-x:.9rem;
+    --role-badge-bottom:10px;
+    --overlay-safe:64px;
+  
+    /* Hero logo (square crop) */
+    --hero-logo-size:400px;   /* desktop square size */
+    --hero-logo-zoom:1.20;    /* >1 zooms in a bit */
+    --hero-logo-focus-y:35%;  /* vertical focus point for crop */
+  
+    /* Strong text visibility */
+    --text-strong:#111;
+  
+    /* Links */
+    --ifm-link-color:var(--ifm-color-primary);
+    --ifm-link-hover-color:var(--ifm-color-primary-light);
+  }
+  
+  [data-theme='dark']{
+    --ifm-color-primary:#7f89ff;
+    --ifm-color-primary-dark:#6a73ff;
+    --ifm-color-primary-darker:#5f67ff;
+    --ifm-color-primary-darkest:#4b52ff;
+    --ifm-color-primary-light:#8e97ff;
+    --ifm-color-primary-lighter:#a0a7ff;
+    --ifm-color-primary-lightest:#c6caff;
+  
+    --card-bg:#0b0d12;
+    --text-strong:#fff;
+  
+    --ifm-link-color:var(--ifm-color-primary-lightest);
+    --ifm-link-hover-color:var(--ifm-color-primary-lighter);
+  }
+  
+  /* Small global tweak */
+  .navbar__logo img{ height:28px; width:auto; }
+  
+```
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+
+
+src\css\typography.css
+```css
+/* src/css/typography.css */
+/* Make bold/links readable in both themes across all content areas */
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  :is(strong, b){
+  color:var(--text-strong) !important;
+  font-weight:800;
+}
+
+/* Links (inline content only — not nav/menu buttons) */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:not(.button, .navbar__link, .menu__link){
+  color:var(--ifm-link-color) !important;
+  text-decoration-color:currentColor;
+  text-underline-offset:.14em;
+  opacity:1 !important;
+}
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:visited:not(.button, .navbar__link, .menu__link){
+  color:var(--ifm-link-color) !important;
+  opacity:1 !important;
+}
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:hover,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:focus-visible{
+  color:var(--ifm-link-hover-color) !important;
+  text-decoration-color:currentColor;
+}
+
+/* Underlines (e.g., publications) */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article) u{
+  color:var(--text-strong) !important;
+  text-decoration-color:currentColor;
+  text-underline-offset:.14em;
+}
+
+/* Ensure nested bold/links inherit */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  strong a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  b a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a strong,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a b{
+  color:inherit !important;
+}
+
+/* Don’t dim anchors in dark mode anywhere */
+[data-theme='dark'] a{ opacity:1 !important; }
+
+```
+
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+
+
+
+src\css\utilities.css
+```css
+/* src/css/utilities.css */
+/* small things and one-offs */
+
+.svg-sprite{ position:absolute; width:0; height:0; overflow:hidden; }
+
+```
+

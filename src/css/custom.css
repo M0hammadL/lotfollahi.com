@@ -5,3 +5,27 @@
 @import './hero.css';
 @import './members.css';
 @import './utilities.css';
+@import './about.css';
+@import './publications.css';
+
+/* Homepage hero social icon fix */
+.hero-socials a {
+    /* Use the theme variable that switches from black to white */
+    color: var(--text-strong);
+    display: inline-block; /* Helps with spacing and hover */
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .hero-socials a:hover {
+    /* Use the theme's link hover color for a nice effect */
+    color: var(--ifm-link-hover-color);
+    transform: translateY(-2px);
+  }
+  
+  /* This is the key part for SVGs */
+  .hero-socials svg {
+    /* This tells the SVG to inherit the color from its parent 'a' tag */
+    fill: currentColor;
+    width: 32px;  /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+  }

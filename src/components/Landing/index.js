@@ -1,16 +1,15 @@
+// src/components/Landing/index.js
 import React from "react";
 import Style from "./Home.module.css";
 import me from "../../img/lotfollahi.jpg";
-import classNames from "classnames";
 import ListItem from "./ListItem";
-import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
-import {FaLinkedin, FaTwitter, FaGithub, FaGoogleDrive, FaMailBulk} from "react-icons/fa";
-import {SiGooglescholar} from "react-icons/Si";
-import {MdEmail} from "react-icons/all";
 
-
+// Only what we use, with correct package casing
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { SiGooglescholar } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 
 export default function Landing() {
   return (
@@ -20,11 +19,9 @@ export default function Landing() {
       flexDirection={{ xs: "column", md: "row" }}
       alignItems={"center"}
       justifyContent={"center"}
-      paddingTop={'15vh'}
-      // minHeight={"calc(100vh - 3.75rem)"}
+      paddingTop={"15vh"}
     >
       <Box
-        // className={classNames(Style.avatar, Style.shadowed)}
         alt={"Image of Mohammad Lotfollahi"}
         component={"img"}
         src={me}
@@ -39,52 +36,56 @@ export default function Landing() {
         <h1>
           {info.firstName} {info.lastName}
         </h1>
-        <h5 style={{opacity: '100%'}}>{info.position}</h5>
+        <h5 style={{ opacity: "100%" }}>{info.position}</h5>
+
         <Box component={"ul"} p={"0.8rem"}>
           {info.miniBio.map((bio, index) => (
             <ListItem key={index} logo={bio.logo} text={bio.text} link={bio.link} />
           ))}
         </Box>
+
+        {/* Socials */}
         <Box
+          className={Style.heroSocials}
           display={"flex"}
           gap={"1.5rem"}
           justifyContent={"center"}
           fontSize={{ xs: "2rem", md: "2.5rem" }}
         >
-          {/* Twitter */}
           <a
-            target='_blank'
-            aria-label={"twitter"}
-            rel='noopener noreferrer'
-            href={"https://twitter.com/mo_lotfollahi"}
+            target="_blank"
+            aria-label="twitter"
+            rel="noopener noreferrer"
+            href="https://twitter.com/mo_lotfollahi"
           >
             <FaTwitter />
           </a>
-          {/* Linkedin */}
+
           <a
-            target='_blank'
-            aria-label={"linkedin"}
-            rel='noopener noreferrer'
-            href={"https://www.linkedin.com/in/mlotfollahi/"}
+            target="_blank"
+            aria-label="linkedin"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/mlotfollahi/"
           >
             <FaLinkedin />
           </a>
-           <a
-            target='_blank'
-            aria-label={"Googlescholar"}
-            rel='noopener noreferrer'
-            href={"https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en"}
+
+          <a
+            target="_blank"
+            aria-label="google scholar"
+            rel="noopener noreferrer"
+            href="https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en"
           >
             <SiGooglescholar />
           </a>
-         {/* Github */}
+
           <a
-            target='_blank'
-            aria-label={"email"}
-            rel='noopener noreferrer'
-            href={"mailto:ml19@sanger.ac.uk"}
+            target="_blank"
+            aria-label="email"
+            rel="noopener noreferrer"
+            href="mailto:ml19@sanger.ac.uk"
           >
-            <MdEmail/>
+            <MdEmail />
           </a>
         </Box>
       </Box>

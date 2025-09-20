@@ -1,0 +1,124 @@
+/* src/css/about.css */
+
+/* Remove the right TOC gutter on this page when present */
+.page--about .theme-doc-toc-desktop { display:none !important; }
+
+/* Intro spacing */
+.about-intro{ display:grid; gap:.6rem; margin:.25rem 0 1rem; }
+
+/* ——— Affiliations grid (top logos) ——— */
+.affiliations{ margin:.25rem 0 1.25rem; }
+.affiliations-grid{
+  display:grid;
+  grid-template-columns:repeat(6, minmax(0,1fr));
+  gap:12px;
+}
+@media (max-width:1100px){ .affiliations-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:640px){  .affiliations-grid{ grid-template-columns:repeat(2,1fr); } }
+
+.logo-card{
+  display:grid; justify-items:center; align-content:center; gap:.45rem;
+  padding:14px;
+  border-radius:16px;
+  background:var(--logo-tile-bg, #fff);
+  border:1px solid color-mix(in oklab, var(--ifm-color-primary) 15%, #bbb 25%);
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+  text-decoration:none;
+}
+/* Keep proportions: height rules everything, width auto */
+.logo-card img{
+  height:56px; width:auto; max-width:92%;
+  display:block; margin-inline:auto; object-fit:contain;
+}
+/* Force dark text on white tiles in BOTH themes */
+.logo-card span{ font-weight:700; font-size:.9rem; color:#111; opacity:.95; }
+
+/* Keep logo tiles white in both themes so brand colors stay true */
+:root{ --logo-tile-bg:#fff; }
+[data-theme='dark']{ --logo-tile-bg:#fff; }
+
+/* ——— Funders / institutions compact grid ——— */
+.logos-grid{
+  display:grid;
+  grid-template-columns:repeat(7, minmax(0,1fr));
+  gap:10px;
+  margin:.6rem 0 1.1rem;
+}
+@media (max-width:1100px){ .logos-grid{ grid-template-columns:repeat(4,1fr); } }
+@media (max-width:640px){  .logos-grid{ grid-template-columns:repeat(3,1fr); } }
+
+.logo-tile{
+  background:var(--logo-tile-bg, #fff);
+  display:grid; place-items:center;
+  border-radius:14px;
+  padding:10px;
+  border:1px solid color-mix(in oklab, var(--ifm-color-primary) 15%, #bbb 25%);
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+.logo-tile img{
+  height:56px; width:auto; max-width:92%;
+  display:block; margin-inline:auto; object-fit:contain;
+}
+
+/* ——— Company pills (kept for reference; no longer used on About) ——— */
+.company-pills{
+  display:flex; flex-wrap:wrap; gap:.6rem; margin:.35rem 0 1.2rem;
+}
+.logo-pill{
+  display:inline-flex; align-items:center; gap:.5rem;
+  background:linear-gradient(var(--card-bg),var(--card-bg)) padding-box,
+             linear-gradient(135deg,var(--ifm-color-primary),#9a93ec) border-box;
+  border:1.2px solid transparent;
+  padding:.35rem .7rem;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+  color:var(--text-strong);
+}
+.logo-pill:visited{ color:var(--text-strong); }
+.logo-pill:hover{ transform:translateY(-1px); transition:transform .15s ease; }
+.circle-thumb{
+  width:44px; height:44px; border-radius:50%;
+  background:#fff; display:grid; place-items:center;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);
+}
+.circle-thumb img{ width:72%; height:72%; object-fit:contain; }
+
+/* ——— Industry experience: white cards in “W” (3+2) layout ——— */
+.company-w{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:12px;
+  margin:.6rem 0 1.2rem;
+  align-items:stretch;
+}
+.company-card{
+  display:grid; justify-items:center; align-content:center; gap:.5rem;
+  padding:16px;
+  border-radius:16px;
+  background:#fff;
+  border:1px solid color-mix(in oklab, var(--ifm-color-primary) 15%, #bbb 25%);
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+  text-decoration:none; font-weight:800;
+  color:#111;                    /* readable on white in dark mode */
+}
+.company-card img{ height:40px; width:auto; max-width:90%; display:block; }
+.company-card span{ color:#111; }
+
+/* Place items 4 and 5 under columns 1 and 3 to make the W */
+.company-w > a:nth-child(4){ grid-column:1; }
+.company-w > a:nth-child(5){ grid-column:3; }
+
+/* Responsive: 2 columns, then 1 column */
+@media (max-width:1000px){
+  .company-w{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .company-w > a:nth-child(4){ grid-column:auto; } /* normal flow */
+  .company-w > a:nth-child(5){ grid-column:auto; }
+}
+@media (max-width:640px){
+  .company-w{ grid-template-columns:1fr; }
+}
+
+/* Bottom call-to-action */
+.about-cta{ margin:.75rem 0 1.25rem; }
