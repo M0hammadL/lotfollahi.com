@@ -1,0 +1,53 @@
+/* src/css/typography.css */
+/* Make bold/links readable in both themes across all content areas */
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  :is(strong, b){
+  color:var(--text-strong) !important;
+  font-weight:800;
+}
+
+/* Links (inline content only — not nav/menu buttons) */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:not(.button, .navbar__link, .menu__link){
+  color:var(--ifm-link-color) !important;
+  text-decoration-color:currentColor;
+  text-underline-offset:.14em;
+  opacity:1 !important;
+}
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:visited:not(.button, .navbar__link, .menu__link){
+  color:var(--ifm-link-color) !important;
+  opacity:1 !important;
+}
+
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:hover,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a:focus-visible{
+  color:var(--ifm-link-hover-color) !important;
+  text-decoration-color:currentColor;
+}
+
+/* Underlines (e.g., publications) */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article) u{
+  color:var(--text-strong) !important;
+  text-decoration-color:currentColor;
+  text-underline-offset:.14em;
+}
+
+/* Ensure nested bold/links inherit */
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  strong a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  b a,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a strong,
+:where(.markdown, .theme-doc-markdown, .theme-blog-markdown, .theme-page, main article)
+  a b{
+  color:inherit !important;
+}
+
+/* Don’t dim anchors in dark mode anywhere */
+[data-theme='dark'] a{ opacity:1 !important; }

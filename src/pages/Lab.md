@@ -23,14 +23,15 @@ hide_table_of_contents: true
         computer scientists, biologists, computational biologists, and clinicians—collaborating
         to advance innovative research and lab work.
       </p>
-      <p>
-        We always have positions available for talented clinicians, computer scientists, and both wet-lab and dry-lab biologists.
-      </p>
-      <div class="cta-row">
-        <a class="chip chip--sm" href="mailto:ml19@sanger.ac.uk" aria-label="Email the lab">
+      <div class="apply-row">
+        <span>
+          We always have positions available for talented clinicians, computer scientists, and both wet-lab and dry-lab biologists.
+          <strong>  Reach out via: </strong>
+          <a class="chip chip--sm" href="mailto:ml19@sanger.ac.uk" aria-label="Email the lab">
           <svg width="18" height="18"><use href="#i-mail"/></svg>
           Email
         </a>
+        </span>
       </div>
     </div>
     <div class="lab-col lab-col--logo">
@@ -382,7 +383,7 @@ hide_table_of_contents: true
   <div class="member-card">
   <div class="member-media">
     <img src="/img/people/Mahan.jpg" alt="Mahan Veisi" />
-    <div class="role-badge">Undergrad Student</div>
+    <div class="role-badge">Undergraduate Student</div>
     <div class="overlay">
       <a href="https://x.com/MahanVeisi8" aria-label="X"><svg><use href="#i-x"/></svg></a>
       <a href="https://www.linkedin.com/in/mahanveisi8/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>

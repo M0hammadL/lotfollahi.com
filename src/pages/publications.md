@@ -1,319 +1,281 @@
-- See a full list of papers on **[Google Scholar](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**.
-- Co-first and co-last authors are indicated by + and *, respectively.
-
-
-### 2024
-
-##### Multi-modal generative modeling for joint analysis of single-cell T cell receptor and gene expression data.
-Drost, F., An, Y., Bonafonte-Pardàs, I., Dratva, L. M., Lindeboom, R. G., Haniffa, M., ... , <u>Lotfollahi,M\*</u>, Schubert, B*. 
-
-[[code]](https://github.com/SchubertLab/mvTCR),
-[[Nature Communications (2024)]](https://www.nature.com/articles/s41467-024-49806-9).
-
-##### Large-scale characterization of cell niches in spatial atlases using bio-inspired graph learning
-
-
-Birk, S., Bonafonte-Pardàs, I., Feriz, A. M.,, ... & <u>Lotfollahi, M.\*</u>.
-
-[[code]](https://github.com/lotfollahi-lab)
-[[bioRxv (2024)]](https://www.biorxiv.org/content/10.1101/2024.02.21.581428v2).
-
-### 2023
-
-##### An integrated single-cell reference atlas of the human endometrium.
-
-Marečková, M., Garcia-Alonso, L., Moullet, M., Lorenzi, V., Petryszak, R., Sancho-Serra, C., <u>Lotfollahi,M\*</u> ... &
-Vento-Tormo, R. (2023).
-
-[[bioRxiv (2023)]](https://www.biorxiv.org/content/10.1101/2023.11.03.564728v1.abstract).
-
-##### Population-level integration of single-cell datasets enables multi-scale analysis across samples.
-De Donno, C., Hediyeh-Zadeh, S., Wagenstetter, M., Moinfar, A. A., Zappia, L., 
-<u>Lotfollahi, M.* </u>, & Theis, F. J*. 
-
-[[code]](https://github.com/theislab/scArches),
-[[Nature Methods (2023)]](https://www.nature.com/articles/s41592-023-02035-2).
-
 ---
-##### Predicting cell morphological responses to perturbations using generative modeling
-
-Palma, A., Theis, F. J.\*, <u>Lotfollahi,M\*</u>.
-
-[[bioRxiv (2023)]](https://www.biorxiv.org/content/10.1101/2023.07.17.549216v1).
-[[code]](https://github.com/theislab/impa).
-
-
----
-
-##### An integrated cell atlas of the human lung in health and disease
-
-Sikkema, L., Strobl, D., Zappia, L., Madissoon, E., Markov, N. S., Zaragosi, L., Ansari, M., Arguel, M., Apperloo, L., Bécavin, C., Berg, M., Chichelnitskiy, E., Chung, M.,
-Collin, A., Gay, A. C. A., Hooshiar Kashani, B., Jain, M., Kapellos, T., Kole, T. M., …,<u>Lotfollahi. M</u>,...,Theis, F.
-
-[[Nature Medicine (2023)]](https://www.nature.com/articles/s41591-023-02327-2).
-[[code]](https://github.com/LungCellAtlas/HLCA_reproducibility),
-[[Mapping data to HLCA using scArhes]](https://docs.scarches.org/en/latest/hlca_map_classify.html),
-
----
-
-##### Predicting cellular responses to complex perturbations in high‐throughput screens
-
-<u>Lotfollahi, M+.</u>, Klimovskaia Susmelj+, A., De Donno, C+., Hetzel, L., Ji, Y., Ibarra, I. L., ... & Theis, F. J.
-
-[[Molecular Systems Biology (2023)]](https://www.embopress.org/doi/full/10.15252/msb.202211517),
-[[code]](https://github.com/facebookresearch/CPA),
-[[Facebook AI blogpost]](https://ai.facebook.com/blog/ai-predicts-effective-drug-combinations-to-fight-complex-diseases-faster),
-[[state of AI report 2021]](https://www.stateof.ai/2021),
-[[featured cover]](https://www.embopress.org/loi/17444292).
-
----
-
-##### The scverse project provides a computational ecosystem for single-cell omics data analysis
-
-Virshup+ _et al_. 
-
-[[Nature biotechnology (2023)]](https://www.embopress.org/doi/full/10.15252/msb.202211517),
-[[community]](https://scverse.org/).
-
----
-
-##### Best practices for single-cell analysis across modalities
-
-Heumos+ _et al_. 
-
-[[Nature Reviews Genetics (2023)]](https://www.embopress.org/doi/full/10.15252/msb.202211517),
-[[code)]](https://www.sc-best-practices.org/preamble.html).
-
-
----
-##### Biologically Informed Deep Learning to Query Gene Programs in Single-Cell Atlases
-
-<u>Lotfollahi M</u>, M+., Rybakov, S+., Hrovatin, K., Hediyeh-Zadeh, S., Talavera-López, C., Misharin, A. V., & Theis, F. J.
-
-[[Nature Cell Biology (2023)]](https://icml-compbio.github.io/icml-website-2021/2021/papers/WCBICML2021_paper_45.pdf),
-[[code]](https://github.com/theislab/scArches).
+title: Publications
+hide_table_of_contents: False
+ 
 
 ---
 
 
-##### Mapping cells to gene programs
-
-<u>Lotfollahi M</u>, M+., Rybakov, S+., Hrovatin, K., Hediyeh-Zadeh, S., Talavera-López, C., Misharin, A. V., & Theis, F. J.
-
-[[Protocole exchange (2023)]](https://protocolexchange.researchsquare.com/article/pex-2092/v1),
-[[code]](https://github.com/theislab/scArches).
-
----
-
-#### Single-cell RNA sequencing uncovers heterogeneous transcriptional signatures in tumor-infiltrated dendritic cells in prostate cancer. Heliyon, 9(5), e15694.
-
-
-Feriz, A. M., Khosrojerdi, A., <u>Lotfollahi, M.</u>, Shamsaki, N., GhasemiGol, M., HosseiniGol, E., Fereidouni, M., Rohban, M. H., Sebzari, A. R., Saghafi, S., Leone, P., Silvestris, N., Safarpour, H., & Racanelli, V. (2023). 
-
-[[Heliyon(2023)]](https://www.cell.com/heliyon/pdf/S2405-8440(23)02901-8.pdf).
-
-### 2022
-
-
-##### Predicting single-cell perturbation responses for unseen drugs
-
-Hetzel, L., Böhm, S., Kilbertus, N., Günnemann, S., <u>Lotfollahi, M.</u>, & Theis, F. (2022).
-
-[[NeurIPS (2022)]](https://nips.cc/Conferences/2022/ScheduleMultitrack?event=53227), 
-[[code]](https://github.com/theislab/chemcpa).
-
----
-
-##### Modelling method using a conditional variational autoencoder
-
-Theis, F. J.,<u>Lotfollahi, M.</u>, Wolf, F. A. 
-
-[US Patent](https://patents.google.com/patent/US20220383985A1/en).
-
----
-
-##### Deep Learning in Spatially Resolved Transcriptomics: A Comprehensive Technical View
-
-Nasab, R. Z., Ghamsari, M. R. E., Argha, A., Macphillamy, C., Beheshti, A., Alizadehsani, R., Lovell, N. H.,
-<u>Lotfollahi, M.</u>, & Alinejad-Rokny, H. 
-
-
-[arXiv](https://arxiv.org/abs/2210.04453).
-
-
----
-
-##### Single-cell reference mapping to construct and extend cell type hierarchies
-
-Michielsen,L+.,<u>Lotfollahi, M.+</u>, Strobl, D., Sikkema, L., Reinders, M. J. T., Theis, F. J.,Mahfouz, A. 
-
-[[BioRxv (2022)]](https://www.biorxiv.org/content/10.1101/2022.07.07.499109v1),
-[[code]](https://github.com/theislab/scarches).
-
---- 
-
-##### Squidpy: a scalable framework for spatial omics analysis
-
-Palla, G., Spitzer, H., Klein, M., Fischer, D., Schaar, A. C., Kuemmerle, L. B., Rybakov, S.,
-Ibarra, I. L., Holmberg, O., Virshup, I., <u>Lotfollahi, M.</u>, Richter, S. & Theis, F. J. 
-
-
-[[Nature Methods (2022)]](https://www.nature.com/articles/s41592-021-01358-2),
-[[code]](https://github.com/theislab/squidpy).
-
----
-
-##### A Python library for probabilistic analysis of single-cell omics data
-
-Gayoso, A.+, Lopez, R.+, Xing, G., Boyeau+, P., Valiollah Pour Amiri, V., Hong, J., Wu, K., Jayasuriya, M., Mehlman, E., Langevin, M., Liu, Y., Samaran, J.,
-Misrachi, G., Nazaret, A., Clivio, O., Xu, C., Ashuach, T., Gabitto, M., <u>Lotfollahi, M.</u>, … Yosef, N. 
-
-[[Nature Biotechnology (2022)]](https://www.nature.com/articles/s41587-021-01206-w),
-[[code]](https://scvi-tools.org/).
-
----
-
-##### Population-level integration of single-cell datasets enables multi-scale analysis across samples.
-
-De Donno, C., Hediyeh-Zadeh, S., Wagenstetter, M., Moinfar, A. A., Zappia, L., 
-<u>Lotfollahi, M.* </u>, & Theis, F. J*. 
-
-[[code]](https://github.com/theislab/scArches),
-[[bioRxv (2022)]](https://www.biorxiv.org/content/10.1101/2022.11.28.517803v1).
-
----
-
-##### An integrated cell atlas of the human lung in health and disease
-
-Sikkema, L., Strobl, D., Zappia, L., Madissoon, E., Markov, N. S., Zaragosi, L., Ansari, M., Arguel, M., Apperloo, L., Bécavin, C., Berg, M., Chichelnitskiy, E., Chung, M.,
-Collin, A., Gay, A. C. A., Hooshiar Kashani, B., Jain, M., Kapellos, T., Kole, T. M., …,<u>Lotfollahi. M</u>,...,Theis, F.
-
-[[code]](https://github.com/LungCellAtlas/HLCA_reproducibility),
-
-[[bioRxv (2022)]](https://www.biorxiv.org/content/10.1101/2022.03.10.483747v1).
-
-
----
-
-##### Deep generative modeling of transcriptional dynamics for RNA velocity analysis in single cells.
-
-Gayoso, A., Weiler, P.,<u> Lotfollahi, M.</u>, Klein, D., Hong, J., Streets, A., Theis, F. J., & Yosef, N.
-
-
-[[code]](https://github.com/YosefLab/velovi),
-
-[[bioRxv (2022)]](https://www.biorxiv.org/content/10.1101/2022.03.10.483747v1).
-
-
----
-
-##### MultiCPA: Multimodal Compositional Perturbation Autoencoder
-
-
-Inecik, K., Uhlmann, A.,
-<u>Lotfollahi,M.* </u>, Theis,F*.
-
-[[ICML Workshop on Computational Biology (WCB) 2022]](https://icml-compbio.github.io/icml-website-2022/),
-[[bioRxv]](https://www.biorxiv.org/content/10.1101/2022.07.08.499049v1),
-[[code]](https://github.com/theislab/multicpa).
-
----
-##### Continual single-cell architecture surgery for reference mapping.
-
-Hediyeh-zadeh, S.,
-<u>Lotfollahi, M.* </u>, & Theis, F*.
-
-[[ICML Workshop on Computational Biology (WCB) 2022]](https://icml-compbio.github.io/2022/papers/WCBICML2022_paper_68.pdf),
-
---- 
-
-##### Mapping single-cell data to reference atlases by transfer learning
-
-<u>Lotfollahi, M.</u>, Naghipourfar, M., Luecken, M. D., Khajavi, M., Büttner, M., Wagenstetter, M., Avsec, Ž., Gayoso, A., Yosef, N., Interlandi, M. & Others.
-
-[[Nature Biotechnology (2022)]](https://www.nature.com/articles/s41587-021-01001-7),
-[[code]](https://github.com/theislab/scarches),
-[[MDSI best paper award]](https://www.mdsi.tum.de/en/mdsi/latest-info/news/full-text/article/awardees-of-the-mdsi-best-paper-of-the-year-award/),
-[[featured cover in Nature Biotechnology]](https://www.nature.com/nbt/volumes/40/issues/1).
-
-
-### 2021
-
-
-##### Multigrate: Single-Cell Multi-Omic Data Integration
-
-<u>Lotfollahi. M+</u>., Litinetskaya, A+. and Theis, F. J.
-
-[[contributed talk Award at ICML Workshop on Computational Biology 2021]](https://icml-compbio.github.io/icml-website-2021/),
-[[code]](https://github.com/theislab/multigrate),
-[[bioRxv (2022)]](https://www.biorxiv.org/content/10.1101/2022.03.16.484643v1).
-
----
-
-##### Integrating T-cell receptor and transcriptome for large-scale single-cell immune profiling analysis
-
-Drost, F., An, Y., Dratva, L. M., Lindeboom, R. G. H., Haniffa, M., Teichmann, S. A., Theis, F., <u>Lotfollahi, M.\*</u>, Schubert, B\*.
-
-
-[[ICML Workshop on Computational Biology 2021]](https://icml-compbio.github.io/icml-website-2021/2021/papers/WCBICML2021_paper_45.pdf),
-[[code]](https://github.com/SchubertLab/mvTCR),
-[[bioRxv (2021)]](https://www.biorxiv.org/content/10.1101/2021.06.24.449733v2.abstract).
-
-
----
-
-##### Machine learning for perturbational single-cell omics
-
-Ji, Y.,<u> Lotfollahi, M.</u>, Wolf, F. A. & Theis, F. J.
-
-[[Cell Systems(2021)]](https://doi.org/10.1016/j.cels.2021.05.016),
-[[data resource]](https://github.com/theislab/sc-pert).
-
-### 2020
-
-##### Out-of-distribution prediction with disentangled representations for single-cell RNA sequencing data
-
-<u>Lotfollahi, M.+</u>, Dony, L.+, Agarwala, H.+, & Theis, F. J.
-
-[[ICML Workshop on Computational Biology (WCB) 2020]](https://icml-compbio.github.io/icml-website-2020/),
-[[spotlight talk ICML WCB 2020]](https://slideslive.com/38931310/outofdistribution-prediction-with-disentangled-representations-for-scrnaseq-data),
-[[code]](https://github.com/theislab/disent)
-
---- 
-
-#### Conditional out-of-distribution generation for unpaired data using transfer VAE
-
-<u>Lotfollahi, M.</u>, Naghipourfar, M., Theis, F. J. & Wolf, F. A.
-
-[[Bioinformatics(2020)]](https://doi.org/10.1093/bioinformatics/btaa800),
-[\[code\]](https://github.com/theislab/trvae),
-[\[talk at ECCB 2020 (21.18% accept rate)\]](https://eccb2020.info/).
-
----
-
-**Learning Interpretable Latent Autoencoder Representations with Annotations of Feature Sets**
-
-S. Rybakov, <u>M. Lotfollahi</u>, F.J. Theis*, F.A. Wolf*.
-
-
-[[Machine Learning in Computational Biology (2020)]](https://doi.org/10.1101/2020.12.02.401182),
-[[code]](https://github.com/theislab/intercode).
-
-
-### 2019
-
-**scGen predicts single-cell perturbation responses.**
-
-<u>Lotfollahi, M.</u>, Wolf, F. A. & Theis, F. J.
-
-
-[\[Nature Methods(2019)\]](https://doi.org/10.1038/s41592-019-0494-8),
-[\[code\]](https://github.com/theislab/scgen),
-[\[press\]](https://www.bioengineering.tum.de/en/news/details/ai-extrapolates-from-mice-to-humans-1).
-
----
-##### Deep packet: a novel approach for encrypted traffic classification using deep learning
-
-<u>Lotfollahi, M.</u>, Jafari Siavoshani, M., Shirali Hossein Zade, R., & Saberian, M.
-
-[\[soft computing(2019)\]](https://link.springer.com/article/10.1007/s00500-019-04030-2?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst&utm_source=ArticleAuthorOnlineFirst&utm_medium=email&utm_content=AA_en_06082018&ArticleAuthorOnlineFirst_20190516&error=cookies_not_supported&code=04315f4e-0ae2-48fb-9e2f-c2d25db1a332).
+<Layout>
+
+<div className="pub-wrap">
+
+- See a full list of papers on [**Google Scholar**](https://scholar.google.com/citations?hl=en&user=NXhouUcAAAAJ&view_op=list_works&sortby=pubdate).
+- Co-first and co-last authors are indicated by + and \*, respectively.
+
+<h3 className="pub-year">2025</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">Quantitative characterization of cell niches in spatially resolved omics data.</div>
+  <div className="pub-meta">Birk, S., Bonafonte-Pardàs, I., Feriz, A. M., Boxall, A., Agirre, E., Memi, F., ... & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41588-024-01968-3" className="pub-badge pub-badge--journal">Nature Genetics (2025)</a>
+    <a href="https://github.com/Lotfollahi-lab/cnmf" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Predicting cell morphological responses to perturbations using generative modeling.</div>
+  <div className="pub-meta">Palma, A., Theis, F. J., & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41467-024-57777-w" className="pub-badge pub-badge--journal">Nature Communications (2025)</a>
+    <a href="https://github.com/theislab/morpho-generation" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Towards multimodal foundation models in molecular cell biology.</div>
+  <div className="pub-meta">Cui, H., Tejada-Lapuerta, A., Brbić, M., Saez-Rodriguez, J., Cristea, S., ... & <strong>Lotfollahi, M.</strong>, ... & Wang, B.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41586-025-07611-x" className="pub-badge pub-badge--journal">Nature (2025)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Integration and querying of multimodal single-cell data with PoE-VAE.</div>
+  <div className="pub-meta">Litinetskaya, A., Schulman, M., Curion, F., Szalata, A., Omidi, A., <strong>Lotfollahi, M.</strong>, & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://dl.acm.org/doi/abs/10.1145/3694348.3713023" className="pub-badge pub-badge--preprint">RECOMB (2025)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Integrating multi-covariate disentanglement with counterfactual analysis on synthetic data enables cell type discovery and counterfactual predictions.</div>
+  <div className="pub-meta">Megas, S., Amani, A., Rose, A., Dufva, O., Shamsaie, K., Asadollahzadeh, H., ... & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://www.biorxiv.org/content/10.1101/2025.06.03.657578v1" className="pub-badge pub-badge--preprint">bioRxiv (2025)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Mapping and reprogramming human tissue microenvironments with MintFlow.</div>
+  <div className="pub-meta">Akbarnejad, A., Steele, L., Jafree, D. J., Birk, S., Sallese, M. R., Rademaker, K., ... & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://www.biorxiv.org/content/10.1101/2025.06.24.661094v1" className="pub-badge pub-badge--preprint">bioRxiv (2025)</a>
+  </div>
+</div>
+</div>
+
+<h3 className="pub-year">2024</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">Multi-modal generative modeling for joint analysis of single-cell T cell receptor and gene expression data.</div>
+  <div className="pub-meta">Drost, F., An, Y., Bonafonte-Pardàs, I., Dratva, L. M., Lindeboom, R. G., Haniffa, M., ... , <strong>Lotfollahi, M.*</strong>, & Schubert, B.*</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41467-024-49774-6" className="pub-badge pub-badge--journal">Nature Communications (2024)</a>
+    <a href="https://github.com/theislab/scar" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">A single cell and spatial genomics atlas of human skin fibroblasts in health and disease.</div>
+  <div className="pub-meta">Steele, L., Admane, C., Chakala, K. P., Foster, A., Gopee, N. H., Koplev, S., ... & <strong>Lotfollahi, M.*</strong>, & Haniffa, M.*</div>
+  <div className="pub-badges">
+    <a href="https://www.biorxiv.org/content/10.1101/2024.12.23.629194v1" className="pub-badge pub-badge--preprint">bioRxiv (2024)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">ArchMap: A web-based platform for reference-based analysis of single-cell datasets.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Bright, C., Skorobogat, R., Dehkordi, M., George, X., Richter, S., ... & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.biorxiv.org/content/10.1101/2024.09.19.613883v1" className="pub-badge pub-badge--preprint">bioRxiv (2024)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Pertpy: an end-to-end framework for perturbation analysis.</div>
+  <div className="pub-meta">Heumos, L., Ji, Y., May, L., Green, T., Zhang, X., Wu, X., Ostner, J., Peidli, S., ... & <strong>Lotfollahi, M.*</strong>, & Theis, F. J.*</div>
+  <div className="pub-badges">
+    <a href="https://www.biorxiv.org/content/10.1101/2024.08.04.606516v1" className="pub-badge pub-badge--preprint">bioRxiv (2024)</a>
+    <a href="https://github.com/scverse/pertpy" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Toward learning a foundational representation of cells and genes.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41592-024-02298-6" className="pub-badge pub-badge--journal">Nature Methods (2024)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">The future of rapid and automated single-cell data analysis using reference mapping.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Hao, Y., Theis, F. J., & Satija, R.</div>
+  <div className="pub-badges">
+    <a href="https://www.cell.com/cell/fulltext/S0092-8674(24)00405-2" className="pub-badge pub-badge--journal">Cell (2024)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Deep learning in spatially resolved transcriptomics: a comprehensive technical view.</div>
+  <div className="pub-meta">Zahedi, R., Ghamsari, R., Argha, A., Macphillamy, C., Beheshti, A., ... & <strong>Lotfollahi, M.*</strong>, & Alinejad-Rokny, H.*</div>
+  <div className="pub-badges">
+    <a href="https://academic.oup.com/bib/article/25/2/bbae082/7615995" className="pub-badge pub-badge--journal">Briefings in Bioinformatics (2024)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Multimodal weakly supervised learning to identify disease-specific changes in single-cell atlases.</div>
+  <div className="pub-meta">Litinetskaya, A., Shulman, M., Hediyeh-zadeh, S., Moinfar, A. A., Curion, F., ... & <strong>Lotfollahi, M.*</strong>, & Theis, F. J.*</div>
+  <div className="pub-badges">
+    <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605625v1" className="pub-badge pub-badge--preprint">bioRxiv (2024)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Deep generative modeling of transcriptional dynamics for RNA velocity analysis in single cells.</div>
+  <div className="pub-meta">Gayoso, A., Weiler, P., <strong>Lotfollahi, M.</strong>, Klein, D., Hong, J., Streets, A., Theis, F. J., & Yosef, N.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41592-023-02131-8" className="pub-badge pub-badge--journal">Nature Methods (2024)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">An integrated single-cell reference atlas of the human endometrium.</div>
+  <div className="pub-meta">Marečková, M., Garcia-Alonso, L., Moullet, M., Lorenzi, V., Petryszak, R., ... & <strong>Lotfollahi, M.</strong>, ... & Vento-Tormo, R.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41588-024-01859-7" className="pub-badge pub-badge--journal">Nature Genetics (2024)</a>
+  </div>
+</div>
+</div>
+
+<h3 className="pub-year">2023</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">Population-level integration of single-cell datasets enables multi-scale analysis across samples.</div>
+  <div className="pub-meta">De Donno, C., Hediyeh-Zadeh, S., Moinfar, A. A., Wagenstetter, M., Zappia, L., ... & <strong>Lotfollahi, M.</strong>, & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41592-023-02056-2" className="pub-badge pub-badge--journal">Nature Methods (2023)</a>
+    <a href="https://github.com/theislab/scarches-reproducibility/tree/master/population_extension" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Single-cell reference mapping to construct and extend cell-type hierarchies.</div>
+  <div className="pub-meta">Michielsen, L.+, <strong>Lotfollahi, M.</strong>+, Strobl, D., Sikkema, L., Reinders, M. J. T., Theis, F. J., & Mahfouz, A.</div>
+  <div className="pub-badges">
+    <a href="https://academic.oup.com/nargab/article/5/3/lqad070/7253509" className="pub-badge pub-badge--journal">NAR Genomics and Bioinformatics (2023)</a>
+    <a href="https://github.com/LMichielsen/scHPL" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Best practices for single-cell analysis across modalities.</div>
+  <div className="pub-meta">Heumos, L., Schaar, A. C., Lance, C., Litinetskaya, A., Drost, F., Zappia, L., ... & <strong>Lotfollahi, M.</strong>, ... & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41576-023-00586-w" className="pub-badge pub-badge--journal">Nature Reviews Genetics (2023)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">An integrated cell atlas of the human lung in health and disease.</div>
+  <div className="pub-meta">Sikkema, L., Ramírez-Suástegui, C., Strobl, D. C., Gillett, T. E., Zappia, L., ... & <strong>Lotfollahi, M.</strong>, ... & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41591-023-02327-2" className="pub-badge pub-badge--journal">Nature Medicine (2023)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Predicting cellular responses to complex perturbations in high‐throughput screens.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>+, Susmelj, A. K.+, De Donno, C.+, Hetzel, L., Ji, Y., Ibarra, I. L., ... & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.embopress.org/doi/full/10.15252/msb.202211517" className="pub-badge pub-badge--journal">Molecular Systems Biology (2023)</a>
+    <a href="https://github.com/theislab/cpa-reproducibility" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">The scverse project provides a computational ecosystem for single-cell omics data analysis.</div>
+  <div className="pub-meta">Virshup, I., Bredikhin, D., Heumos, L., Palla, G., Sturm, G., Gayoso, A., ... & <strong>Lotfollahi, M.</strong>, ... & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41587-023-01733-8" className="pub-badge pub-badge--journal">Nature Biotechnology (2023)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Mapping cells to gene programs.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Rybakov, S., Hrovatin, K., Hediyeh-zadeh, S., Talavera-Lopez, C., Misharin, A. V., & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://protocolexchange.researchsquare.com/article/pex-2066/v1" className="pub-badge pub-badge--preprint">Protocol Exchange (2023)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Biologically informed deep learning to query gene programs in single-cell atlases.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>+, Rybakov, S.+, Hrovatin, K., Hediyeh-Zadeh, S., Talavera-López, C., ... & Misharin, A. V., & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41556-022-01072-x" className="pub-badge pub-badge--journal">Nature Cell Biology (2023)</a>
+    <a href="https://github.com/theislab/expiby-reproducibility" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+</div>
+
+<h3 className="pub-year">2022</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">Modelling method using a conditional variational autoencoder.</div>
+  <div className="pub-meta">Theis, F. J., <strong>Lotfollahi, M.</strong>, & Wolf, F. A.</div>
+  <div className="pub-badges">
+    <a href="https://patents.google.com/patent/US20220237976A1/en" className="pub-badge">US Patent (2022)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Squidpy: a scalable framework for spatial omics analysis.</div>
+  <div className="pub-meta">Palla, G., Spitzer, H., Klein, M., Fischer, D., Schaar, A. C., Kuemmerle, L. B., ... & <strong>Lotfollahi, M.</strong>, ... & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41592-021-01358-2" className="pub-badge pub-badge--journal">Nature Methods (2022)</a>
+    <a href="https://github.com/scverse/squidpy" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">A Python library for probabilistic analysis of single-cell omics data.</div>
+  <div className="pub-meta">Gayoso, A.+, Lopez, R.+, Xing, G., Boyeau, P., ... & <strong>Lotfollahi, M.</strong>, … & Yosef, N.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41587-021-01000-7" className="pub-badge pub-badge--journal">Nature Biotechnology (2022)</a>
+    <a href="https://github.com/scverse/scvi-tools" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Mapping single-cell data to reference atlases by transfer learning.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Naghipourfar, M., Luecken, M. D., Khajavi, M., Büttner, M., ... & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41587-021-01001-6" className="pub-badge pub-badge--journal">Nature Biotechnology (2022)</a>
+    <a href="https://github.com/theislab/scarches" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+</div>
+
+<h3 className="pub-year">2021</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">Machine learning for perturbational single-cell omics.</div>
+  <div className="pub-meta">Ji, Y., <strong>Lotfollahi, M.</strong>, Wolf, F. A., & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(21)00155-2" className="pub-badge pub-badge--journal">Cell Systems (2021)</a>
+  </div>
+</div>
+</div>
+
+<h3 className="pub-year">2020</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">Conditional out-of-distribution generation for unpaired data using transfer VAE.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Naghipourfar, M., Theis, F. J., & Wolf, F. A.</div>
+  <div className="pub-badges">
+    <a href="https://academic.oup.com/bioinformatics/article/36/Supplement_2/i610/6055866" className="pub-badge pub-badge--journal">Bioinformatics (2020)</a>
+  </div>
+</div>
+</div>
+
+<h3 className="pub-year">2019</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">scGen predicts single-cell perturbation responses.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Wolf, F. A., & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41592-019-0494-8" className="pub-badge pub-badge--journal">Nature Methods (2019)</a>
+    <a href="https://github.com/theislab/scgen" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Deep packet: A novel approach for encrypted traffic classification using deep learning.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Siavoshani, M. J., Zade, R. S. H., & Saberian, M.</div>
+  <div className="pub-badges">
+    <a href="https://link.springer.com/article/10.1007/s00500-019-04033-5" className="pub-badge pub-badge--journal">Soft Computing (2019)</a>
+  </div>
+</div>
+</div>
+
+</div>
+</Layout>
