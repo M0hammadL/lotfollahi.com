@@ -50,19 +50,6 @@ hide_table_of_contents: true
 </figure>
 
 
-## Staff
-
-
-<div class="members-grid">
-
-  <div class="member-card">
-<div class="member-media">
-    <img src="/img/people/Abhishek.jpg" alt="Abhishek Sharma" />
-    <div class="role-badge">Postdoctoral Fellow</div>
-</div>
-<div class="member-meta"><h3>Abhishek Sharma</h3></div>
-</div>
-
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/amir.jpg" alt="Amirhossein Vahidi" />
@@ -98,14 +85,6 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Hazem Kotb</h3></div>
   </div>
 
-<div class="member-card">
-<div class="member-media">
-    <img src="/img/people/Aslan.jpeg" alt="Aslan Bakirov" />
-    <div class="role-badge">Machine Learning Scientist</div>
-</div>
-<div class="member-meta"><h3>Aslan Bakirov</h3></div>
-</div>
-
 
   <div class="member-card">
     <div class="member-media">
@@ -117,19 +96,6 @@ hide_table_of_contents: true
       </div>
     </div>
     <div class="member-meta"><h3>Arpit Merchant</h3></div>
-  </div>
-
-  <div class="member-card">
-    <div class="member-media">
-      <img src="/img/people/Christopher.jpg" alt="Christopher Soelistyo" />
-      <div class="role-badge">Senior Data Scientist</div>
-      <div class="overlay">
-        <a href="https://uk.linkedin.com/in/christopher-soelistyo" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-        <a href="https://github.com/chris-soelistyo" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
-        <a href="https://scholar.google.com/citations?user=zEH_ofwAAAAJ&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
-      </div>
-    </div>
-    <div class="member-meta"><h3>Christopher Soelistyo</h3></div>
   </div>
 
   <div class="member-card">
@@ -235,8 +201,6 @@ hide_table_of_contents: true
 
 </div>
 
-## Students
-
 <div class="members-grid">
 
   <div class="member-card">
@@ -314,17 +278,6 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Andrea Rubbi</h3></div>
   </div>
 
-<div class="member-card">
-  <div class="member-media">
-    <img src="/img/people/lisa.jpeg" alt="Lisa Marie Milchsack" /> 
-    <div class="role-badge">PhD Candidate</div>
-
-  </div>
-  <div class="member-meta"><h3>Lisa Marie Milchsack</h3></div>
-  <p class="co-note">co-supervised with Sarah Teichmann</p>
-</div>
-
-
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/Ciro.jpg" alt="Ciro Ramírez-Suástegui" />
@@ -355,29 +308,11 @@ hide_table_of_contents: true
 
 <div class="member-card">
   <div class="member-media">
-    <img src="/img/people/Benjamin.jpeg" alt="Benjamin Chang" /> 
-    <div class="role-badge">PhD Candidate</div>
-  </div>
-  <div class="member-meta"><h3>Benjamin Chang</h3></div>
-  <p class="co-note">co-supervised with Tom Rainforth</p>
-</div>
-
-<div class="member-card">
-  <div class="member-media">
-    <img src="/img/people/Joseph.jpeg" alt="Benjamin Chang" /> 
+    <img src="/img/people/Joseph.jpeg" alt="Joseph" /> 
     <div class="role-badge">PhD Candidate</div>
   </div>
   <div class="member-meta"><h3>Joseph Clarke</h3></div>
   <p class="co-note">co-supervised with Ben Lehner</p>
-</div>
-
-<div class="member-card">
-  <div class="member-media">
-    <img src="/img/people/Huawen.jpg" alt="Huawen Zhong" /> 
-    <div class="role-badge">Visiting PhD Student</div>
-
-  </div>
-  <div class="member-meta"><h3>Huawen Zhong</h3></div>
 </div>
 
   <div class="member-card">
