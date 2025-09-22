@@ -49,6 +49,7 @@ hide_table_of_contents: true
   <img src="/img/people/Christmas.jpeg" alt="Lotfollahi Lab Christmas dinner at the Anchor Pub, Cambridge" loading="lazy" />
 </figure>
 
+<div class="members-grid">
 
   <div class="member-card">
     <div class="member-media">
@@ -84,7 +85,6 @@ hide_table_of_contents: true
     </div>
     <div class="member-meta"><h3>Hazem Kotb</h3></div>
   </div>
-
 
   <div class="member-card">
     <div class="member-media">
@@ -192,16 +192,32 @@ hide_table_of_contents: true
   </div>
 
   <div class="member-card">
+  <div class="member-media">
+    <img src="/img/people/kenji.png" alt="Kangjie Zheng" />
+    <div class="role-badge">Postdoctoral Fellow</div>
+    <div class="overlay">
+      <a href="https://www.linkedin.com/in/kangjie-zheng-274990192/" aria-label="LinkedIn">
+        <svg><use href="#i-linkedin"/></svg>
+      </a>
+      <a href="https://github.com/zhengkangjie" aria-label="GitHub">
+        <svg><use href="#i-github"/></svg>
+      </a>
+      <a href="https://www.kjzheng.com" aria-label="Website">
+        <svg><use href="#i-globe"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="member-meta"><h3>Kangjie Zheng</h3></div>
+</div>
+
+
+  <div class="member-card">
     <div class="member-media">
       <img src="/img/people/Emily.jpg" alt="Emily Graves" />
       <div class="role-badge">Technical Specialist</div>
     </div>
     <div class="member-meta"><h3>Emily Graves</h3></div>
   </div>
-
-</div>
-
-<div class="members-grid">
 
   <div class="member-card">
     <div class="member-media">
@@ -247,7 +263,6 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Marie Moullet</h3></div>
   </div>
 
-
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/Lloyd.jpg" alt="Lloyd Steele" />
@@ -256,15 +271,14 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Lloyd Steele</h3></div>
   </div>
 
-<div class="member-card">
-  <div class="member-media">
-    <img src="/img/people/Kevin.jpeg" alt="Kevin Ly" />
-    <div class="role-badge">PhD Candidate</div>
+  <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/Kevin.jpeg" alt="Kevin Ly" />
+      <div class="role-badge">PhD Candidate</div>
+    </div>
+    <div class="member-meta"><h3>Kevin Ly</h3></div>
+    <p class="co-note">co-supervised with Gosia Trynka</p>
   </div>
-  <div class="member-meta"><h3>Kevin Ly</h3></div>
-  <p class="co-note">co-supervised with Gosia Trynka</p>
-</div>
-
 
   <div class="member-card">
     <div class="member-media">
@@ -292,7 +306,6 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Ciro Ramírez-Suástegui</h3></div>
   </div>
 
-
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/Mohammad.jpg" alt="Mohammad Vali Sanian" />
@@ -305,31 +318,28 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Mohammad Vali Sanian</h3></div>
   </div>
 
-
-<div class="member-card">
-  <div class="member-media">
-    <img src="/img/people/Joseph.jpeg" alt="Joseph" /> 
-    <div class="role-badge">PhD Candidate</div>
+  <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/Joseph.jpeg" alt="Joseph" />
+      <div class="role-badge">PhD Candidate</div>
+    </div>
+    <div class="member-meta"><h3>Joseph Clarke</h3></div>
+    <p class="co-note">co-supervised with Ben Lehner</p>
   </div>
-  <div class="member-meta"><h3>Joseph Clarke</h3></div>
-  <p class="co-note">co-supervised with Ben Lehner</p>
-</div>
 
   <div class="member-card">
-  <div class="member-media">
-    <img src="/img/people/Mahan.jpg" alt="Mahan Veisi" />
-    <div class="role-badge">Undergraduate Student</div>
-    <div class="overlay">
-      <a href="https://x.com/MahanVeisi8" aria-label="X"><svg><use href="#i-x"/></svg></a>
-      <a href="https://www.linkedin.com/in/mahanveisi8/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-      <a href="https://github.com/MahanVeisi8" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
-      <a href="https://scholar.google.com/citations?user=REPLACE_WITH_ID&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
-      <a href="https://mahanveisi8.github.io/" aria-label="Website"><svg><use href="#i-globe"/></svg></a>
+    <div class="member-media">
+      <img src="/img/people/Mahan.jpg" alt="Mahan Veisi" />
+      <div class="role-badge">Undergraduate Student</div>
+      <div class="overlay">
+        <a href="https://x.com/MahanVeisi8" aria-label="X"><svg><use href="#i-x"/></svg></a>
+        <a href="https://www.linkedin.com/in/mahanveisi8/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/MahanVeisi8" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a href="https://scholar.google.com/citations?user=REPLACE_WITH_ID&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+        <a href="https://mahanveisi8.github.io/" aria-label="Website"><svg><use href="#i-globe"/></svg></a>
+      </div>
     </div>
+    <div class="member-meta"><h3>Mahan Veisi</h3></div>
   </div>
-  <div class="member-meta"><h3>Mahan Veisi</h3></div>
-
-</div>
-
 
 </div>
