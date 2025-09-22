@@ -306,6 +306,16 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Ciro Ramírez-Suástegui</h3></div>
   </div>
 
+<div class="member-card"> 
+  <div class="member-media"> 
+    <img src="/img/people/Lisa.jpeg" alt="Lisa Marie Milchsack" /> 
+    <div class="role-badge">PhD Candidate</div>
+    </div> 
+    <div class="member-meta"><h3>Lisa Marie Milchsack</h3>
+  </div> <p class="co-note">co-supervised with Sarah Teichmann</p> 
+</div>
+
+
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/Mohammad.jpg" alt="Mohammad Vali Sanian" />
