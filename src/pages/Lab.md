@@ -333,9 +333,9 @@ hide_table_of_contents: true
       <div class="role-badge">Undergraduate Student</div>
       <div class="overlay">
         <a href="https://x.com/MahanVeisi8" aria-label="X"><svg><use href="#i-x"/></svg></a>
-        <a href="https://www.linkedin.com/in/mahanveisi8/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://www.linkedin.com/in/mahan-veisi-427934226/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
         <a href="https://github.com/MahanVeisi8" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
-        <a href="https://scholar.google.com/citations?user=REPLACE_WITH_ID&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+        <a href="https://scholar.google.com/citations?user=LQL2vyQAAAAJ" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
         <a href="https://mahanveisi8.github.io/" aria-label="Website"><svg><use href="#i-globe"/></svg></a>
       </div>
     </div>
