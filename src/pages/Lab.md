@@ -306,6 +306,23 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Ciro Ramírez-Suástegui</h3></div>
   </div>
 
+ <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/Mengji.png" alt="Mengji" />
+      <div class="role-badge">Postdoctoral Fellow</div>
+      <div class="overlay">
+        <a href="https://github.com/mjDelta" aria-label="GitHub">
+          <svg><use href="#i-github"/></svg>
+        </a>
+        <a href="https://mjdelta.github.io" aria-label="Website">
+          <svg><use href="#i-globe"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="member-meta"><h3>Mengji</h3></div>
+  </div>
+
+  
 <div class="member-card"> 
   <div class="member-media"> 
     <img src="/img/people/Lisa.jpeg" alt="Lisa Marie Milchsack" /> 
