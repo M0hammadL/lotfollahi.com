@@ -293,7 +293,7 @@ src/css/members.css
   box-shadow:0 12px 32px rgba(0,0,0,.35),0 4px 12px rgba(0,0,0,.25);
   transition:transform .25s ease, box-shadow .25s ease;
 }
-.member-card:hover{ transform:translateY(-4px); box-shadow:0 22px 60px rgba(0,0,0,.45),0 6px 18px rgba(0,0,0,.3) }
+.member-card:hover{ transform:translateY(-4px); box-shadow:0 22px 60px rgba(169, 5, 210, 0.55),0 6px 18px rgba(208, 8, 215, 0.3) }
 
 .member-media{ position:relative; aspect-ratio:4/5; overflow:hidden; }
 .member-media img{ width:100%; height:100%; object-fit:cover; display:block; }
@@ -348,6 +348,107 @@ src/css/members.css
 @media (max-width:1200px){ .members-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
 @media (max-width:996px){  .members-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (max-width:640px){  .members-grid{ grid-template-columns:1fr; } }
+
+/* ==== Tunables for wide photos / gallery ==== */
+:root{
+  --wide-max: 1100px;              /* max width of big photos */
+  --glow-elev: .25;                /* base glow strength */
+  --hover-glow: .32;               /* glow on hover */
+  --hover-scale: 1.015;            /* scale on hover (wide figure) */
+  --hover-scale-card: 1.02;        /* scale on hover (gallery cards) */
+  --shine-intensity: .06;          /* inner shine level on cards */
+  --edge-bw: 1.8px;                /* gradient border width */
+  --edge-radius: 16px;             /* outer radius */
+  --img-radius: 12px;              /* inner image radius */
+}
+
+/* ==== Wide hero figure: gradient edge + purple glow + interactive hover ==== */
+.lab-wide-figure{
+  display:grid; justify-items:center; gap:.5rem;
+  margin:.5rem auto 1.75rem; padding:.25rem;
+}
+.lab-wide-figure figcaption{ text-align:center; font-weight:600; opacity:.9; }
+
+.lab-wide-figure--glow {
+  padding:.4rem; /* room for border trick */
+  background:
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-lightest)) border-box;
+  border: var(--edge-bw) solid transparent;
+  border-radius: var(--edge-radius);
+  box-shadow:
+    0 24px 60px rgba(90, 79, 220, var(--glow-elev)),
+    0 8px 22px rgba(0, 0, 0, .35);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.lab-wide-figure--glow img{
+  width: min(100%, var(--wide-max));
+  height:auto;
+  border-radius: var(--img-radius);
+  display:block;
+}
+.lab-wide-figure--glow:hover{
+  transform: translateY(-2px) scale(var(--hover-scale));
+  box-shadow:
+    0 34px 90px rgba(127, 137, 255, var(--hover-glow)),
+    0 12px 28px rgba(0, 0, 0, .45);
+  filter: saturate(1.03) contrast(1.02);
+}
+
+.lab-gallery{
+  display:grid;
+  justify-content:center;                 /* center the single column */
+  grid-template-columns: minmax(0, var(--wide-max));
+  gap: 14px;
+  margin:.5rem auto 2rem;
+}
+
+/* When you actually have 2+ photos, add the class below to make two columns */
+.lab-gallery--two{
+  justify-content:stretch;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: min(100%, calc(var(--wide-max) * 2 + 14px)); /* 2 cols + gap */
+  margin-inline:auto;
+}
+@media (max-width: 900px){
+  .lab-gallery--two{ grid-template-columns: 1fr; max-width: var(--wide-max); }
+}
+
+.photo-card{
+  margin:0; padding:.35rem;
+  background:
+    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-lightest)) border-box;
+  border: var(--edge-bw) solid transparent;
+  border-radius: var(--edge-radius);
+  box-shadow: 0 16px 42px rgba(150, 4, 247, 0.432), 0 6px 18px rgba(212, 5, 248, 0.541);
+  overflow:hidden;
+  position:relative;
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+.photo-card::after{
+  /* subtle inner shine that brightens on hover */
+  content:""; position:absolute; inset:6px;
+  border-radius: calc(var(--img-radius) - 2px);
+  box-shadow: inset 0 0 35px rgba(255,255,255,var(--shine-intensity));
+  pointer-events:none;
+}
+.photo-card img{
+  display:block; width:100%; height:auto; border-radius: var(--img-radius);
+  transform: scale(1.0);
+  transition: transform .22s ease, filter .22s ease;
+}
+.photo-card figcaption{
+  text-align:center; font-weight:700; opacity:.9;
+  padding:.55rem .6rem .7rem;
+}
+.photo-card:hover{
+  transform: translateY(-3px) scale(var(--hover-scale-card));
+  box-shadow: 0 30px 80px rgba(90,79,220,.35), 0 10px 28px rgba(0,0,0,.4);
+  filter: saturate(1.05);
+}
+.photo-card:hover img{ transform: scale(1.03); }
+
 
 ```
 

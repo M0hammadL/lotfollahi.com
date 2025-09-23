@@ -44,9 +44,13 @@ hide_table_of_contents: true
 
 <h2 class="section-title">Lab members</h2>
 
-<figure class="lab-wide-figure">
+<!-- <figure class="lab-wide-figure">
   <figcaption>Here is a photo of our first lab Christmas dinner at the Anchor Pub in Cambridge.</figcaption>
   <img src="/img/people/Christmas.jpeg" alt="Lotfollahi Lab Christmas dinner at the Anchor Pub, Cambridge" loading="lazy" />
+</figure> -->
+
+<figure class="lab-wide-figure lab-wide-figure--glow">
+  <img src="/img/people/retreat-stairs.jpg" alt="Lotfollahi Lab retreat group photo on the staircase" loading="eager" />
 </figure>
 
 <div class="members-grid">
@@ -345,6 +349,47 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Mohammad Vali Sanian</h3></div>
   </div>
 
+<div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/Hesam.png" alt="Hesam Asadollahzadeh" />
+      <div class="role-badge">Data Scientist</div>
+      <div class="overlay">
+        <a href="https://www.linkedin.com/in/hesamasadzadeh/" aria-label="LinkedIn">
+          <svg><use href="#i-linkedin"/></svg>
+        </a>
+        <a href="https://hesamasad.github.io/" aria-label="Website">
+          <svg><use href="#i-globe"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="member-meta"><h3>Hesam Asadollahzadeh</h3></div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/Arian.jpg" alt="Arian Amani" />
+      <div class="role-badge">Data Scientist</div>
+      <div class="overlay">
+        <a href="https://twitter.com/ArianAmaani" aria-label="X">
+          <svg><use href="#i-x"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/ArianAmani" aria-label="LinkedIn">
+          <svg><use href="#i-linkedin"/></svg>
+        </a>
+        <a href="https://github.com/ArianAmani" aria-label="GitHub">
+          <svg><use href="#i-github"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=CPdEOZgAAAAJ&hl=en&oi=ao" aria-label="Google Scholar">
+          <svg><use href="#i-scholar"/></svg>
+        </a>
+        <a href="https://arianamani.github.io/" aria-label="Website">
+          <svg><use href="#i-globe"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="member-meta"><h3>Arian Amani</h3></div>
+  </div>
+  
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/Joseph.jpeg" alt="Joseph" />
@@ -369,4 +414,13 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Mahan Veisi</h3></div>
   </div>
 
+</div>
+
+<h3 class="section-title">More from the lab</h3>
+
+<div class="lab-gallery">
+  <figure class="photo-card">
+    <img src="/img/people/retreat-jump.jpg" alt="Lotfollahi Lab retreat — the jump shot!" loading="lazy" />
+    <figcaption>Cambridge lawns, 2025.</figcaption>
+  </figure>
 </div>
