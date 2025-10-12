@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Lotfollahi Blog</title>
-        <link>https://demo.lotfollahi.com/blog</link>
+        <link>https://lotfollahi.com/blog</link>
         <description>Lotfollahi Blog</description>
         <lastBuildDate>Wed, 12 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Appointed as director of ML/AI research at Relation Therapeutics]]></title>
-            <link>https://demo.lotfollahi.com/blog/Appointed as director of ML/AI research at Relation Therapeutics</link>
-            <guid>https://demo.lotfollahi.com/blog/Appointed as director of ML/AI research at Relation Therapeutics</guid>
+            <link>https://lotfollahi.com/blog/Appointed as director of ML/AI research at Relation Therapeutics</link>
+            <guid>https://lotfollahi.com/blog/Appointed as director of ML/AI research at Relation Therapeutics</guid>
             <pubDate>Wed, 12 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I am thrilled to announce my new role as Director of ML Research at]]></description>
             <content:encoded><![CDATA[<p>I am thrilled to announce my new role as Director of ML Research at
@@ -22,8 +22,8 @@
         </item>
         <item>
             <title><![CDATA[I have joined ELLIS]]></title>
-            <link>https://demo.lotfollahi.com/blog/I have joined ELLIS</link>
-            <guid>https://demo.lotfollahi.com/blog/I have joined ELLIS</guid>
+            <link>https://lotfollahi.com/blog/I have joined ELLIS</link>
+            <guid>https://lotfollahi.com/blog/I have joined ELLIS</guid>
             <pubDate>Mon, 19 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I am excited to join ELLIS - the European Laboratory for Learning and Intelligent Systems.]]></description>
             <content:encoded><![CDATA[<p>I am excited to join <strong><a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS - the European Laboratory for Learning and Intelligent Systems</a></strong>.
@@ -33,8 +33,8 @@ Europe and follows a three-pillar strategy to achieve that.</p></blockquote>]]><
         </item>
         <item>
             <title><![CDATA[CPA goes on the cover!]]></title>
-            <link>https://demo.lotfollahi.com/blog/CPA goes on the cover!</link>
-            <guid>https://demo.lotfollahi.com/blog/CPA goes on the cover!</guid>
+            <link>https://lotfollahi.com/blog/CPA goes on the cover!</link>
+            <guid>https://lotfollahi.com/blog/CPA goes on the cover!</guid>
             <pubDate>Tue, 13 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I am excited that our work from my time at Meta AI and collaboration with Helmholtz Munich on modeling single-cell perturbations (e.g., drugs, disease, CRISPR manipulations) is now featured on the cover of Molecular systems biology.]]></description>
             <content:encoded><![CDATA[<p>I am excited that our work from my time at Meta AI and collaboration with Helmholtz Munich on modeling single-cell perturbations (e.g., drugs, disease, CRISPR manipulations) is now featured on the cover of Molecular systems biology.
@@ -47,8 +47,8 @@ Thanks to all collaborators and my co-authors for making this happen.</p><p><img
         </item>
         <item>
             <title><![CDATA[Bayer Foundation Early Excellence in Science Award]]></title>
-            <link>https://demo.lotfollahi.com/blog/Bayer Foundation Early Excellence in Science Award</link>
-            <guid>https://demo.lotfollahi.com/blog/Bayer Foundation Early Excellence in Science Award</guid>
+            <link>https://lotfollahi.com/blog/Bayer Foundation Early Excellence in Science Award</link>
+            <guid>https://lotfollahi.com/blog/Bayer Foundation Early Excellence in Science Award</guid>
             <pubDate>Thu, 02 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I am greatly honored by Bayer Foundation]]></description>
             <content:encoded><![CDATA[<p>I am greatly honored by <a href="https://www.helmholtz-munich.de/en/newsroom/news-all/artikel/interpreting-biological-data-mohammad-lotfollahi-wins-early-excellence-in-science-award-2022" target="_blank" rel="noopener noreferrer">Bayer Foundation</a>
@@ -59,8 +59,8 @@ ultimately facilitate the advancement of precision medicine and AI-assisted drug
         </item>
         <item>
             <title><![CDATA[MDSI Best Paper of the Year Award]]></title>
-            <link>https://demo.lotfollahi.com/blog/MDSI Best Paper of the Year Award</link>
-            <guid>https://demo.lotfollahi.com/blog/MDSI Best Paper of the Year Award</guid>
+            <link>https://lotfollahi.com/blog/MDSI Best Paper of the Year Award</link>
+            <guid>https://lotfollahi.com/blog/MDSI Best Paper of the Year Award</guid>
             <pubDate>Sat, 26 Nov 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Proud that our paper on life-long and transfer learning for single-cell biology has been awarded among top 3 papers selected by anonymous reviewers from MDSI at Technical University of Munich.]]></description>
             <content:encoded><![CDATA[<p>Proud that our paper on life-long and transfer learning for single-cell biology has been awarded among top 3 papers selected by anonymous reviewers from <a href="https://www.mdsi.tum.de/en/mdsi/latest-info/news/full-text/article/awardees-of-the-mdsi-best-paper-of-the-year-award/" target="_blank" rel="noopener noreferrer">MDSI</a> at Technical University of Munich.
