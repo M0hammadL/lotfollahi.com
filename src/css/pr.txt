@@ -146,7 +146,29 @@ src\css\custom.css
 @import './members.css';
 @import './utilities.css';
 @import './about.css';
+@import './publications.css';
 
+/* Homepage hero social icon fix */
+.hero-socials a {
+    /* Use the theme variable that switches from black to white */
+    color: var(--text-strong);
+    display: inline-block; /* Helps with spacing and hover */
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .hero-socials a:hover {
+    /* Use the theme's link hover color for a nice effect */
+    color: var(--ifm-link-hover-color);
+    transform: translateY(-2px);
+  }
+  
+  /* This is the key part for SVGs */
+  .hero-socials svg {
+    /* This tells the SVG to inherit the color from its parent 'a' tag */
+    fill: currentColor;
+    width: 32px;  /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+  }
 ```
 
 ##########################################
@@ -361,9 +383,8 @@ src/css/members.css
 
 src\css\tokens.css
 ```css
-/* src/css/publications.css
-   Styling for the publications list: compact readable items + small badges for links
-*/
+/* src/css/publications.css */
+/* Styling for the publications list: compact readable items + small badges for links */
 
 .pub-wrap {
     margin: 0 0 2rem;
@@ -373,83 +394,131 @@ src\css\tokens.css
   
   /* Section header (year) */
   .pub-year {
-    margin-top: 1.75rem;
-    margin-bottom: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
     font-weight: 900;
-    font-size: clamp(1.35rem, 1rem + 1.2vw, 1.6rem);
+    font-size: clamp(1.5rem, 1.2rem + 1.2vw, 1.8rem);
+    border-bottom: 2px solid var(--ifm-color-primary-lightest);
+    padding-bottom: 0.4rem;
   }
   
   /* Each publication row */
-  .pub-list { display: grid; gap: 1.15rem; margin: .6rem 0 1.6rem; }
+  .pub-list {
+    display: grid;
+    gap: 1.25rem;
+    margin: 0.8rem 0 1.8rem;
+  }
   
   /* Individual item */
-  .pub-item{
-    display:block;
-    padding: 14px 16px;
-    border-radius: 12px;
-    background: linear-gradient(var(--card-bg), var(--card-bg));
+  .pub-item {
+    display: block;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: var(--card-bg);
     border: 1px solid color-mix(in oklab, var(--ifm-color-primary) 12%, #ddd 20%);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
-    line-height: 1.45;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+    line-height: 1.55;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .pub-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
   }
   
   /* Title */
-  .pub-title{
-    font-weight:800;
-    margin: 0 0 6px;
+  .pub-title {
+    font-weight: 800;
+    margin: 0 0 8px;
     color: var(--text-strong);
-    font-size: 1.02rem;
+    font-size: 1.15rem; /* Increased font size */
   }
   
   /* Authors & venue line */
-  .pub-meta{
-    margin: 0 0 8px;
-    color: color-mix(in oklab, var(--text-strong) 65%, #000 0%);
-    font-size: .95rem;
-    opacity: .95;
+  .pub-meta {
+    margin: 0 0 10px;
+    color: color-mix(in oklab, var(--text-strong) 70%, transparent);
+    font-size: 0.98rem;
+    opacity: 0.95;
   }
   
   /* Small badge bar (code / journal / preprint links) */
-  .pub-badges{
-    display:flex;
-    gap:.5rem;
-    flex-wrap:wrap;
-    align-items:center;
+  .pub-badges {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 8px;
   }
   
   /* badge style */
   .pub-badge {
-    display:inline-flex;
-    align-items:center;
-    gap:.5rem;
-    padding:.28rem .6rem;
-    border-radius:999px;
-    font-weight:700;
-    font-size:.85rem;
-    text-decoration:none;
-    border:1px solid transparent;
-    background: linear-gradient(135deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    border: 1.2px solid transparent;
+    background: rgba(0, 0, 0, 0.025);
     color: var(--ifm-link-color);
-    transition: transform .12s ease, box-shadow .12s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
   }
-  .pub-badge:hover{ transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0,0,0,0.08); }
+  
+  .pub-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.09);
+  }
   
   /* variant for preprints and journals */
-  .pub-badge--code{ background: transparent; border:1px dashed color-mix(in oklab,var(--ifm-color-primary) 40%, #bbb 20%); color:var(--ifm-link-color); }
-  .pub-badge--journal{ background: linear-gradient(135deg,var(--ifm-color-primary-lightest), white); color: #111; border:1px solid rgba(0,0,0,0.06); }
-  .pub-badge--preprint{ background: linear-gradient(135deg, rgba(0,0,0,0.03), transparent); color: var(--ifm-link-color); border:1px solid rgba(0,0,0,0.06); }
+  .pub-badge--code {
+    background: transparent;
+    border: 1.2px dashed color-mix(in oklab, var(--ifm-color-primary) 45%, #bbb 20%);
+    color: var(--ifm-link-color);
+  }
+  .pub-badge--journal {
+    background: linear-gradient(135deg, var(--ifm-color-primary-lightest), white);
+    color: #111;
+    border: 1.2px solid rgba(0, 0, 0, 0.06);
+  }
+  .pub-badge--preprint {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.03), transparent);
+    color: var(--ifm-link-color);
+    border: 1.2px solid rgba(0, 0, 0, 0.06);
+  }
   
   /* make links always readable in dark mode */
-  [data-theme='dark'] .pub-item { background: #0b0d12; box-shadow: 0 12px 30px rgba(0,0,0,0.5); border: 1px solid color-mix(in oklab,var(--ifm-color-primary) 12%, #111 10%); }
-  [data-theme='dark'] .pub-badge--journal{ color:#fff; background: linear-gradient(135deg,var(--ifm-color-primary),var(--ifm-color-primary-light)); }
+  [data-theme='dark'] .pub-item {
+    background: #1c1c24;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid color-mix(in oklab, var(--ifm-color-primary) 12%, #111 10%);
+  }
+  [data-theme='dark'] .pub-badge--journal {
+    color: #fff;
+    background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  }
+  [data-theme='dark'] .pub-item:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  }
+  [data-theme='dark'] .pub-year {
+    border-bottom: 2px solid var(--ifm-color-primary-dark);
+  }
   
   /* smaller screens: slightly tighter padding */
-  @media (max-width:640px){
-    .pub-item{ padding:12px; }
-    .pub-title{ font-size:1rem; }
-    .pub-badge{ font-size:.82rem; padding:.24rem .5rem; }
+  @media (max-width: 640px) {
+    .pub-item {
+      padding: 14px;
+    }
+    .pub-title {
+      font-size: 1.05rem;
+    }
+    .pub-badge {
+      font-size: 0.85rem;
+      padding: 0.28rem 0.55rem;
+    }
   }
-
 
 ```
 

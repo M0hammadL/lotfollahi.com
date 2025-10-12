@@ -45,8 +45,7 @@ hide_table_of_contents: true
 <h2 class="section-title">Lab members</h2>
 
 <figure class="lab-wide-figure">
-  <figcaption>Here is a photo of our first lab Christmas dinner at the Anchor Pub in Cambridge.</figcaption>
-  <img src="/img/people/Christmas.jpeg" alt="Lotfollahi Lab Christmas dinner at the Anchor Pub, Cambridge" loading="lazy" />
+  <img src="/img/people/stairs.jpg" alt="Lotfollahi Lab Christmas dinner at the Anchor Pub, Cambridge" loading="lazy" />
 </figure>
 
 <div class="members-grid">
