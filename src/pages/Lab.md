@@ -410,3 +410,16 @@ hide_table_of_contents: true
   </div>
 
 </div>
+
+<h2 class="section-title">Cambridge Retreat 2025</h2>
+
+<div class="gallery-card">
+  <figure class="gallery-figure">
+    <img
+      src="/img/gallery/jump_retreat_2025.jpg"
+      alt="Lotfollahi Lab—Cambridge Retreat 2025"
+      loading="lazy"
+    />
+    <figcaption>Cambridge Retreat 2025</figcaption>
+  </figure>
+</div>
