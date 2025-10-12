@@ -1,230 +1,150 @@
-# Scarches Docs
-Below is a five-minute tutorial how to extends and edit the docs. The sections are self-contained and are copied from the tutorials when you first create a new docusaurus page. For more resources, check out the official guide: https://docusaurus.io/docs.  
+Awesome — you’ve got the flow working. Here’s a clean, repo-ready **`README.md`** that matches your exact setup (local edit → verify → deploy to GitHub Pages via HTTPS env vars), plus a short project overview and the gallery instructions you asked for.
 
-## What you'll need to run the docs locally
+Replace your current README with this:
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+```md
+# Lotfollahi Lab Website
 
-## 1. Run your site locally
+Static site built with **Docusaurus v2** and deployed to **GitHub Pages** under the custom domain **https://lotfollahi.com**.
 
-Run the development server:
+---
+
+## Requirements
+
+- **Node.js ≥ 16.14** (Node 18 LTS recommended)
+- **npm** (ships with Node)
+- Git
+
+Project config highlights:  
+- `docusaurus.config.js` → `url: 'https://lotfollahi.com'`, `baseUrl: '/'`, `trailingSlash: true`
+- `static/CNAME` contains:
+```
+
+lotfollahi.com
+
+````
+
+---
+
+## Quick Start (Local Dev → Verify → Deploy)
+
+### 1) Install & run dev server (hot reload)
 ```bash
-cd my-website
 npm install
-npm run start
+npm run start             # http://localhost:3000
+````
+
+### 2) Build a production bundle
+
+```bash
+npm run build             # outputs to ./build
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### 3) Preview the EXACT bundle that will go live
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+```bash
+npm run serve             # http://localhost:3000 (serves ./build)
+```
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### 4) Deploy to GitHub Pages (HTTPS)
 
-## 2. Create A Page
+> We deploy the contents of `build/` to the **gh-pages** branch using HTTPS env vars.
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+**Windows PowerShell**
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+```powershell
+$env:GIT_USER="MahanVeisi8"
+$env:GIT_PASS="<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>"   # PAT with 'repo' scope
+npm run deploy
+```
 
-### Create your first Markdown Page
+**Windows CMD**
 
-Create a file at src/pages/my-markdown-page.md. It will be available at: 
-[http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+```bat
+set GIT_USER=MahanVeisi8
+set GIT_PASS=<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>
+npm run deploy
+```
 
-## 3. Create a Document
-Documents are **groups of pages** connected through:
+After deploy, GitHub Pages serves it at `gh-pages` and your custom domain points to it (thanks to `static/CNAME`).
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
-
-### Create your first Doc
-
-Create a Markdown file at `docs/hello.md`.
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-### Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
 ---
 
-# Hello
+## Project Structure (key bits)
 
-This is my **first Docusaurus document**!
+```
+lotfollahi.com/
+├─ src/
+│  ├─ pages/
+│  │  ├─ index.js              # Home -> uses src/components/Landing
+│  │  ├─ Lab.md                # Lab members page
+│  │  ├─ about.md              # Biography page
+│  │  └─ publications.md       # Publications page
+│  ├─ css/
+│  │  ├─ custom.css            # central CSS importing:
+│  │  ├─ tokens.css            # design tokens (colors, sizes)
+│  │  ├─ typography.css        # link/bold styles
+│  │  ├─ hero.css              # hero card styles
+│  │  ├─ members.css           # lab cards + photo layouts
+│  │  └─ publications.css      # publications list styles
+│  └─ components/              # (Landing, etc.)
+├─ static/
+│  ├─ img/                     # images served from /img/...
+│  │  ├─ people/               # portraits
+│  │  └─ gallery/              # site galleries (see below)
+│  └─ CNAME                    # custom domain config (lotfollahi.com)
+├─ docusaurus.config.js        # site config (url/baseUrl/trailingSlash)
+├─ package.json                # scripts & deps
+└─ build/                      # production output (generated)
 ```
 
-## 4. Markdown Features
-
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
-
-### Front Matter
-
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
-
-```text title="my-doc.md"
-// highlight-start
 ---
-id: my-doc-id
-title: My document title
-description: My document description
-slug: /my-custom-url
+
+
+## Scripts (for reference)
+
+```json
+{
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "swizzle": "docusaurus swizzle",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
+  }
+}
+```
+
 ---
-// highlight-end
 
-### Markdown heading
+## Typical Workflow
 
-Markdown text with [links](./hello.md)
+1. Edit content (Markdown/MDX, CSS, images).
+2. `npm run start` to iterate fast.
+3. `npm run build` → `npm run serve` to sanity-check the exact production bundle.
+4. **Deploy via HTTPS**:
+
+   * PowerShell:
+
+     ```powershell
+     $env:GIT_USER="MahanVeisi8"
+     $env:GIT_PASS="<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>"
+     npm run deploy
+     ```
+   * CMD:
+
+     ```bat
+     set GIT_USER=MahanVeisi8
+     set GIT_PASS=<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>
+     npm run deploy
+     ```
+
+Your site will update at **[https://lotfollahi.com](https://lotfollahi.com)** (custom domain on GitHub Pages).
+
 ```
 
-### Links
-
-Regular Markdown links are supported, using url paths or relative file paths.
-
-```md
-Let's see how to [Create a page](/create-a-page).
+If you want, I can also prep a tiny PR-style diff for the Lab page + CSS so you can paste it directly.
 ```
-
-```md
-Let's see how to [Create a page](./create-a-page.md).
-```
-
-**Result:** Let's see how to [Create a page](./create-a-page.md).
-
-### Images
-
-Regular Markdown images are supported.
-
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
-
-```md
-![Docusaurus logo](/img/docusaurus.png)
-```
-
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
-
-```md
-![Docusaurus logo](./img/docusaurus.png)
-```
-
-## 5. Deploy your site
-
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
-
-It builds your site as simple **static HTML, JavaScript and CSS files**.
-
-### Build your site
-
-Build your site **for production**:
-
-```bash
-npm run build
-```
-
-The static files are generated in the `build` folder.
-
-### Deploy your site
-
-Test your production build locally:
-
-```bash
-npm run serve
-```
-
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
-
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
-
-To deploy to Github Pages, deploy the website by running:
-
-```bash
-docusaurus deploy
-```
-
-Finally, once the deployment branch, ghpages, is created, deploy the website using:
-```bash
-GIT_USER=<GITHUB_USERNAME> yarn deploy
-```
-
-For Windows, use: 
-```bash
-cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
-```
-
-Now, the ghpages should be created and the last step is to set up the settings of Github Pages.
-
-## 6. Manage Docs Versions
-
-Docusaurus can manage multiple versions of your docs.
-
-## Create a docs version
-
-Release a version 1.0 of your project:
-
-```bash
-npm run docusaurus docs:version 1.0
-```
-
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
-
-Your docs now have 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar.
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
-
-## Additional Resources
-- For more exhaustive documentation, read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
-
-
-
-
-
-
-
-
-

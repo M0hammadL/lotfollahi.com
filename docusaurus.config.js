@@ -8,8 +8,10 @@ const config = {
   tagline: 'Machine learning for cellular biology',
   favicon: 'img/favicon.ico',
 
-  url: 'https://demo.lotfollahi.com',
+  url: 'https://lotfollahi.com',
   baseUrl: '/',
+  trailingSlash: true,
+
 
   organizationName: 'M0hammadL',
   projectName: 'lotfollahi.com',
