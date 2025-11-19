@@ -72,6 +72,8 @@ src/css/members.css
 .lab-wide-figure{
   display:grid; justify-items:center; gap:.5rem;
   margin:.5rem auto 1.75rem; padding:.25rem;
+  display:grid;
+  justify-items:center;
 }
 .lab-wide-figure img{
   width:min(100%, 1100px); height:auto;

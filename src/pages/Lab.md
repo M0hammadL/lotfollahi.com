@@ -321,17 +321,6 @@ hide_table_of_contents: true
     <div class="member-meta"><h3>Mengji</h3></div>
   </div>
 
-  
-<div class="member-card"> 
-  <div class="member-media"> 
-    <img src="/img/people/Lisa.jpeg" alt="Lisa Marie Milchsack" /> 
-    <div class="role-badge">PhD Candidate</div>
-    </div> 
-    <div class="member-meta"><h3>Lisa Marie Milchsack</h3>
-  </div> <p class="co-note">co-supervised with Sarah Teichmann</p> 
-</div>
-
-
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/Mohammad.jpg" alt="Mohammad Vali Sanian" />
@@ -411,8 +400,6 @@ hide_table_of_contents: true
 
 </div>
 
-<h2 class="section-title">Cambridge Retreat 2025</h2>
-
 <div class="gallery-card">
   <figure class="gallery-figure">
     <img
@@ -420,6 +407,5 @@ hide_table_of_contents: true
       alt="Lotfollahi Lab—Cambridge Retreat 2025"
       loading="lazy"
     />
-    <figcaption>Cambridge Retreat 2025</figcaption>
   </figure>
 </div>
