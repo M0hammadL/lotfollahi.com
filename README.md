@@ -1,8 +1,4 @@
-Awesome — you’ve got the flow working. Here’s a clean, repo-ready **`README.md`** that matches your exact setup (local edit → verify → deploy to GitHub Pages via HTTPS env vars), plus a short project overview and the gallery instructions you asked for.
 
-Replace your current README with this:
-
-```md
 # Lotfollahi Lab Website
 
 Static site built with **Docusaurus v2** and deployed to **GitHub Pages** under the custom domain **https://lotfollahi.com**.
@@ -137,7 +133,7 @@ lotfollahi.com/
    * CMD:
 
      ```bat
-     set GIT_USER=MahanVeisi8
+     set GIT_USER=
      set GIT_PASS=<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>
      npm run deploy
      ```
@@ -146,5 +142,3 @@ Your site will update at **[https://lotfollahi.com](https://lotfollahi.com)** (c
 
 ```
 
-If you want, I can also prep a tiny PR-style diff for the Lab page + CSS so you can paste it directly.
-```
