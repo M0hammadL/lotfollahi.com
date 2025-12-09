@@ -49,7 +49,7 @@ npm run serve             # http://localhost:3000 (serves ./build)
 **Windows PowerShell**
 
 ```powershell
-$env:GIT_USER="MahanVeisi8"
+$env:GIT_USER=<GITHUB_USERNAME>
 $env:GIT_PASS="<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>"   # PAT with 'repo' scope
 npm run deploy
 ```
@@ -57,7 +57,7 @@ npm run deploy
 **Windows CMD**
 
 ```bat
-set GIT_USER=MahanVeisi8
+set GIT_USER=<GITHUB_USERNAME>
 set GIT_PASS=<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>
 npm run deploy
 ```
@@ -126,7 +126,7 @@ lotfollahi.com/
    * PowerShell:
 
      ```powershell
-     $env:GIT_USER="MahanVeisi8"
+     $env:GIT_USER="<GITHUB_USERNAME>"
      $env:GIT_PASS="<YOUR_GITHUB_PERSONAL_ACCESS_TOKEN>"
      npm run deploy
      ```
