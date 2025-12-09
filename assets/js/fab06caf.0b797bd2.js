@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklotfollahi_com=globalThis.webpackChunklotfollahi_com||[]).push([[9978],{4607:l=>{l.exports=JSON.parse('{"permalink":"/blog/tags/award","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

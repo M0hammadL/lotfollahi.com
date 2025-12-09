@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklotfollahi_com=globalThis.webpackChunklotfollahi_com||[]).push([[5528],{2349:a=>{a.exports=JSON.parse('{"label":"Award","permalink":"/blog/tags/award","allTagsPath":"/blog/tags","count":4}')}}]);
