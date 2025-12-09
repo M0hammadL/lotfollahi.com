@@ -73,6 +73,19 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
+      <img src="/img/people/Carlo.jpg" alt="Carlo Leonardi" />
+      <div class="role-badge">Principal Data Scientist</div>
+            <div class="overlay">
+        <a href="https://x.com/CarloLeonardi7" aria-label="X"><svg><use href="#i-x"/></svg></a>
+        <a href="https://www.linkedin.com/in/cleonardi95/?locale=en_US" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+      </div>
+    </div>
+    <div class="member-meta"><h3>Carlo Leonardi</h3></div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-media">
       <img src="/img/people/hazem.jpeg" alt="Hazem Kotb" />
       <div class="role-badge">Senior Data Scientist</div>
       <div class="overlay">
