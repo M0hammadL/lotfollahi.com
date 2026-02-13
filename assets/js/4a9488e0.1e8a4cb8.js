@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklotfollahi_com=self.webpackChunklotfollahi_com||[]).push([[9170],{3674:l=>{l.exports=JSON.parse('{"label":"Funding","permalink":"/blog/tags/funding","allTagsPath":"/blog/tags","count":1}')}}]);

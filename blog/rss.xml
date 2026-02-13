@@ -4,10 +4,29 @@
         <title>Lotfollahi Blog</title>
         <link>https://lotfollahi.com/blog</link>
         <description>Lotfollahi Blog</description>
-        <lastBuildDate>Wed, 12 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Our lab is awarded 2.9M$ from Medical Research Council to tackle kidney cancer using generative AI + massive multimodal data]]></title>
+            <link>https://lotfollahi.com/blog/Our lab is awarded 2.9M$ from Medical Research Council to tackle kidney cancer</link>
+            <guid>https://lotfollahi.com/blog/Our lab is awarded 2.9M$ from Medical Research Council to tackle kidney cancer</guid>
+            <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[I am excited to announce that our lab has been awarded 2.9M$ from the Medical Research Council to tackle kidney cancer using generative AI and massive multimodal data.]]></description>
+            <content:encoded><![CDATA[<p>I am excited to announce that our lab has been awarded <strong>2.9M$</strong> from the Medical Research Council to tackle kidney cancer using generative AI and massive multimodal data.</p><p><a href="https://x.com/mo_lotfollahi/status/2001827759597981758" target="_blank" rel="noopener noreferrer"><img loading="lazy" alt="MRC Kidney Cancer Award" src="/assets/images/mrc-kidney-694fdcd61af3e8546a6bbae6a0ea1220.png" width="1632" height="664" class="img_ev3q"></a></p><p><a href="https://x.com/mo_lotfollahi/status/2001827759597981758" target="_blank" rel="noopener noreferrer"><strong>Read the full announcement on X</strong></a></p>]]></content:encoded>
+            <category>Award</category>
+            <category>Funding</category>
+        </item>
+        <item>
+            <title><![CDATA[Starting January 2026 I have joined the scientific advisory board of Novo Nordisk]]></title>
+            <link>https://lotfollahi.com/blog/Joined scientific advisory board of Novo Nordisk</link>
+            <guid>https://lotfollahi.com/blog/Joined scientific advisory board of Novo Nordisk</guid>
+            <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[I am pleased to announce that starting January 2026, I have joined the scientific advisory board of Novo Nordisk.]]></description>
+            <content:encoded><![CDATA[<p>I am pleased to announce that starting January 2026, I have joined the scientific advisory board of <a href="https://www.novonordisk.com/" target="_blank" rel="noopener noreferrer">Novo Nordisk</a>.</p><p><img loading="lazy" alt="Novo Nordisk" src="/assets/images/novonordisk-ea9db12478d9ffdc40ef527b08e3337a.png" width="1280" height="938" class="img_ev3q"></p>]]></content:encoded>
+            <category>Award</category>
+        </item>
         <item>
             <title><![CDATA[Appointed as director of ML/AI research at Relation Therapeutics]]></title>
             <link>https://lotfollahi.com/blog/Appointed as director of ML/AI research at Relation Therapeutics</link>
@@ -47,8 +66,8 @@ Thanks to all collaborators and my co-authors for making this happen.</p><p><img
         </item>
         <item>
             <title><![CDATA[Bayer Foundation Early Excellence in Science Award]]></title>
-            <link>https://lotfollahi.com/blog/Bayer Foundation Early Excellence in Science Award</link>
-            <guid>https://lotfollahi.com/blog/Bayer Foundation Early Excellence in Science Award</guid>
+            <link>https://lotfollahi.com/blog/bayer-foundation-early-excellence-in-science-award</link>
+            <guid>https://lotfollahi.com/blog/bayer-foundation-early-excellence-in-science-award</guid>
             <pubDate>Thu, 02 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I am greatly honored by Bayer Foundation]]></description>
             <content:encoded><![CDATA[<p>I am greatly honored by <a href="https://www.helmholtz-munich.de/en/newsroom/news-all/artikel/interpreting-biological-data-mohammad-lotfollahi-wins-early-excellence-in-science-award-2022" target="_blank" rel="noopener noreferrer">Bayer Foundation</a>
