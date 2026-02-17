@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklotfollahi_com=self.webpackChunklotfollahi_com||[]).push([[9267],{8289:l=>{l.exports=JSON.parse('[{"label":"Publication","permalink":"/blog/tags/publication","count":2},{"label":"Award","permalink":"/blog/tags/award","count":6},{"label":"Funding","permalink":"/blog/tags/funding","count":1}]')}}]);

@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lotfollahi.com/blog</id>
     <title>Lotfollahi Blog</title>
-    <updated>2026-02-13T00:00:00.000Z</updated>
+    <updated>2026-02-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lotfollahi.com/blog"/>
     <subtitle>Lotfollahi Blog</subtitle>
     <icon>https://lotfollahi.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DirMoE at ICLR 2026 — a fully differentiable Mixture-of-Experts router]]></title>
+        <id>https://lotfollahi.com/blog/DirMoE at ICLR 2026</id>
+        <link href="https://lotfollahi.com/blog/DirMoE at ICLR 2026"/>
+        <updated>2026-02-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Mixture-of-Experts (MoE) is a powerful way to scale large language models (LLMs): instead of running the full model for every token, a router activates only a few "experts," giving more capacity at roughly the same compute.]]></summary>
+        <content type="html"><![CDATA[<p>Mixture-of-Experts (MoE) is a powerful way to scale large language models (LLMs): instead of running the full model for every token, a router activates only a few "experts," giving more capacity at roughly the same compute.</p><p>But routing is still a sore spot. Most MoE systems use Top-k + Softmax, where expert selection is discrete—so you don't get clean end-to-end gradients. In practice, this can lead to unstable routing, calibration issues, and uneven expert usage.</p><p>In our <strong>ICLR 2026</strong> paper, we introduce <a href="https://openreview.net/forum?id=a15cDnzr6r" target="_blank" rel="noopener noreferrer"><strong>DirMoE</strong></a> — a fully differentiable probabilistic router that separates <em>which</em> experts fire (Bernoulli) from <em>how</em> their weights are assigned (Dirichlet). We also add a simple "sparsity knob" (Simpson-index penalty) to control the expected number of active experts, without relying on load-balancing losses that can homogenize experts.</p><p><strong>Results:</strong> DirMoE matches or exceeds vanilla MoE throughput (no extra bottlenecks), is strong/competitive on zero-shot benchmarks (ARC, BoolQ, PIQA, …), and leads to clearer expert specialization (interpretable domain focus like ArXiv/Books/GitHub code).</p><p><img loading="lazy" alt="DirMoE: Dirichlet-Routed Mixture of Experts — disentangling expert selection (Bernoulli) from expert contribution (Dirichlet)" src="/assets/images/dirmoe-2ebdcf83a3195fcb003fbf1bfd647199.png" width="1712" height="1000" class="img_ev3q"></p><p>Led by <a href="https://twitter.com/HesamAsdz" target="_blank" rel="noopener noreferrer">Hesam Asadollahzadeh</a> and <a href="https://twitter.com/AmirhVahidi" target="_blank" rel="noopener noreferrer">Amirhossein Vahidi</a>.</p><p><a href="https://openreview.net/forum?id=a15cDnzr6r" target="_blank" rel="noopener noreferrer"><strong>Read the paper on OpenReview</strong></a> · <a href="https://x.com/mo_lotfollahi/status/2019848646926159930" target="_blank" rel="noopener noreferrer"><strong>Thread on X</strong></a></p>]]></content>
+        <author>
+            <name>Mo Lotfollahi</name>
+            <uri>https://lotfollahi.com</uri>
+        </author>
+        <category label="Publication" term="Publication"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Our lab is awarded 2.9M$ from Medical Research Council to tackle kidney cancer using generative AI + massive multimodal data]]></title>
         <id>https://lotfollahi.com/blog/Our lab is awarded 2.9M$ from Medical Research Council to tackle kidney cancer</id>
