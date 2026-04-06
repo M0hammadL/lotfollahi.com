@@ -29,3 +29,46 @@
     width: 32px;  /* Adjust size as needed */
     height: 32px; /* Adjust size as needed */
   }
+
+/* Hide anchor (#) links on headings */
+.hash-link {
+  display: none;
+}
+
+/* Research page: image wrapped in text on desktop, stacked on mobile */
+.research-figure-wrap {
+  float: right;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 1.5rem 0.75rem 1.5rem; /* extra right margin to avoid navbar/logo overlap */
+  clear: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.research-figure-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  vertical-align: bottom;
+}
+.research-section-clear {
+  clear: both;
+}
+
+/* Tablet and below: don't float - prevents overlap with navbar/logo */
+@media (max-width: 996px) {
+  .research-figure-wrap {
+    float: none;
+    max-width: 320px;
+    margin: 0 auto 1.25rem;
+    display: block;
+  }
+  .research-figure-wrap img {
+    margin: 0 auto;
+  }
+}

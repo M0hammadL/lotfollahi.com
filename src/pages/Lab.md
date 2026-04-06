@@ -35,8 +35,34 @@ hide_table_of_contents: true
       </div>
     </div>
     <div class="lab-col lab-col--logo">
-      <div class="logo-stage">
-        <img src="/img/logo.svg" alt="Lotfollahi Lab logo" />
+      <div class="lab-logo-block">
+        <div class="logo-stage">
+          <img src="/img/logo.svg" alt="Lotfollahi Lab logo" />
+        </div>
+        <p class="lab-funders-label">Funded and sponsored by</p>
+        <div class="lab-funders">
+        <a href="https://wellcome.org/" target="_blank" rel="noopener noreferrer" aria-label="Wellcome">
+          <img src="/img/logos/wellcome.svg" alt="Wellcome" />
+        </a>
+        <a href="https://www.ukri.org/councils/mrc/" target="_blank" rel="noopener noreferrer" aria-label="Medical Research Council">
+          <img src="/img/logos/mrc.png" alt="MRC" />
+        </a>
+        <a href="https://www.nvidia.com/" target="_blank" rel="noopener noreferrer" aria-label="NVIDIA">
+          <img src="/img/logos/nvidia.svg" alt="NVIDIA" />
+        </a>
+        <a href="https://wellcomeleap.org/" target="_blank" rel="noopener noreferrer" aria-label="Wellcome Leap">
+          <img src="/img/logos/wellcomeleap.svg" alt="Wellcome Leap" />
+        </a>
+        <a href="https://www.opentargets.org/" target="_blank" rel="noopener noreferrer" aria-label="Open Targets">
+          <img src="/img/logos/opentargets.svg" alt="Open Targets" />
+        </a>
+        <a href="https://breakthrought1d.org.uk/" target="_blank" rel="noopener noreferrer" aria-label="Breakthrough T1D">
+          <img src="/img/logos/breakthrought1d.svg" alt="Breakthrough T1D" />
+        </a>
+        <a href="https://chanzuckerberg.com/" target="_blank" rel="noopener noreferrer" aria-label="Chan Zuckerberg Initiative">
+          <img src="/img/logos/czi.svg" alt="Chan Zuckerberg Initiative" />
+        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -52,7 +78,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/amir.jpg" alt="Amirhossein Vahidi" />
+      <img src="/img/people/amir.jpg" alt="Amirhossein Vahidi" loading="lazy" />
       <div class="role-badge">Principal Data Scientist</div>
       <div class="overlay">
         <a href="https://github.com/amirvhd" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
@@ -65,7 +91,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Jonas.jpg" alt="Jonas Maaskola" />
+      <img src="/img/people/Jonas.jpg" alt="Jonas Maaskola" loading="lazy" />
       <div class="role-badge">Principal Data Scientist</div>
     </div>
     <div class="member-meta"><h3>Jonas Maaskola</h3></div>
@@ -73,7 +99,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Carlo.jpg" alt="Carlo Leonardi" />
+      <img src="/img/people/Carlo.jpg" alt="Carlo Leonardi" loading="lazy" />
       <div class="role-badge">Postdoctoral Fellow</div>
             <div class="overlay">
         <a href="https://x.com/CarloLeonardi7" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -86,7 +112,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/hazem.jpeg" alt="Hazem Kotb" />
+      <img src="/img/people/hazem.jpeg" alt="Hazem Kotb" loading="lazy" />
       <div class="role-badge">Senior Data Scientist</div>
       <div class="overlay">
         <a href="https://x.com/hazemsci" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -100,7 +126,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/arpit.jpeg" alt="Arpit Merchant" />
+      <img src="/img/people/arpit.jpeg" alt="Arpit Merchant" loading="lazy" />
       <div class="role-badge">Senior Data Scientist</div>
       <div class="overlay">
         <a href="https://scholar.google.com/citations?hl=en&user=-aPMoN8AAAAJ" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
@@ -112,7 +138,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Delshad.jpg" alt="Delshad Vaghari" />
+      <img src="/img/people/Delshad.jpg" alt="Delshad Vaghari" loading="lazy" />
       <div class="role-badge">Senior Data Scientist</div>
       <div class="overlay">
         <a href="https://x.com/delshadveghari" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -125,8 +151,8 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Dabin.jpg" alt="Dabin Jeong" />
-      <div class="role-badge">Senior Bioinformatician</div>
+      <img src="/img/people/Dabin.jpg" alt="Dabin Jeong" loading="lazy" />
+      <div class="role-badge">Machine learning scientist</div>
       <div class="overlay">
         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
         <a href="https://github.com/DabinJeong" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
@@ -139,7 +165,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Adib.jpg" alt="Adib Miraki" />
+      <img src="/img/people/Adib.jpg" alt="Adib Miraki" loading="lazy" />
       <div class="role-badge">Bioinformatician</div>
       <div class="overlay">
         <a href="https://x.com/Adib_m_" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -154,7 +180,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/akbar.jpeg" alt="Amir Hossein Akbarnejad" />
+      <img src="/img/people/akbar.jpeg" alt="Amir Hossein Akbarnejad" loading="lazy" />
       <div class="role-badge">Postdoctoral Fellow</div>
       <div class="overlay">
         <a href="https://www.linkedin.com/in/amir-hossein-hosseini-akbarnejad-0b182935b/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
@@ -165,7 +191,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Daniyal.jpg" alt="Daniyal Jafree" />
+      <img src="/img/people/Daniyal.jpg" alt="Daniyal Jafree" loading="lazy" />
       <div class="role-badge">Postdoctoral Fellow</div>
       <div class="overlay">
         <a href="https://x.com/daniyal_jafree" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -180,7 +206,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Marta.jpg" alt="Marta Sallese" />
+      <img src="/img/people/Marta.jpg" alt="Marta Sallese" loading="lazy" />
       <div class="role-badge">Postdoctoral Fellow</div>
       <div class="overlay">
         <a href="https://x.com/MartaSallese" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -193,7 +219,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Sam.jpg" alt="Sam Ogden" />
+      <img src="/img/people/Sam.jpg" alt="Sam Ogden" loading="lazy" />
       <div class="role-badge">Staff Scientist</div>
       <div class="overlay">
         <a href="https://github.com/so145" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
@@ -205,7 +231,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
   <div class="member-media">
-    <img src="/img/people/kenji.png" alt="Kangjie Zheng" />
+    <img src="/img/people/kenji.png" alt="Kangjie Zheng" loading="lazy" />
     <div class="role-badge">Postdoctoral Fellow</div>
     <div class="overlay">
       <a href="https://www.linkedin.com/in/kangjie-zheng-274990192/" aria-label="LinkedIn">
@@ -225,7 +251,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Emily.jpg" alt="Emily Graves" />
+      <img src="/img/people/Emily.jpg" alt="Emily Graves" loading="lazy" />
       <div class="role-badge">Technical Specialist</div>
     </div>
     <div class="member-meta"><h3>Emily Graves</h3></div>
@@ -233,7 +259,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/seb.jpeg" alt="Sebastian Birk" />
+      <img src="/img/people/seb.jpeg" alt="Sebastian Birk" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
         <a href="https://x.com/sebastianbirk_" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -248,7 +274,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/adam.jpeg" alt="Adam Boxall" />
+      <img src="/img/people/adam.jpeg" alt="Adam Boxall" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
         <a href="https://x.com/AdamRBoxall" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -264,7 +290,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Marie.jpeg" alt="Marie Moullet" />
+      <img src="/img/people/Marie.jpeg" alt="Marie Moullet" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
         <a href="https://www.linkedin.com/in/marie-moullet-86b622170/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
@@ -277,7 +303,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Lloyd.jpg" alt="Lloyd Steele" />
+      <img src="/img/people/Lloyd.jpg" alt="Lloyd Steele" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
     </div>
     <div class="member-meta"><h3>Lloyd Steele</h3></div>
@@ -285,7 +311,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Kevin.jpeg" alt="Kevin Ly" />
+      <img src="/img/people/Kevin.jpeg" alt="Kevin Ly" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
     </div>
     <div class="member-meta"><h3>Kevin Ly</h3></div>
@@ -294,7 +320,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Andrea.jpg" alt="Andrea Rubbi" />
+      <img src="/img/people/Andrea.jpg" alt="Andrea Rubbi" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
         <a href="https://www.linkedin.com/in/andrea-rubbi-9a06021a1/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
@@ -306,7 +332,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Ciro.jpg" alt="Ciro Ramírez-Suástegui" />
+      <img src="/img/people/Ciro.jpg" alt="Ciro Ramírez-Suástegui" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
         <a href="https://twitter.com/Cramsuig" aria-label="X"><svg><use href="#i-x"/></svg></a>
@@ -320,7 +346,7 @@ hide_table_of_contents: true
 
  <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Mengji.png" alt="Mengji" />
+      <img src="/img/people/Mengji.png" alt="Mengji" loading="lazy" />
       <div class="role-badge">Postdoctoral Fellow</div>
       <div class="overlay">
         <a href="https://github.com/mjDelta" aria-label="GitHub">
@@ -336,7 +362,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Mohammad.jpg" alt="Mohammad Vali Sanian" />
+      <img src="/img/people/Mohammad.jpg" alt="Mohammad Vali Sanian" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
       <div class="overlay">
         <a href="https://www.linkedin.com/in/mohammad-vali-sanian-948254140/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
@@ -348,7 +374,7 @@ hide_table_of_contents: true
 
 <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Hesam.png" alt="Hesam Asadollahzadeh" />
+      <img src="/img/people/Hesam.png" alt="Hesam Asadollahzadeh" loading="lazy" />
       <div class="role-badge">Data Scientist</div>
       <div class="overlay">
         <a href="https://www.linkedin.com/in/hesamasadzadeh/" aria-label="LinkedIn">
@@ -364,7 +390,7 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Arian.jpg" alt="Arian Amani" />
+      <img src="/img/people/Arian.jpg" alt="Arian Amani" loading="lazy" />
       <div class="role-badge">Data Scientist</div>
       <div class="overlay">
         <a href="https://twitter.com/ArianAmaani" aria-label="X">
@@ -389,26 +415,11 @@ hide_table_of_contents: true
   
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Joseph.jpeg" alt="Joseph" />
+      <img src="/img/people/Joseph.jpeg" alt="Joseph" loading="lazy" />
       <div class="role-badge">PhD Candidate</div>
     </div>
     <div class="member-meta"><h3>Joseph Clarke</h3></div>
     <p class="co-note">co-supervised with Ben Lehner</p>
-  </div>
-
-  <div class="member-card">
-    <div class="member-media">
-      <img src="/img/people/Mahan.jpg" alt="Mahan Veisi" />
-      <div class="role-badge">Undergraduate Student</div>
-      <div class="overlay">
-        <a href="https://x.com/MahanVeisi8" aria-label="X"><svg><use href="#i-x"/></svg></a>
-        <a href="https://www.linkedin.com/in/mahan-veisi-427934226/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-        <a href="https://github.com/MahanVeisi8" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
-        <a href="https://scholar.google.com/citations?user=LQL2vyQAAAAJ" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
-        <a href="https://mahanveisi8.github.io/" aria-label="Website"><svg><use href="#i-globe"/></svg></a>
-      </div>
-    </div>
-    <div class="member-meta"><h3>Mahan Veisi</h3></div>
   </div>
 
 </div>

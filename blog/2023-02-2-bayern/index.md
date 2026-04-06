@@ -1,5 +1,5 @@
 ---
-slug: Bayer Foundation Early Excellence in Science Award
+slug: bayer-foundation-early-excellence-in-science-award
 title: Bayer Foundation Early Excellence in Science Award
 authors: [Mo]
 tags: [Award]

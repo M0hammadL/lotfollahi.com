@@ -2,226 +2,110 @@
 
 ## Overview
 
-- In this page, I highlight my research on how machine learning and computational models enable understanding, mapping, and predicting cellular biology.
+- In this page, I highlight my research on how machine learning and computational models enable understanding, mapping, and predicting cellular biology. The work is organized into four directions: **(1)** generative modeling of cellular responses to perturbations; **(2)** tissue architecture and ecosystem reprogramming with spatial genomics; **(3)** generative multimodal tissue foundation models; and **(4)** core machine learning methods for biomedical generative AI.
 - Before 2018, as part of my AI program master thesis, I developed **[Deep Packet](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**, the first neural network architecture for network traffic classification, and it has become one of the seminal papers in the field.
 - Papers selected as cover:
 
-<div style={{display:'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
-    <figure>
-        <img src="/img/nature-biotech.jpeg" style={{margin: '10px'}} alt="NBT" width='300' height='300'/> 
-        <figcaption> <font size="1"> <a href="https://www.nature.com/nbt/volumes/40/issues/1">Lotfollahi et al., Nature Biotechnology (2022)</a>
-</font></figcaption>
+<div style={{display:'flex', justifyContent: 'center', flexWrap: 'nowrap', gap: '10px', alignItems: 'flex-start', overflowX: 'auto'}}>
+    <figure style={{margin: 0, flexShrink: 0, textAlign: 'center', minWidth: '228px'}}>
+        <img src="/img/nature-biotech.jpeg" style={{margin: '10px', display: 'block', width: '228px', height: '300px', objectFit: 'contain'}} alt="Nature Biotechnology cover" />
+        <figcaption><font size="1"><a href="https://www.nature.com/nbt/volumes/40/issues/1">Lotfollahi et al., Nature Biotechnology (2022)</a></font></figcaption>
     </figure>
-    <figure>
-        <img src="img/morris-lab-cpa.jpg" style={{margin: '10px'}} alt="alt text" width='300' height='300'/>
-        <figcaption> <font size="1"> <a href="https://www.embopress.org/toc/17444292/2023/19/6">Lotfollahi et al., Molecular Systems Biology (2023)</a>
-        </font></figcaption>
+    <figure style={{margin: 0, flexShrink: 0, textAlign: 'center', minWidth: '228px'}}>
+        <img src="/img/morris-lab-cpa.jpg" style={{margin: '10px', display: 'block', width: '228px', height: '300px', objectFit: 'contain'}} alt="Molecular Systems Biology cover - CPA" />
+        <figcaption><font size="1"><a href="https://www.embopress.org/toc/17444292/2023/19/6">Lotfollahi et al., Molecular Systems Biology (2023)</a></font></figcaption>
+    </figure>
+    <figure style={{margin: 0, flexShrink: 0, textAlign: 'center', minWidth: '228px'}}>
+        <img src="/img/nature-genetics-cover.png" style={{margin: '10px', display: 'block', width: '228px', height: '300px', objectFit: 'contain'}} alt="Nature Genetics cover - NicheCompass" />
+        <figcaption><font size="1"><a href="https://www.nature.com/articles/s41588-025-02120-6">Birk et al., Nature Genetics (2025)</a></font></figcaption>
     </figure>
 </div>
 
 - See a full list of papers on **[Google Scholar](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**.
 
-## Generative AI for Modeling Single-Cell Perturbation
+## Generative modeling of cellular responses to perturbations
 
-During my doctoral studies, I developed a series of generative AI algorithms to predict out-of-distribution cellular behaviors in response to perturbations (e.g., diseases, drugs, CRISPR KOs). Using these models, one can predict and answer counterfactual questions such as, "What would the gene expression of this cell have looked like if it had been treated differently?"
+<div className="research-figure-wrap">
+  <img src="/img/perturbation-manifold.png" alt="Conceptual landscape of cell state transitions in response to perturbations" />
+</div>
 
-![Alt text](../img/pert.png?raw=true "Title")
+We develop generative AI models that predict how cells change in response to perturbations—such as drugs, CRISPR knockouts, disease context, or other interventions—enabling counterfactual biology: given a cell measured in one condition, what would it look like under another? This research direction has evolved into a modeling framework (some call it virtual cell modeling) aimed at learning reusable representations of cell state and using them to predict cellular responses to perturbations, including out-of-distribution generalization to unseen perturbations and combinations. The long-term goal is to turn perturbational datasets into a predictive engine for hypothesis generation, mechanism discovery, and prioritization in large-scale screens.
 
-The first approach is called the single-cell generator ([scGen](https://www.nature.com/articles/s41592-019-0494-8)). It models perturbation effects using simple arithmetic in the latent space. Later, we formulated the problem as a distribution matching scenario, known as [trVAE](https://academic.oup.com/bioinformatics/article/36/Supplement_2/i610/6055927), where we aim to move cells from a control distribution to a perturbed condition.
+<div className="research-section-clear" />
 
-Finally, during my time at Facebook AI, we developed the composition perturbation autoencoder ([CPA](https://www.embopress.org/doi/full/10.15252/msb.202211517)), which can predict combinatorial perturbations such as drug combinations or double CRISPR KOs. We also extended CPA to predict unseen drugs ([chemCPA](https://proceedings.neurips.cc/paper_files/paper/2022/hash/aa933b5abc1be30baece1d230ec575a7-Abstract-Conference.html)) and to support multiple modalities ([multiCPA](https://www.biorxiv.org/content/10.1101/2022.07.08.499049v1.abstract)).
+<div className="research-figure-wrap">
+  <img src="/img/perturbation-impa.png" alt="IMPA prediction workflow: control cell, perturbation, and predicted phenotype" />
+</div>
 
-In addition to the above, we have written a [perspective](https://www.sciencedirect.com/science/article/pii/S2405471221002027) about the challenges and opportunities in this emerging field.
+Across single-cell omics and high-content microscopy, we introduced a series of generative approaches that learn how perturbations transform cellular state and phenotype. Our early work [scGen](https://www.nature.com/articles/s41592-019-0494-8) models perturbation effects with simple latent-space arithmetic. We then developed [trVAE](https://academic.oup.com/bioinformatics/article/36/Supplement_2/i610/6055927), which reframes perturbation prediction as distribution matching—moving cells from a control distribution to a perturbed condition. Later, during my time at Facebook AI, we introduced the Compositional Perturbation Autoencoder ([CPA](https://www.embopress.org/doi/full/10.15252/msb.202211517)) to predict combinatorial perturbations such as drug combinations or double CRISPR knockouts, and extended it to handle unseen drugs ([chemCPA](https://proceedings.neurips.cc/paper_files/paper/2022/hash/aa933b5abc1be30baece1d230ec575a7-Abstract-Conference.html)). In parallel, we developed [IMPA](https://www.nature.com/articles/s41467-024-55707-8) (Image Perturbation Autoencoder) to predict perturbation-induced morphological responses in high-content microscopy using untreated cells as input, addressing the challenge that only a small fraction of perturbations show measurable activity in experimental screens. More recently, we introduced [CellDISECT](https://www.biorxiv.org/content/10.1101/2025.06.03.657578v1), where we introduce multiple counterfactuals for disentangling covariates and predicting cellular responses.
 
-**scGen predicts single-cell perturbation responses.**
+<div className="research-section-clear" />
 
-<u>Lotfollahi, M.</u>, Wolf, F. A. & Theis, F. J.
+**Selected papers:**
 
-[\[Nature Methods (2019)\]](https://doi.org/10.1038/s41592-019-0494-8),
-[\[code\]](https://github.com/theislab/scgen),
-[\[press\]](https://www.bioengineering.tum.de/en/news/details/ai-extrapolates-from-mice-to-humans-1).
-
----
-**Conditional out-of-distribution generation for unpaired data using transfer VAE.**
-
-<u>Lotfollahi, M.</u>, Naghipourfar, M., Theis, F. J. & Wolf, F. A.
-
-[[Bioinformatics (2020)]](https://doi.org/10.1093/bioinformatics/btaa800),
-[\[code\]](https://github.com/theislab/trvae),
-[\[talk at ECCB 2020 (21.18% accept rate)\]](https://eccb2020.info/).
-
----
-**Predicting cellular responses to complex perturbations in high-throughput screens.**
-
-<u>Lotfollahi, M+.</u>, Klimovskaia Susmelj+, A., De Donno, C+., Hetzel, L., Ji, Y., Ibarra, I. L., ... & Theis, F. J.
-
-[[Molecular Systems Biology (2023)]](https://www.embopress.org/doi/full/10.15252/msb.202211517),
-[[code]](https://github.com/facebookresearch/CPA),
-[[Facebook AI blogpost]](https://ai.facebook.com/blog/ai-predicts-effective-drug-combinations-to-fight-complex-diseases-faster),
-[[state of AI report 2021]](https://www.stateof.ai/2021),
-[[featured cover]](https://www.embopress.org/loi/17444292).
-
----
-**Predicting single-cell perturbation responses for unseen drugs.**
-
-Hetzel, L., Böhm, S., Kilbertus, N., Günnemann, S., <u>Lotfollahi, M.</u>, & Theis, F. (2022).
-
-[[NeurIPS (2022)]](https://nips.cc/Conferences/2022/ScheduleMultitrack?event=53227), 
-[[code]](https://github.com/theislab/chemcpa).
-
----
-**Machine learning for perturbational single-cell omics.**
-
-Ji, Y.,<u> Lotfollahi, M.</u>, Wolf, F. A. & Theis, F. J.
-
-[[Cell Systems (2021)]](https://doi.org/10.1016/j.cels.2021.05.016),
-[[data resource]](https://github.com/theislab/sc-pert).
-
----
-**MultiCPA: Multimodal Compositional Perturbation Autoencoder.**
-Inecik, K., Uhlmann, A., <u>Lotfollahi, M.\*</u>, & Theis, F\*.
-
-[[ICML Workshop on Computational Biology (WCB) 2022]](https://icml-compbio.github.io/icml-website-2022/),
-[[bioRxv]](https://www.biorxiv.org/content/10.1101/2022.07.08.499049v1),
-[[code]](https://github.com/theislab/multicpa).
-
----
-**Out-of-distribution prediction with disentangled representations for single-cell RNA sequencing data**
-
-<u>Lotfollahi, M.+</u>, Dony, L.+, Agarwala, H.+, & Theis, F. J.
-
-[[ICML Workshop on Computational Biology (WCB) 2020]](https://icml-compbio.github.io/icml-website-2020/),
-[[spotlight talk ICML WCB 2020]](https://slideslive.com/38931310/outofdistribution-prediction-with-disentangled-representations-for-scrnaseq-data),
-[[code]](https://github.com/theislab/disent)
+- **scGen** — Nature Methods (2019) — [[paper]](https://doi.org/10.1038/s41592-019-0494-8), [[code]](https://github.com/theislab/scgen), [[press]](https://www.bioengineering.tum.de/en/news/details/ai-extrapolates-from-mice-to-humans-1)
+- **trVAE** — Bioinformatics (2020) — [[paper]](https://doi.org/10.1093/bioinformatics/btaa800), [[code]](https://github.com/theislab/trvae), [[talk]](https://eccb2020.info/)
+- **CPA** — Molecular Systems Biology (2023) — [[paper]](https://www.embopress.org/doi/full/10.15252/msb.202211517), [[code]](https://github.com/facebookresearch/CPA), [[blogpost]](https://ai.facebook.com/blog/ai-predicts-effective-drug-combinations-to-fight-complex-diseases-faster)
+- **chemCPA** — NeurIPS (2022) — [[paper]](https://proceedings.neurips.cc/paper_files/paper/2022/hash/aa933b5abc1be30baece1d230ec575a7-Abstract-Conference.html), [[code]](https://github.com/theislab/chemcpa)
+- **IMPA** — Nature Communications (2025) — [[paper]](https://www.nature.com/articles/s41467-024-55707-8), [[code]](https://github.com/theislab/impa)
+- **CellDISECT** — bioRxiv (2025) — [[paper]](https://www.biorxiv.org/content/10.1101/2025.06.03.657578v1), [[code]](https://github.com/lotfollahi-lab/CellDISECT)
 
 
-## Generative AI for modeling high content Microscopy image
+## Tissue architecture and ecosystem reprogramming with spatial genomics
 
-Advancements in high-throughput screening, particularly 
-in high-content microscopy, have accelerated drug target identification and mode of 
-action studies by allowing the exploration of complex phenotypic data. 
-However, scaling these experiments to encompass a wide range of drug or
-genetic manipulations is challenging because only a limited number
-of compounds exhibit activity in screenings. 
-![Alt text](../img/img.png?raw=true "Title")
+![NicheCompass and MintFlow: tissue niches, microenvironments, and in silico perturbations](/img/tissue-spatial-combined.png)
 
-**Predicting Cell Morphological Responses to Perturbations Using Generative Modeling**
+Spatial genomics makes it possible to study tissue organization at cellular resolution, but two fundamental challenges remain. First, can we identify tissue microenvironments (niches) and quantitatively define what makes them distinct—based on the cellular pathways and communication programs that structure them? Second, can we move beyond description and simulate perturbations of tissue microenvironments to predict how local ecosystems and cellular states reprogram in response to interventions?
 
-To address this, we developed a generative model, the Image Perturbation Autoencoder (IMPA), which predicts cellular morphological effects of chemical and genetic perturbations using untreated cells as input.
+To address the first challenge, we developed [NicheCompass](https://www.nature.com/articles/s41588-025-02120-6), a pathway-informed graph deep learning framework grounded in principles of cellular communication. NicheCompass learns interpretable representations that capture signaling and interaction programs, enabling robust niche discovery and quantitative characterization across spatial samples and disease contexts.
 
-Palma, A., Theis, F. J.\*, <u>Lotfollahi, M.\*</u>.
+To address the second challenge, we developed [MintFlow](https://github.com/Lotfollahi-lab/mintflow), a generative AI approach that learns how local tissue microenvironments imprint and reprogram cellular state, and enables *in silico* tissue perturbations—for example, depleting or replacing specific cell populations and predicting resulting responses at micro- and macro-scales. MintFlow shifts spatial analysis from descriptive mapping toward predictive simulation of tissue ecosystem reprogramming, supporting unbiased mechanism discovery and translational hypothesis generation across human disease settings.
 
-[[bioRxiv (2023)]](https://www.biorxiv.org/content/10.1101/2023.07.17.549216v1),
-[[code]](https://github.com/theislab/impa).
+**Selected papers:**
 
+- **NicheCompass** — Nature Genetics (2025) — [[paper]](https://www.nature.com/articles/s41588-025-02120-6), [[code]](https://github.com/Lotfollahi-lab/nichecompass)
+- **MintFlow** — bioRxiv (2025) — [[paper]](https://doi.org/10.1101/2025.06.24.661094), [[code]](https://github.com/Lotfollahi-lab/mintflow)
 
-## Modeling Tissue and Spatial Biology 
+## Generative Multimodal Tissue Foundation Models
 
-![Alt text](../img/spatial.png?raw=true "Title")
+![Generative Multimodal Tissue Foundation Models: data collection, SIGMMA alignment, and HoloTea 3D generation](/img/tissue-foundation-models.png)
 
-Spatial omics holds great potential to elucidate tissue architecture by dissecting underlying cell niches and cellular interactions. However, we lack an end-to-end computational framework that can effectively integrate different spatial omics tissue samples, quantitatively characterize cell niches based on biological knowledge of cell-cell communication and transcriptional regulation pathways,
-and discover spatial molecular programs of cells. We present NicheCompass,
-a graph deep learning method designed based on the principles of cellular communication. It utilizes existing knowledge of inter- and intracellular interaction pathways to learn an interpretable latent space of cells across multiple tissue samples, enabling the construction and querying of spatial reference atlases. 
+Our lab generates massive, patient-linked multimodal tissue datasets collected across hospitals in the UK and internationally—combining H&E whole-slide imaging, spatial transcriptomics, transcriptomics, proteomics, and DNA sequence. Our research direction is to build generative multimodal foundation models that link these modalities and enable counterfactual tissue biology: given a tissue sample measured in one modality or context, generate what it would look like in another modality (with uncertainty), while preserving spatial organization, tissue architecture, and cell–cell interactions. A central objective is "cheap → expensive" generation, e.g., predicting spatial transcriptomics from routine histology, and ultimately learning patient-level tissue representations that generalize across sites, protocols, and cohorts.
 
+Building on [HoloTea](https://arxiv.org/abs/2511.14613), we move beyond 2D slice prediction to 3D virtual tissues by generating spot-level gene expression from H&E using a 3D-aware flow-matching framework that leverages adjacent sections for volumetric continuity and incorporates biologically appropriate priors for count data.
 
-Birk, S., Bonafonte-Pardàs, I., Feriz, A. M.,, ... & <u>Lotfollahi, M.\*</u>.
+We then extend this into robust, reusable representations with [SIGMMA](https://arxiv.org/abs/2511.15464), which learns hierarchical multi-scale aligned embeddings of H&E and spatial transcriptomics, representing spatial expression as a cell graph to preserve tissue topology and interactions across micro/meso/macro scales.
 
-[[code]](https://github.com/lotfollahi-lab)
-[[bioRxv (2024)]](https://www.biorxiv.org/content/10.1101/2024.02.21.581428v2).
+Together, these advances define a roadmap toward tissue foundation models that can generate missing modalities, assemble coherent 3D molecular anatomy, and enable scalable biomarker discovery and mechanistic hypothesis generation in real-world clinical tissue data.
 
-## Single-cell Reference Mapping
+**Selected papers:**
+
+- **HoloTea** — arXiv (2025) — [[paper]](https://arxiv.org/abs/2511.14613)
+- **SIGMMA** — arXiv (2025) — [[paper]](https://arxiv.org/abs/2511.15464)
+
+## Core Machine Learning Research
+
+![DirMoE: Dirichlet-routed Mixture of Experts (top). SP-FM: Shortest-Path Flow Matching with mixture-conditioned bases (bottom).](/img/core-ml-research.png)
+
+To answer hard biological and clinical questions with generative AI, we can't simply port existing architectures from vision or language. Biomedical data is heterogeneous, noisy, missing by design, and heavily shifted across cohorts—so we often need new architectures, new probabilistic/mathematical modeling choices, and new training objectives to make generative models scalable, stable, and scientifically meaningful. This is a core direction of our lab: we develop foundational ML methods for generative modeling that later power our multimodal tissue and patient models.
+
+Two recent mixture-focused examples (ICLR 2026) illustrate this philosophy. [DirMoE](https://openreview.net/forum?id=a15cDnzr6r) introduces a fully differentiable Mixture-of-Experts router that disentangles which experts activate (Bernoulli "spike") from how probability mass is allocated among them (Dirichlet "slab"), enabling end-to-end training with interpretable control over sparsity and specialization.
+
+In a complementary direction, [Shortest-Path Flow Matching (SP-FM)](https://arxiv.org/abs/2601.11827) improves conditional generative modeling by conditioning both the base distribution (as a Gaussian mixture) and the velocity field on the condition, effectively choosing a base that shortens the path to the target distribution and strengthening extrapolation to unseen conditions.
+
+**Selected papers:**
+
+- **DirMoE** — ICLR (2026) — [[paper]](https://openreview.net/forum?id=a15cDnzr6r)
+- **SP-FM** — arXiv (2026) — [[paper]](https://arxiv.org/abs/2601.11827)
+
+## Machine learning to build single-cell atlases
+
 ![Alt text](../img/ref.png?raw=true "Title")
 
-The availability of single-cell reference datasets and mapping algorithms transforms analytical workflows for single-cell sequencing datasets. These reference atlases are generated with the intention of helping individual labs in the field understand their own data. Single-cell reference mapping addresses the question of how this can be done efficiently and in a reusable fashion, enabling information accumulated from multiple prior experiments to help interpret new data. The ultimate goal is to transition from an expert-centric and tedious pipeline to a rapid, accessible, and accurate procedure for beginners and experts alike.
+Our lab has pioneered machine learning methods that make single-cell atlases reusable, extendable references—so new datasets can be mapped, annotated, and compared in a shared coordinate system rather than re-integrated from scratch.
 
-We introduced the first deep learning algorithm to map single-cell datasets into pretrained reference building methods called single-cell architecture surgery ([scArches](https://www.nature.com/articles/s41587-021-01001-7)). scArches receives a pretrained model and a query dataset, and maps the query data to the reference without retraining the reference model. scArches is now widely used by the community to understand disease, development, in vivo/vitro differences, imputing missing modalities, and transferring cell-type annotations from reference to query by mapping those query datasets onto a reference atlas. We later introduced [treeArches](https://www.biorxiv.org/content/10.1101/2022.07.07.499109v2) to not just update the reference but also cell-type hierarchies.
+We introduced [scArches](https://www.nature.com/articles/s41587-021-01001-7) for reference mapping by transfer learning, enabling query datasets to be mapped into a pretrained atlas without retraining the reference. We extended this to evolving cell identity structure with [treeArches](https://www.biorxiv.org/content/10.1101/2022.07.07.499109v2) (updating cell-type hierarchies). We expanded atlas building beyond RNA with multimodal generative models: [Multigrate](https://www.biorxiv.org/content/10.1101/2022.03.16.484643v1) integrates partially overlapping modalities (RNA/ATAC/protein) into unified multimodal references, and [mvTCR](https://www.biorxiv.org/content/10.1101/2021.06.24.449733v2) integrates TCR sequences + scRNA-seq for immune atlases. To improve biological meaning and scale, we developed [expiMap](https://www.nature.com/articles/s41556-022-01072-x) for interpretable gene-program embeddings and [scPoli](https://www.nature.com/articles/s41592-023-02035-2) for population-level references that learn sample- and cell-level structure and provide uncertainty-aware annotation of new data.
 
+**Community impact (examples)**
 
-We extended reference mapping to support multiple data modalities such as RNA/ATAC using [Multigrate](https://www.biorxiv.org/content/10.1101/2022.03.16.484643v1.abstract). Additionally, we developed [expiMap](https://www.nature.com/articles/s41556-022-01072-x) to learn novel gene programs for query datasets. Furthermore, we improved technical aspects by leveraging continuous embeddings with [scPoli](https://www.google.com/search?q=scpoli) and using continual learning strategies through [continual surgery](https://icml-compbio.github.io/2022/papers/WCBICML2022_paper_68.pdf). The [scArches repository](https://github.com/theislab/scarches) now serves as a unified framework integrating many applications of single-cell reference mapping including the above.
-
-**Mapping Single-cell Data to Reference Atlases by Transfer Learning**
-
-<u>Lotfollahi, M.</u>, Naghipourfar, M., Luecken, M. D., Khajavi, M., Büttner, M., Wagenstetter, M., Avsec, Ž., Gayoso, A., Yosef, N., Interlandi, M., & Others.
-
-[[Nature Biotechnology (2022)]](https://www.nature.com/articles/s41587-021-01001-7),
-[[code]](https://github.com/theislab/scarches),
-[[MDSI best paper award]](https://www.mdsi.tum.de/en/mdsi/latest-info/news/full-text/article/awardees-of-the-mdsi-best-paper-of-the-year-award/),
-[[featured cover in Nature Biotechnology]](https://www.nature.com/nbt/volumes/40/issues/1).
-
----
-**Single-cell Reference Mapping to Construct and Extend Cell Type Hierarchies**
-
-Michielsen, L+., <u>Lotfollahi, M.+</u>, Strobl, D., Sikkema, L., Reinders, M. J. T., Theis, F. J., Mahfouz, A.
-
-[[NAR Genomics (2024)]](https://academic.oup.com/nargab/article/5/3/lqad070/7231336?login=false),
-[[code]](https://github.com/theislab/scarches).
-
-
-## Multimodal Modeling of Single-Cell Data
-
-The integration and simultaneous analysis of genomic, epigenomic, transcriptomic, proteomic, and metabolomic data at the single-cell level are revolutionizing our understanding of cell biology in both normal and diseased states.
-
-![Alt text](../img/mul.png?raw=true "Title")
-
-We have developed two innovative generative models to facilitate this integration:
-
-1. [Multigrate](https://www.biorxiv.org/content/10.1101/2022.03.16.484643v1.abstract): This model enables the integration of partially overlapping single-cell modalities to construct a comprehensive multimodal reference atlas. It incorporates single-cell chromatin accessibility, transcriptomics, and surface protein abundance.
-
-2. [mvTCR](https://www.biorxiv.org/content/10.1101/2021.06.24.449733v2.abstract): This model is designed to integrate T-cell receptor sequences with single-cell RNA-seq data.
-
-**Multigrate: Single-Cell Multi-Omic Data Integration.**
-
-<u>Lotfollahi, M+</u>, Litinetskaya, A+, and Theis, F. J.
-
-[[Contributed talk Award at ICML Workshop on Computational Biology 2021]](https://icml-compbio.github.io/icml-website-2021/),
-[[code]](https://github.com/theislab/multigrate),
-[[bioRxv (2022)]](https://www.biorxiv.org/content/10.1101/2022.03.16.484643v1).
-
----
-
-**Integrating T-cell receptor and transcriptome for large-scale single-cell immune profiling analysis.**
-
-Drost, F., An, Y., Dratva, L. M., Lindeboom, R. G. H., Haniffa, M., Teichmann, S. A., Theis, F., <u>Lotfollahi, M.\*</u>, Schubert, B\*.
-
-[[ICML Workshop on Computational Biology 2021]](https://icml-compbio.github.io/icml-website-2021/2021/papers/WCBICML2021_paper_45.pdf),
-[[code]](https://github.com/SchubertLab/mvTCR),
-[[bioRxv (2021)]](https://www.biorxiv.org/content/10.1101/2021.06.24.449733v2.abstract).
-
-## Biologically Informed Deep Learning for Single-Cell Genomics
-
-The availability of large-scale single-cell atlases has provided us with detailed insights into cell states. At the same time, advancements in deep learning have facilitated the rapid analysis of query datasets by mapping them into reference atlases. However, the existing data transformations learned by these methods lack interpretability in terms of biologically known concepts such as genes or pathways.
-
-![Alt text](../img/inter.png?raw=true "Title")
-
-To address this limitation, we introduced two methods: expiMap and intercode. These methods embed single-cell data within a biologically meaningful space that captures the activity of gene programs. Additionally, we demonstrate the feasibility of learning novel gene programs using expiMap.
-
-**Biologically Informed Deep Learning to Query Gene Programs in Single-Cell Atlases**
-
-<u>Lotfollahi, M</u>, M+, Rybakov, S+, Hrovatin, K., Hediyeh-Zadeh, S., Talavera-López, C., Misharin, A. V., & Theis, F. J.
-
-[[Nature Cell Biology (2023)]](https://icml-compbio.github.io/icml-website-2021/2021/papers/WCBICML2021_paper_45.pdf),
-[[code]](https://github.com/theislab/scArches).
-
----
-
-**Learning Interpretable Latent Autoencoder Representations with Annotations of Feature Sets**
-
-S. Rybakov, <u>M. Lotfollahi</u>, F.J. Theis\*, F.A. Wolf\*.
-
-[[Machine Learning in Computational Biology (2020)]](https://doi.org/10.1101/2020.12.02.401182),
-[[code]](https://github.com/theislab/intercode).
-
-## Population-level Integration of Single-Cell Datasets
-
-The increasing generation of population-level single-cell atlases with hundreds or thousands of samples has the potential to link demographic and technical metadata with high-resolution cellular and tissue data in homeostasis and disease. Constructing such comprehensive references requires large-scale integration of heterogeneous cohorts with varying metadata capturing demographic and technical information.
-
-![Alt text](../img/pop.png?raw=true "Title")
-
-We introduced scPoli, which learns both sample and cell representations, is aware of cell-type annotations, and can integrate and annotate newly generated query datasets while providing an uncertainty mechanism to identify unknown populations. It
-
-De Donno, C., Hediyeh-Zadeh, S., Wagenstetter, M., Moinfar, A. A., Zappia, L.,
-<u> Lotfollahi, M.* </u>, & Theis, F. J *. 
-
-
-[[code]](https://github.com/theislab/scArches),
-[[Nature Methods (2023)]](https://www.nature.com/articles/s41592-023-02035-2).
+The community has extensively leveraged these approaches. Here are examples that our lab contributed to, showcased in building the first integrated reference atlas for [lung](https://www.nature.com/articles/s41591-023-02327-2), and more recently integrated spatial atlases for [fibroblasts](https://www.nature.com/articles/s41590-025-02267-8) and [skin](https://www.biorxiv.org/content/10.1101/2024.12.23.629194v1.abstract).

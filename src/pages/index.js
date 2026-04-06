@@ -1,16 +1,12 @@
 import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Landing from '@site/src/components/Landing';
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Mo Lotfollahi | Machine Learning and AI for Biomedical Science"
+      description="Faculty at Wellcome Sanger Institute & Cambridge. ML for single-cell biology, perturbation modeling, and drug discovery.">
       <main>
         <Landing />
       </main>

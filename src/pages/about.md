@@ -21,66 +21,32 @@ hide_table_of_contents: true
 
 </div>
 
-<div class="affiliations">
-  <div class="affiliations-grid">
-    <a class="logo-card" href="https://www.sanger.ac.uk/group/lotfollahi-group/" aria-label="Wellcome Sanger Institute">
-      <img src="/img/logos/sanger.svg" alt="Wellcome Sanger Institute logo" />
-      <span>Sanger Institute</span>
-    </a>
-    <a class="logo-card" href="https://www.stemcells.cam.ac.uk/people/affiliates/lotfollahi" aria-label="Cambridge Stem Cell Institute">
-      <img src="/img/logos/csci.svg" alt="Cambridge Stem Cell Institute logo" />
-      <span>CSCI</span>
-    </a>
-    <a class="logo-card" href="https://ccaim.cam.ac.uk/" aria-label="CCAIM">
-      <img src="/img/logos/ccaim.svg" alt="CCAIM logo" />
-      <span>CCAIM</span>
-    </a>
-    <a class="logo-card" href="https://www.cam.ac.uk/" aria-label="University of Cambridge">
-      <img src="/img/logos/cambridge.svg" alt="University of Cambridge logo" />
-      <span>University of Cambridge</span>
-    </a>
-    <a class="logo-card" href="https://aivivo.co/" aria-label="AI VIVO">
-      <img src="/img/logos/aivivo.svg" alt="AI VIVO logo" />
-      <span>AI VIVO</span>
-    </a>
-    <a class="logo-card" href="https://ellis.eu/" aria-label="ELLIS">
-      <img src="/img/logos/ellis.svg" alt="ELLIS logo" />
-      <span>ELLIS</span>
-    </a>
-  </div>
-</div>
-
 <p>
   We aim to leverage AI and advanced experimental techniques to engineer cells and modulate their response to disease and perturbations, and translate them for diagnostics, therapeutics, and drug discovery.
 </p>
 
 <p>
-  I have received multiple awards for my research (see <a href="/blog/Bayer%20Foundation%20Early%20Excellence%20in%20Science%20Award">example</a>) and have been featured in press/journals (see <a href="/research">research</a>).{' '}
+  I have received multiple awards for my research (see <a href="/blog/bayer-foundation-early-excellence-in-science-award">example</a>) and have been featured in press/journals (see <a href="/research">research</a>).{' '}
   Additionally, I have been awarded multiple fellowships, grants, and scholarships, including those from{' '}
-  <strong><a href="https://www.joachim-herz-stiftung.de/en/">Joachim Hertz</a></strong>{', '}
+  <strong><a href="https://www.joachim-herz-stiftung.de/en/">Joachim Hertz Stiftung</a></strong>{', '}
   <strong><a href="https://www.embl.org/">EMBL</a></strong>{', '}
   <strong><a href="https://about.meta.com/">Meta</a></strong>{', '}
-  <strong><a href="https://www.opentargets.org/">Open Targets</a></strong>{' '}and{' '}
-  <strong><a href="https://chanzuckerberg.com/">Chan Zuckerberg Initiative</a></strong>.{' '}
+  <strong><a href="https://www.opentargets.org/">Open Targets</a></strong>{', '}
+  <strong><a href="https://chanzuckerberg.com/">Chan Zuckerberg Initiative</a></strong>{', '}
+  <strong><a href="https://www.ukri.org/councils/mrc/">Medical Research Council</a></strong>{', '}
+  <strong><a href="https://www.nvidia.com/">NVIDIA</a></strong>{', '}
+  <strong><a href="https://wellcome.org/">Wellcome</a></strong>{', '}
+  <strong><a href="https://wellcomeleap.org/">Wellcome Leap</a></strong>{' '}and{' '}
+  <strong><a href="https://www.breakthrought1d.org/">Breakthrough T1D</a></strong>.{' '}
   Previously, I completed my PhD in Computational Biology at the{' '}
   <strong><a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a></strong>{' '}and{' '}
   <strong><a href="https://www.helmholtz-munich.de/">Helmholtz Munich</a></strong>{' '}under the supervision of{' '}
   <strong><a href="https://www.helmholtz-munich.de/en/icb/pi/fabian-theis">Fabian Theis</a></strong>.
 </p>
 
-<div class="logos-grid logos-grid--funders">
-  <a class="logo-tile" href="https://www.joachim-herz-stiftung.de/en/" aria-label="Joachim Herz"><img src="/img/logos/joachimherz.svg" alt="Joachim Herz logo" /></a>
-  <a class="logo-tile" href="https://www.embl.org/" aria-label="EMBL"><img src="/img/logos/embl.svg" alt="EMBL logo" /></a>
-  <a class="logo-tile" href="https://about.meta.com/" aria-label="Meta"><img src="/img/logos/meta.svg" alt="Meta logo" /></a>
-  <a class="logo-tile" href="https://www.opentargets.org/" aria-label="Open Targets"><img src="/img/logos/opentargets.svg" alt="Open Targets logo" /></a>
-  <a class="logo-tile" href="https://chanzuckerberg.com/" aria-label="CZI"><img src="/img/logos/czi.svg" alt="CZI logo" /></a>
-  <a class="logo-tile" href="https://www.tum.de/en/" aria-label="TUM"><img src="/img/logos/tum.png" alt="TUM logo" /></a>
-  <a class="logo-tile" href="https://www.helmholtz-munich.de/" aria-label="Helmholtz Munich"><img src="/img/logos/helmholtz.svg" alt="Helmholtz Munich logo" /></a>
-</div>
-
 # Industry experience
 
-<p>In addition to my academic activities, I have industry experience as a researcher, consultant, and advisor in both biotechnology and ML/AI companies, including:</p>
+<p>In addition to my academic activities, I have industry experience as a researcher, consultant, and advisor in both biotechnology and ML/AI companies. I was a research scientist at <strong>Cellarity</strong>, director of machine learning at <strong>Relation Therapeutics</strong>, researcher at <strong>Meta</strong>, and I serve on the scientific advisory board of <strong>Novo Nordisk</strong>.</p>
 
 <div class="company-w">
   <a class="company-card" href="https://aivivo.co/" aria-label="AI VIVO">
@@ -94,6 +60,10 @@ hide_table_of_contents: true
   <a class="company-card" href="https://ai.facebook.com/" aria-label="Meta AI">
     <img src="/img/logos/meta.svg" alt="Meta AI" />
     <span>Meta AI</span>
+  </a>
+  <a class="company-card" href="https://www.novonordisk.com/" aria-label="Novo Nordisk">
+    <img src="/img/logos/novonordisk.png" alt="Novo Nordisk" />
+    <span>Novo Nordisk</span>
   </a>
   <a class="company-card" href="https://www.santaanabio.com/" aria-label="SANTA ANA Bio">
     <img src="/img/logos/santaanabio.svg" alt="SANTA ANA Bio" />

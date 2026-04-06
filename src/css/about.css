@@ -106,15 +106,17 @@
 .company-card img{ height:40px; width:auto; max-width:90%; display:block; }
 .company-card span{ color:#111; }
 
-/* Place items 4 and 5 under columns 1 and 3 to make the W */
+/* Place items 4, 5, 6 under columns 1, 2, 3 to make the W */
 .company-w > a:nth-child(4){ grid-column:1; }
-.company-w > a:nth-child(5){ grid-column:3; }
+.company-w > a:nth-child(5){ grid-column:2; }
+.company-w > a:nth-child(6){ grid-column:3; }
 
 /* Responsive: 2 columns, then 1 column */
 @media (max-width:1000px){
   .company-w{ grid-template-columns:repeat(2, minmax(0,1fr)); }
-  .company-w > a:nth-child(4){ grid-column:auto; } /* normal flow */
-  .company-w > a:nth-child(5){ grid-column:auto; }
+  .company-w > a:nth-child(4),
+  .company-w > a:nth-child(5),
+  .company-w > a:nth-child(6){ grid-column:auto; } /* normal flow */
 }
 @media (max-width:640px){
   .company-w{ grid-template-columns:1fr; }

@@ -1,13 +1,13 @@
 // src/components/Landing/index.js
 import React from "react";
 import Style from "./Home.module.css";
-import me from "../../img/lotfollahi.jpg";
+import me from "@site/static/img/lotfollahi.png";
 import ListItem from "./ListItem";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
 
 // Only what we use, with correct package casing
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 
@@ -28,6 +28,7 @@ export default function Landing() {
         width={{ xs: "35vh", md: "40vh" }}
         height={{ xs: "35vh", md: "40vh" }}
         borderRadius={"50%"}
+        sx={{ objectFit: "cover" }}
         p={"0.0rem"}
         mb={{ xs: "1rem", sm: 0 }}
         mr={{ xs: 0, md: "2rem" }}
@@ -54,16 +55,25 @@ export default function Landing() {
         >
           <a
             target="_blank"
-            aria-label="twitter"
+            aria-label="X"
             rel="noopener noreferrer"
-            href="https://twitter.com/mo_lotfollahi"
+            href="https://x.com/mo_lotfollahi"
           >
             <FaTwitter />
           </a>
 
           <a
             target="_blank"
-            aria-label="linkedin"
+            aria-label="GitHub"
+            rel="noopener noreferrer"
+            href="https://github.com/M0hammadL"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            target="_blank"
+            aria-label="LinkedIn"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/mlotfollahi/"
           >
@@ -72,7 +82,7 @@ export default function Landing() {
 
           <a
             target="_blank"
-            aria-label="google scholar"
+            aria-label="Google Scholar"
             rel="noopener noreferrer"
             href="https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en"
           >
@@ -81,7 +91,7 @@ export default function Landing() {
 
           <a
             target="_blank"
-            aria-label="email"
+            aria-label="Email"
             rel="noopener noreferrer"
             href="mailto:ml19@sanger.ac.uk"
           >

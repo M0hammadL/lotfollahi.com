@@ -19,7 +19,7 @@ hide_table_of_contents: False
   <div className="pub-title">Quantitative characterization of cell niches in spatially resolved omics data.</div>
   <div className="pub-meta">Birk, S., Bonafonte-Pardàs, I., Feriz, A. M., Boxall, A., Agirre, E., Memi, F., ... & <strong>Lotfollahi, M.</strong></div>
   <div className="pub-badges">
-    <a href="https://www.nature.com/articles/s41588-024-01968-3" className="pub-badge pub-badge--journal">Nature Genetics (2025)</a>
+    <a href="https://www.nature.com/articles/s41588-025-02120-6" className="pub-badge pub-badge--journal">Nature Genetics (2025)</a>
     <a href="https://github.com/Lotfollahi-lab/cnmf" className="pub-badge pub-badge--code">code</a>
   </div>
 </div>
@@ -27,7 +27,7 @@ hide_table_of_contents: False
   <div className="pub-title">Predicting cell morphological responses to perturbations using generative modeling.</div>
   <div className="pub-meta">Palma, A., Theis, F. J., & <strong>Lotfollahi, M.</strong></div>
   <div className="pub-badges">
-    <a href="https://www.nature.com/articles/s41467-024-57777-w" className="pub-badge pub-badge--journal">Nature Communications (2025)</a>
+    <a href="https://www.nature.com/articles/s41467-024-55707-8" className="pub-badge pub-badge--journal">Nature Communications (2025)</a>
     <a href="https://github.com/theislab/morpho-generation" className="pub-badge pub-badge--code">code</a>
   </div>
 </div>
@@ -35,14 +35,14 @@ hide_table_of_contents: False
   <div className="pub-title">Towards multimodal foundation models in molecular cell biology.</div>
   <div className="pub-meta">Cui, H., Tejada-Lapuerta, A., Brbić, M., Saez-Rodriguez, J., Cristea, S., ... & <strong>Lotfollahi, M.</strong>, ... & Wang, B.</div>
   <div className="pub-badges">
-    <a href="https://www.nature.com/articles/s41586-025-07611-x" className="pub-badge pub-badge--journal">Nature (2025)</a>
+    <a href="https://www.nature.com/articles/s41586-025-08710-y" className="pub-badge pub-badge--journal">Nature (2025)</a>
   </div>
 </div>
 <div className="pub-item">
   <div className="pub-title">Integration and querying of multimodal single-cell data with PoE-VAE.</div>
   <div className="pub-meta">Litinetskaya, A., Schulman, M., Curion, F., Szalata, A., Omidi, A., <strong>Lotfollahi, M.</strong>, & Theis, F. J.</div>
   <div className="pub-badges">
-    <a href="https://dl.acm.org/doi/abs/10.1145/3694348.3713023" className="pub-badge pub-badge--preprint">RECOMB (2025)</a>
+    <a href="https://link.springer.com/chapter/10.1007/978-3-031-90252-9_36" className="pub-badge pub-badge--preprint">RECOMB (2025)</a>
   </div>
 </div>
 <div className="pub-item">
@@ -59,6 +59,28 @@ hide_table_of_contents: False
     <a href="https://www.biorxiv.org/content/10.1101/2025.06.24.661094v1" className="pub-badge pub-badge--preprint">bioRxiv (2025)</a>
   </div>
 </div>
+<div className="pub-item">
+  <div className="pub-title">SIGMMA: Hierarchical Graph-Based Multi-Scale Multi-modal Contrastive Alignment of Histopathology Image and Spatial Transcriptome.</div>
+  <div className="pub-meta">Jeong, D., Vahidi, A., Ramírez-Suástegui, C., Moullet, M., Ly, K., Sanian, M. V., ... & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://arxiv.org/abs/2511.15464" className="pub-badge pub-badge--preprint">arXiv (2025)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">3D-Guided Scalable Flow Matching for Generating Volumetric Tissue Spatial Transcriptomics from Serial Histology.</div>
+  <div className="pub-meta">Sanian, M. V., Hemmat, A., Vahidi, A., Maaskola, J., Lee, J. T. H., Makarchuk, S., ... & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://arxiv.org/abs/2511.14613" className="pub-badge pub-badge--preprint">arXiv (2025)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Pertpy: an end-to-end framework for perturbation analysis.</div>
+  <div className="pub-meta">Heumos, L., Ji, Y., May, L., Green, T., Zhang, X., Wu, X., Ostner, J., Peidli, S., ... & <strong>Lotfollahi, M.*</strong>, & Theis, F. J.*</div>
+  <div className="pub-badges">
+    <a href="https://www.nature.com/articles/s41592-025-02909-7" className="pub-badge pub-badge--journal">Nature Methods (2025)</a>
+    <a href="https://github.com/scverse/pertpy" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
 </div>
 
 <h3 className="pub-year">2024</h3>
@@ -72,10 +94,10 @@ hide_table_of_contents: False
   </div>
 </div>
 <div className="pub-item">
-  <div className="pub-title">A single cell and spatial genomics atlas of human skin fibroblasts in health and disease.</div>
-  <div className="pub-meta">Steele, L., Admane, C., Chakala, K. P., Foster, A., Gopee, N. H., Koplev, S., ... & <strong>Lotfollahi, M.*</strong>, & Haniffa, M.*</div>
+  <div className="pub-title">A single-cell and spatial genomics atlas of human skin fibroblasts reveals shared disease-related fibroblast subtypes across tissues.</div>
+  <div className="pub-meta">Steele, L., Olabi, B., Roberts, K., Mazin, P. V., Koplev, S., Tudor, C., ... & <strong>Lotfollahi, M.*</strong>, & Haniffa, M.*</div>
   <div className="pub-badges">
-    <a href="https://www.biorxiv.org/content/10.1101/2024.12.23.629194v1" className="pub-badge pub-badge--preprint">bioRxiv (2024)</a>
+    <a href="https://www.nature.com/articles/s41590-025-02267-8" className="pub-badge pub-badge--journal">Nature Immunology (2025)</a>
   </div>
 </div>
 <div className="pub-item">
@@ -83,14 +105,6 @@ hide_table_of_contents: False
   <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Bright, C., Skorobogat, R., Dehkordi, M., George, X., Richter, S., ... & Theis, F. J.</div>
   <div className="pub-badges">
     <a href="https://www.biorxiv.org/content/10.1101/2024.09.19.613883v1" className="pub-badge pub-badge--preprint">bioRxiv (2024)</a>
-  </div>
-</div>
-<div className="pub-item">
-  <div className="pub-title">Pertpy: an end-to-end framework for perturbation analysis.</div>
-  <div className="pub-meta">Heumos, L., Ji, Y., May, L., Green, T., Zhang, X., Wu, X., Ostner, J., Peidli, S., ... & <strong>Lotfollahi, M.*</strong>, & Theis, F. J.*</div>
-  <div className="pub-badges">
-    <a href="https://www.biorxiv.org/content/10.1101/2024.08.04.606516v1" className="pub-badge pub-badge--preprint">bioRxiv (2024)</a>
-    <a href="https://github.com/scverse/pertpy" className="pub-badge pub-badge--code">code</a>
   </div>
 </div>
 <div className="pub-item">
@@ -234,6 +248,14 @@ hide_table_of_contents: False
     <a href="https://github.com/theislab/scarches" className="pub-badge pub-badge--code">code</a>
   </div>
 </div>
+<div className="pub-item">
+  <div className="pub-title">Predicting cellular responses to novel drug perturbations at a single-cell resolution.</div>
+  <div className="pub-meta">Hetzel, L., Böhm, S., Kilbertus, N., Günnemann, S., Theis, F., & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/aa933b5abc1be30baece1d230ec575a7-Abstract-Conference.html" className="pub-badge pub-badge--journal">NeurIPS (2022)</a>
+    <a href="https://github.com/theislab/chemcpa" className="pub-badge pub-badge--code">code</a>
+  </div>
+</div>
 </div>
 
 <h3 className="pub-year">2021</h3>
@@ -243,6 +265,14 @@ hide_table_of_contents: False
   <div className="pub-meta">Ji, Y., <strong>Lotfollahi, M.</strong>, Wolf, F. A., & Theis, F. J.</div>
   <div className="pub-badges">
     <a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(21)00155-2" className="pub-badge pub-badge--journal">Cell Systems (2021)</a>
+  </div>
+</div>
+<div className="pub-item">
+  <div className="pub-title">Multigrate: single-cell multi-omic data integration.</div>
+  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Litinetskaya, A., & Theis, F. J.</div>
+  <div className="pub-badges">
+    <a href="https://www.biorxiv.org/content/10.1101/2022.03.16.484643v1" className="pub-badge pub-badge--preprint">bioRxiv (2021)</a>
+    <a href="https://github.com/theislab/multigrate" className="pub-badge pub-badge--code">code</a>
   </div>
 </div>
 </div>

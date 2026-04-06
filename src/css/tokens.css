@@ -35,7 +35,7 @@
     --overlay-safe:64px;
   
     /* Hero logo (square crop) */
-    --hero-logo-size:400px;   /* desktop square size */
+    --hero-logo-size:300px;   /* desktop square size */
     --hero-logo-zoom:1.20;    /* >1 zooms in a bit */
     --hero-logo-focus-y:35%;  /* vertical focus point for crop */
   
