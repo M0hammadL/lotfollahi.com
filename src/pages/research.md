@@ -3,7 +3,6 @@
 ## Overview
 
 - In this page, I highlight my research on how machine learning and computational models enable understanding, mapping, and predicting cellular biology. The work is organized into four directions: **(1)** generative modeling of cellular responses to perturbations; **(2)** tissue architecture and ecosystem reprogramming with spatial genomics; **(3)** generative multimodal tissue foundation models; and **(4)** core machine learning methods for biomedical generative AI.
-- Before 2018, as part of my AI program master thesis, I developed **[Deep Packet](https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en)**, the first neural network architecture for network traffic classification, and it has become one of the seminal papers in the field.
 - Papers selected as cover:
 
 <div style={{display:'flex', justifyContent: 'center', flexWrap: 'nowrap', gap: '10px', alignItems: 'flex-start', overflowX: 'auto'}}>

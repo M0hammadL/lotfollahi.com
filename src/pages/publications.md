@@ -298,13 +298,6 @@ hide_table_of_contents: False
     <a href="https://github.com/theislab/scgen" className="pub-badge pub-badge--code">code</a>
   </div>
 </div>
-<div className="pub-item">
-  <div className="pub-title">Deep packet: A novel approach for encrypted traffic classification using deep learning.</div>
-  <div className="pub-meta"><strong>Lotfollahi, M.</strong>, Siavoshani, M. J., Zade, R. S. H., & Saberian, M.</div>
-  <div className="pub-badges">
-    <a href="https://link.springer.com/article/10.1007/s00500-019-04033-5" className="pub-badge pub-badge--journal">Soft Computing (2019)</a>
-  </div>
-</div>
 </div>
 
 </div>
