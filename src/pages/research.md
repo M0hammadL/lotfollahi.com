@@ -24,17 +24,23 @@
 
 ## Generative modeling of cellular responses to perturbations
 
-<div className="research-figure-wrap">
-  <img src="/img/perturbation-manifold.png" alt="Conceptual landscape of cell state transitions in response to perturbations" />
-</div>
-
 We develop generative AI models that predict how cells change in response to perturbations—such as drugs, CRISPR knockouts, disease context, or other interventions—enabling counterfactual biology: given a cell measured in one condition, what would it look like under another? This research direction has evolved into a modeling framework (some call it virtual cell modeling) aimed at learning reusable representations of cell state and using them to predict cellular responses to perturbations, including out-of-distribution generalization to unseen perturbations and combinations. The long-term goal is to turn perturbational datasets into a predictive engine for hypothesis generation, mechanism discovery, and prioritization in large-scale screens.
 
-<div className="research-section-clear" />
-
-<div className="research-figure-wrap">
-  <img src="/img/perturbation-impa.png" alt="IMPA prediction workflow: control cell, perturbation, and predicted phenotype" />
+<div className="research-figure-row research-figure-row--solo">
+  <div className="research-figure-wrap">
+    <img src="/img/perturbation-manifold-impa-merged.png" alt="Perturbation fitness landscape and IMPA morphology prediction" />
+  </div>
 </div>
+
+When screens are large but budgets are finite, we also ask *which* perturbations to run next. At ICML 2026 we present [*Many Needles in a Haystack*](/blog/icml-2026-many-needles-haystack/), which closes a lab-in-the-loop cycle: a probabilistic surrogate proposes batches of genes to perturb, the lab runs the experiments, readouts update the model, and the process repeats—focusing each round on genes most likely to cross a phenotypic hit threshold via our Probability-of-Hit criterion. This recovers more meaningful hits across real immunology screens than standard active learning that chases a single “best” gene.
+
+<div className="research-figure-row research-figure-row--solo">
+  <div className="research-figure-wrap">
+    <img src="/img/many-needles-haystack-full.png" alt="Many Needles in a Haystack: active hit discovery for perturbation experiments" />
+  </div>
+</div>
+
+<div className="research-section-clear" />
 
 Across single-cell omics and high-content microscopy, we introduced a series of generative approaches that learn how perturbations transform cellular state and phenotype. Our early work [scGen](https://www.nature.com/articles/s41592-019-0494-8) models perturbation effects with simple latent-space arithmetic. We then developed [trVAE](https://academic.oup.com/bioinformatics/article/36/Supplement_2/i610/6055927), which reframes perturbation prediction as distribution matching—moving cells from a control distribution to a perturbed condition. Later, during my time at Facebook AI, we introduced the Compositional Perturbation Autoencoder ([CPA](https://www.embopress.org/doi/full/10.15252/msb.202211517)) to predict combinatorial perturbations such as drug combinations or double CRISPR knockouts, and extended it to handle unseen drugs ([chemCPA](https://proceedings.neurips.cc/paper_files/paper/2022/hash/aa933b5abc1be30baece1d230ec575a7-Abstract-Conference.html)). In parallel, we developed [IMPA](https://www.nature.com/articles/s41467-024-55707-8) (Image Perturbation Autoencoder) to predict perturbation-induced morphological responses in high-content microscopy using untreated cells as input, addressing the challenge that only a small fraction of perturbations show measurable activity in experimental screens. More recently, we introduced [CellDISECT](https://www.biorxiv.org/content/10.1101/2025.06.03.657578v1), where we introduce multiple counterfactuals for disentangling covariates and predicting cellular responses.
 
@@ -48,6 +54,7 @@ Across single-cell omics and high-content microscopy, we introduced a series of 
 - **chemCPA** — NeurIPS (2022) — [[paper]](https://proceedings.neurips.cc/paper_files/paper/2022/hash/aa933b5abc1be30baece1d230ec575a7-Abstract-Conference.html), [[code]](https://github.com/theislab/chemcpa)
 - **IMPA** — Nature Communications (2025) — [[paper]](https://www.nature.com/articles/s41467-024-55707-8), [[code]](https://github.com/theislab/impa)
 - **CellDISECT** — bioRxiv (2025) — [[paper]](https://www.biorxiv.org/content/10.1101/2025.06.03.657578v1), [[code]](https://github.com/lotfollahi-lab/CellDISECT)
+- **Many Needles in a Haystack** — ICML (2026) — [[news]](/blog/icml-2026-many-needles-haystack/)
 
 
 ## Tissue architecture and ecosystem reprogramming with spatial genomics

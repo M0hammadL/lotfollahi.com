@@ -13,6 +13,17 @@ hide_table_of_contents: False
 - See a full list of papers on [**Google Scholar**](https://scholar.google.com/citations?hl=en&user=NXhouUcAAAAJ&view_op=list_works&sortby=pubdate).
 - Co-first and co-last authors are indicated by + and \*, respectively.
 
+<h3 className="pub-year">2026</h3>
+<div className="pub-list">
+<div className="pub-item">
+  <div className="pub-title">Many Needles in a Haystack: Active Hit Discovery for Perturbation Experiments.</div>
+  <div className="pub-meta">Rubbi, A., Merchant, A., Ogden, S., Akbarnejad, A., Liò, P., Vakili, S., & <strong>Lotfollahi, M.</strong></div>
+  <div className="pub-badges">
+    <span className="pub-badge pub-badge--journal">ICML (2026)</span>
+  </div>
+</div>
+</div>
+
 <h3 className="pub-year">2025</h3>
 <div className="pub-list">
 <div className="pub-item">

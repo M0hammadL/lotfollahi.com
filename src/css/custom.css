@@ -60,6 +60,117 @@
   clear: both;
 }
 
+/* Figures in one row; stacks on narrow screens */
+.research-figure-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem 1.25rem;
+  width: 100%;
+  clear: both;
+  margin: 0 0 1.25rem;
+}
+/* Flex row only — exclude grid rows so flex/max-width rules never fight the grid */
+.research-figure-row:not(.research-figure-row--2):not(.research-figure-row--3):not(.research-figure-row--solo) .research-figure-wrap {
+  float: none;
+  flex: 1 1 260px;
+  max-width: calc(50% - 0.75rem);
+  margin: 0;
+}
+.research-figure-row:not(.research-figure-row--2):not(.research-figure-row--3):not(.research-figure-row--solo) .research-figure-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+/* Two figures side by side; --equal uses even columns (e.g. manifold | IMPA) */
+.research-figure-row.research-figure-row--2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.75fr);
+  gap: 1.25rem 1.5rem;
+  align-items: start;
+  justify-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 6px;
+  flex-wrap: unset;
+  justify-content: unset;
+}
+.research-figure-row.research-figure-row--2.research-figure-row--equal {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.research-figure-row.research-figure-row--2 > .research-figure-wrap {
+  float: none;
+  flex: unset;
+  margin: 0;
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+}
+.research-figure-row.research-figure-row--2 > .research-figure-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Single full-width figure row (e.g. Many Needles below a pair) */
+.research-figure-row.research-figure-row--solo {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.research-figure-row.research-figure-row--solo > .research-figure-wrap {
+  float: none;
+  flex: unset;
+  margin: 0;
+  min-width: 0;
+  max-width: min(100%, 960px);
+  width: 100%;
+}
+.research-figure-row.research-figure-row--solo > .research-figure-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Three separate panels inline: grid keeps each column readable; center column largest */
+.research-figure-row.research-figure-row--3 {
+  display: grid;
+  /* minmax(0, …) lets columns shrink with the content column; avoids a ~900px hard floor */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  gap: 1.25rem 1.5rem;
+  align-items: start;
+  justify-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 6px;
+  flex-wrap: unset;
+  justify-content: unset;
+}
+.research-figure-row.research-figure-row--3 > .research-figure-wrap {
+  float: none;
+  flex: unset;
+  margin: 0;
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+}
+.research-figure-row.research-figure-row--3 > .research-figure-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Tablet and below: don't float - prevents overlap with navbar/logo */
 @media (max-width: 996px) {
   .research-figure-wrap {
@@ -70,5 +181,32 @@
   }
   .research-figure-wrap img {
     margin: 0 auto;
+  }
+  .research-figure-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+  .research-figure-row--2,
+  .research-figure-row--3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-x: visible;
+    gap: 1.5rem;
+  }
+  .research-figure-row:not(.research-figure-row--2):not(.research-figure-row--3):not(.research-figure-row--solo) .research-figure-wrap {
+    max-width: min(100%, 420px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .research-figure-row.research-figure-row--2 > .research-figure-wrap,
+  .research-figure-row.research-figure-row--3 > .research-figure-wrap {
+    width: 100%;
+    max-width: min(100%, 640px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .research-figure-row.research-figure-row--solo > .research-figure-wrap {
+    max-width: min(100%, 640px);
   }
 }
