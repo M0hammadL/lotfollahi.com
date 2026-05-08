@@ -4,10 +4,20 @@
         <title>Lotfollahi Blog</title>
         <link>https://lotfollahi.com/blog</link>
         <description>Lotfollahi Blog</description>
-        <lastBuildDate>Tue, 17 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Many Needles in a Haystack accepted at ICML 2026]]></title>
+            <link>https://lotfollahi.com/blog/icml-2026-many-needles-haystack</link>
+            <guid>https://lotfollahi.com/blog/icml-2026-many-needles-haystack</guid>
+            <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Excited to share that our paper "Many Needles in a Haystack: Active Hit Discovery for Perturbation Experiments" has been accepted at ICML 2026 — see you in Seoul! 🇰🇷]]></description>
+            <content:encoded><![CDATA[<p>Excited to share that our paper <strong>"Many Needles in a Haystack: Active Hit Discovery for Perturbation Experiments"</strong> has been accepted at <strong>ICML 2026</strong> — see you in Seoul! 🇰🇷</p><p>CRISPR and single-cell perturbation screens can test thousands of genes, but budgets are tight and the genes that actually move a phenotype are rare and scattered. The hard question is no longer <em>can we screen?</em> — it's <em>which perturbations should we run next?</em></p><p>We tackle this with a <strong>lab-in-the-loop</strong> design loop: an AI model proposes a batch of genes to perturb, the lab runs them, the readouts update the model, and the cycle repeats — each round getting smarter about where the hits are hiding.</p><p>The catch is that standard active-learning methods chase a single "best" gene, but biology rarely works that way: hits sit in multiple pathways and cellular contexts. Our method, <strong>Probability-of-Hit</strong>, instead asks the right question — <em>which genes are most likely to cross the hit threshold?</em> — and recovers more biologically meaningful hits across five real immunology screens (T-cell activation, NK cytotoxicity, tau, SARS-CoV-2).</p><p>The upshot for experimentalists: <strong>more hits per plate, fewer wasted wells.</strong></p><p><img loading="lazy" alt="Figure: UMAP of gene embeddings and closed-loop experimental design for active hit discovery" src="/assets/images/many-needles-haystack-icml2026-9d7ba4e653d76fbb9212586a91a9bd28.png" width="1024" height="678" class="img_ev3q"></p><p>Congratulations to first authors <strong>Andrea Rubbi</strong> and <strong>Arpit Merchant</strong>, postdoc <strong>Sam Ogden</strong>, <strong>Amir Hossein Hosseini Akbarnejad</strong>, and thanks to <strong>Pietro Liò</strong> and <strong>Sattar Vakili</strong> for the great collaboration.</p>]]></content:encoded>
+            <category>Publication</category>
+            <category>Award</category>
+        </item>
         <item>
             <title><![CDATA[DirMoE at ICLR 2026 — a fully differentiable Mixture-of-Experts router]]></title>
             <link>https://lotfollahi.com/blog/DirMoE at ICLR 2026</link>
