@@ -1,0 +1,279 @@
+/* src/css/animations.css */
+/* Reusable animation keyframes + utility classes */
+
+/* -------------------------------------------------- */
+/* Keyframes                                           */
+/* -------------------------------------------------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.04); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes typewriter-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+@keyframes heroGlow {
+  0%   { box-shadow: 0 0 30px rgba(90, 79, 220, 0.15), 0 0 60px rgba(90, 79, 220, 0.05); }
+  50%  { box-shadow: 0 0 40px rgba(127, 137, 255, 0.25), 0 0 80px rgba(127, 137, 255, 0.1); }
+  100% { box-shadow: 0 0 30px rgba(90, 79, 220, 0.15), 0 0 60px rgba(90, 79, 220, 0.05); }
+}
+
+/* -------------------------------------------------- */
+/* Scroll-triggered animation classes                  */
+/* Elements start hidden, become visible when .in-view */
+/* -------------------------------------------------- */
+
+.anim-fade-up,
+.anim-fade-down,
+.anim-fade-left,
+.anim-fade-right,
+.anim-scale-in,
+.anim-fade-in {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.anim-fade-up    { transform: translateY(28px); }
+.anim-fade-down  { transform: translateY(-20px); }
+.anim-fade-left  { transform: translateX(-32px); }
+.anim-fade-right { transform: translateX(32px); }
+.anim-scale-in   { transform: scale(0.88); }
+
+.anim-fade-up.in-view,
+.anim-fade-down.in-view,
+.anim-fade-left.in-view,
+.anim-fade-right.in-view,
+.anim-scale-in.in-view,
+.anim-fade-in.in-view {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Stagger delays via CSS custom property */
+.anim-delay-1 { transition-delay: 0.1s !important; }
+.anim-delay-2 { transition-delay: 0.2s !important; }
+.anim-delay-3 { transition-delay: 0.3s !important; }
+.anim-delay-4 { transition-delay: 0.4s !important; }
+.anim-delay-5 { transition-delay: 0.5s !important; }
+.anim-delay-6 { transition-delay: 0.6s !important; }
+
+/* -------------------------------------------------- */
+/* Floating avatar glow (homepage hero image)          */
+/* -------------------------------------------------- */
+
+.hero-avatar-glow {
+  animation: heroGlow 4s ease-in-out infinite;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-avatar-glow:hover {
+  transform: scale(1.03);
+}
+
+/* -------------------------------------------------- */
+/* Animated gradient background strip                  */
+/* -------------------------------------------------- */
+
+.gradient-bg {
+  position: relative;
+}
+.gradient-bg::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(90, 79, 220, 0.08),
+    rgba(127, 137, 255, 0.04),
+    rgba(216, 2, 231, 0.06),
+    rgba(90, 79, 220, 0.08)
+  );
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* -------------------------------------------------- */
+/* Shimmer text for headings                           */
+/* -------------------------------------------------- */
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--text-strong) 0%,
+    var(--ifm-color-primary-lightest) 45%,
+    var(--text-strong) 55%,
+    var(--ifm-color-primary-light) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+/* -------------------------------------------------- */
+/* Magnetic hover on interactive elements              */
+/* -------------------------------------------------- */
+
+.hover-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Subtle rotate on hover */
+.hover-tilt {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-tilt:hover {
+  transform: perspective(600px) rotateY(-2deg) rotateX(2deg) translateY(-2px);
+}
+
+/* -------------------------------------------------- */
+/* Hero background floating orbs                       */
+/* -------------------------------------------------- */
+
+.hero-bg-orbs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.18;
+}
+
+.hero-orb--1 {
+  width: 420px;
+  height: 420px;
+  top: -10%;
+  left: -8%;
+  background: var(--ifm-color-primary);
+  animation: float 7s ease-in-out infinite;
+}
+
+.hero-orb--2 {
+  width: 320px;
+  height: 320px;
+  bottom: -5%;
+  right: -5%;
+  background: #d802e7;
+  animation: float 9s ease-in-out infinite 2s;
+}
+
+.hero-orb--3 {
+  width: 260px;
+  height: 260px;
+  top: 40%;
+  left: 55%;
+  background: var(--ifm-color-primary-lightest);
+  animation: float 11s ease-in-out infinite 4s;
+}
+
+[data-theme='dark'] .hero-orb { opacity: 0.1; }
+
+/* -------------------------------------------------- */
+/* Social icon pop-in on hover                         */
+/* -------------------------------------------------- */
+
+.social-icon-pop {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              color 0.2s ease;
+}
+
+.social-icon-pop:hover {
+  transform: translateY(-4px) scale(1.18);
+}
+
+/* -------------------------------------------------- */
+/* Respect reduced motion                              */
+/* -------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up,
+  .anim-fade-down,
+  .anim-fade-left,
+  .anim-fade-right,
+  .anim-scale-in,
+  .anim-fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hero-avatar-glow { animation: none; }
+  .shimmer-text {
+    animation: none;
+    -webkit-text-fill-color: unset;
+    background: none;
+  }
+  .gradient-bg::before { animation: none; }
+  .hero-orb { animation: none; }
+  .social-icon-pop { transition: none; }
+}

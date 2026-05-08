@@ -2,6 +2,9 @@
 /* Central entry. Keep all imports here so Docusaurus bundles them. */
 @import './tokens.css';
 @import './typography.css';
+@import './animations.css';
+@import './navbar.css';
+@import './landing.css';
 @import './hero.css';
 @import './members.css';
 @import './utilities.css';

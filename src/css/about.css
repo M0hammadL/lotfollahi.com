@@ -24,6 +24,11 @@
   border:1px solid color-mix(in oklab, var(--ifm-color-primary) 15%, #bbb 25%);
   box-shadow:0 8px 22px rgba(0,0,0,.12);
   text-decoration:none;
+  transition:transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s ease;
+}
+.logo-card:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 14px 32px rgba(0,0,0,.16);
 }
 /* Keep proportions: height rules everything, width auto */
 .logo-card img{
@@ -33,9 +38,15 @@
 /* Force dark text on white tiles in BOTH themes */
 .logo-card span{ font-weight:700; font-size:.9rem; color:#111; opacity:.95; }
 
-/* Keep logo tiles white in both themes so brand colors stay true */
+/* Logo tile background — white in light, stays white in dark for brand colors */
 :root{ --logo-tile-bg:#fff; }
 [data-theme='dark']{ --logo-tile-bg:#fff; }
+
+/* Force dark text on white tiles */
+[data-theme='dark'] .company-card {
+  background: #fff;
+  color: #111;
+}
 
 /* ——— Funders / institutions compact grid ——— */
 .logos-grid{

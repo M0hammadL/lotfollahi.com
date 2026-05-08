@@ -1,0 +1,86 @@
+/* src/css/navbar.css */
+/* Dark navbar across all pages; transparent only on homepage hero */
+
+.navbar {
+  background: #0b0d14 !important;
+  box-shadow: 0 1px 0 rgba(127, 137, 255, 0.08) !important;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Navbar links — always light */
+.navbar__link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.78) !important;
+  transition: color 0.2s ease;
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff !important;
+}
+
+/* Dropdown toggle — no underline animation, no flashing */
+.navbar__link.dropdown__link,
+.navbar__item.dropdown .navbar__link {
+  cursor: pointer;
+}
+.navbar__item.dropdown .navbar__link::after {
+  display: none !important;
+}
+
+/* Dropdown menu (More button) */
+.dropdown__menu {
+  background: #1a1a2e !important;
+  border: 1px solid rgba(127, 137, 255, 0.15) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5) !important;
+  padding: 0.4rem 0 !important;
+}
+.dropdown__link {
+  color: rgba(255, 255, 255, 0.78) !important;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.dropdown__link:hover {
+  color: #fff !important;
+  background: rgba(127, 137, 255, 0.12) !important;
+}
+
+/* Active link underline animation (only on regular nav links) */
+.navbar__items > .navbar__item > .navbar__link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--ifm-color-primary-lightest);
+  border-radius: 1px;
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1), left 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.navbar__items > .navbar__item > .navbar__link:hover::after,
+.navbar__items > .navbar__item > .navbar__link--active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Logo subtle hover */
+.navbar__logo img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navbar__logo:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Color mode toggle + other navbar icons */
+.navbar .clean-btn svg,
+.navbar .navbar__items svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Mobile sidebar */
+.navbar-sidebar {
+  background: #0b0d14 !important;
+}
+.navbar-sidebar .navbar__link {
+  color: rgba(255, 255, 255, 0.78) !important;
+}

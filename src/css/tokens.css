@@ -1,21 +1,26 @@
 /* src/css/tokens.css */
-/* Design tokens — one place to tune brand, sizes, spacing */
+/* Design tokens — dark-first since light mode is disabled */
 
-:root{
+:root,
+[data-theme='dark'] {
     /* Brand */
-    --ifm-color-primary:#5a4fdc;
-    --ifm-color-primary-dark:#5247cf;
-    --ifm-color-primary-darker:#4a41c2;
-    --ifm-color-primary-darkest:#3b34a2;
-    --ifm-color-primary-light:#6a60e0;
-    --ifm-color-primary-lighter:#7a71e4;
-    --ifm-color-primary-lightest:#9a93ec;
+    --ifm-color-primary:#7f89ff;
+    --ifm-color-primary-dark:#6a73ff;
+    --ifm-color-primary-darker:#5f67ff;
+    --ifm-color-primary-darkest:#4b52ff;
+    --ifm-color-primary-light:#8e97ff;
+    --ifm-color-primary-lighter:#a0a7ff;
+    --ifm-color-primary-lightest:#c6caff;
   
+    /* Backgrounds */
+    --ifm-background-color:#0b0d14;
+    --ifm-background-surface-color:#10121a;
+
     /* Surfaces */
-    --card-bg:#ffffff;
-    --surface-1:#221023;       /* card background (dark glazed) */
-    --brand:#d802e7;           /* gradient border color 1 */
-    --brand-2:#8e1d3f;         /* gradient border color 2 */
+    --card-bg:#0b0d12;
+    --surface-1:#221023;
+    --brand:#d802e7;
+    --brand-2:#8e1d3f;
     --card-border:rgba(127,137,255,.35);
   
     /* Layout / widths */
@@ -35,34 +40,56 @@
     --overlay-safe:64px;
   
     /* Hero logo (square crop) */
-    --hero-logo-size:300px;   /* desktop square size */
-    --hero-logo-zoom:1.20;    /* >1 zooms in a bit */
-    --hero-logo-focus-y:35%;  /* vertical focus point for crop */
+    --hero-logo-size:300px;
+    --hero-logo-zoom:1.20;
+    --hero-logo-focus-y:35%;
   
     /* Strong text visibility */
-    --text-strong:#111;
-  
-    /* Links */
-    --ifm-link-color:var(--ifm-color-primary);
-    --ifm-link-hover-color:var(--ifm-color-primary-light);
-  }
-  
-  [data-theme='dark']{
-    --ifm-color-primary:#7f89ff;
-    --ifm-color-primary-dark:#6a73ff;
-    --ifm-color-primary-darker:#5f67ff;
-    --ifm-color-primary-darkest:#4b52ff;
-    --ifm-color-primary-light:#8e97ff;
-    --ifm-color-primary-lighter:#a0a7ff;
-    --ifm-color-primary-lightest:#c6caff;
-  
-    --card-bg:#0b0d12;
     --text-strong:#fff;
   
+    /* Links */
     --ifm-link-color:var(--ifm-color-primary-lightest);
     --ifm-link-hover-color:var(--ifm-color-primary-lighter);
-  }
-  
-  /* Small global tweak */
-  .navbar__logo img{ height:28px; width:auto; }
-  
+
+    /* Text colors */
+    --ifm-font-color-base:#e0e0e0;
+    --ifm-font-color-secondary:#a0a0b0;
+    --ifm-heading-color:#fff;
+}
+
+/* Dot-grid texture on all pages */
+body {
+  background-color: #0b0d14 !important;
+  background-image:
+    radial-gradient(circle, rgba(127, 137, 255, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  color: #e0e0e0;
+}
+
+/* Ensure all main content areas are dark */
+.main-wrapper,
+.container,
+.markdown,
+article {
+  background: transparent;
+}
+
+/* Logo tile bg stays white for brand colors */
+:root { --logo-tile-bg:#fff; }
+
+/* Table of contents sidebar links */
+.table-of-contents__link {
+  color: rgba(255, 255, 255, 0.55) !important;
+  transition: color 0.2s ease;
+}
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary-lightest) !important;
+}
+.table-of-contents__left-border {
+  border-left-color: rgba(127, 137, 255, 0.2) !important;
+}
+
+/* Small global tweak */
+.navbar__logo img{ height:28px; width:auto; }

@@ -76,6 +76,51 @@ hide_table_of_contents: true
 
 <div class="members-grid">
 
+  <div class="member-card member-card--pi">
+    <div class="member-media">
+      <img src="/img/lotfollahi.png" alt="Mo Lotfollahi" loading="lazy" />
+      <div class="role-badge role-badge--pi">Faculty / Group Leader</div>
+      <div class="overlay">
+        <a href="https://x.com/mo_lotfollahi" aria-label="X"><svg><use href="#i-x"/></svg></a>
+        <a href="https://www.linkedin.com/in/mlotfollahi/" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/M0hammadL" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a href="https://scholar.google.com/citations?user=NXhouUcAAAAJ&hl=en" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+        <a href="mailto:ml19@sanger.ac.uk" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+    <div class="member-meta"><h3>Mo Lotfollahi</h3></div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/fijil.png" alt="Fijil" loading="lazy" style={{objectPosition: '50% 20%'}} />
+      <div class="role-badge">Dog Scientist</div>
+    </div>
+    <div class="member-meta"><h3>Fijil</h3></div>
+    <p class="co-note">Specialist in making beautiful UMAPs</p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/Emily.jpg" alt="Emily Graves" loading="lazy" />
+      <div class="role-badge">Technical Specialist</div>
+    </div>
+    <div class="member-meta"><h3>Emily Graves</h3></div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/Marta.jpg" alt="Marta Sallese" loading="lazy" />
+      <div class="role-badge">Postdoctoral Fellow</div>
+      <div class="overlay">
+        <a href="https://x.com/MartaSallese" aria-label="X"><svg><use href="#i-x"/></svg></a>
+        <a href="https://it.linkedin.com/in/marta-sallese-b82371195" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/martasallese" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+      </div>
+    </div>
+    <div class="member-meta"><h3>Marta Sallese</h3></div>
+  </div>
+
   <div class="member-card">
     <div class="member-media">
       <img src="/img/people/amir.jpg" alt="Amirhossein Vahidi" loading="lazy" />
@@ -206,19 +251,6 @@ hide_table_of_contents: true
 
   <div class="member-card">
     <div class="member-media">
-      <img src="/img/people/Marta.jpg" alt="Marta Sallese" loading="lazy" />
-      <div class="role-badge">Postdoctoral Fellow</div>
-      <div class="overlay">
-        <a href="https://x.com/MartaSallese" aria-label="X"><svg><use href="#i-x"/></svg></a>
-        <a href="https://it.linkedin.com/in/marta-sallese-b82371195" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-        <a href="https://github.com/martasallese" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
-      </div>
-    </div>
-    <div class="member-meta"><h3>Marta Sallese</h3></div>
-  </div>
-
-  <div class="member-card">
-    <div class="member-media">
       <img src="/img/people/Sam.jpg" alt="Sam Ogden" loading="lazy" />
       <div class="role-badge">Staff Scientist</div>
       <div class="overlay">
@@ -248,14 +280,6 @@ hide_table_of_contents: true
   <div class="member-meta"><h3>Kangjie Zheng</h3></div>
 </div>
 
-
-  <div class="member-card">
-    <div class="member-media">
-      <img src="/img/people/Emily.jpg" alt="Emily Graves" loading="lazy" />
-      <div class="role-badge">Technical Specialist</div>
-    </div>
-    <div class="member-meta"><h3>Emily Graves</h3></div>
-  </div>
 
   <div class="member-card">
     <div class="member-media">

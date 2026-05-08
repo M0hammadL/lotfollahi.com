@@ -20,6 +20,13 @@ const config = {
 
   i18n: { defaultLocale: 'en', locales: ['en'] },
 
+  scripts: [
+    {
+      src: '/js/force-dark.js',
+      async: false,
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -44,8 +51,8 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'dark',
-        respectPrefersColorScheme: true,
-        disableSwitch: false,
+        respectPrefersColorScheme: false,
+        disableSwitch: true,
       },
       navbar: {
         logo: {
@@ -62,18 +69,11 @@ const config = {
           { to: '/research', label: 'Research', position: 'left' },
           { to: '/publications', label: 'Publications', position: 'left' },
           { to: '/blog', label: 'News', position: 'left' },
-          {
-            label: 'More',
-            position: 'left',
-            items: [
-              { to: '/software', label: 'Software' },
-              { to: '/talks', label: 'Talks' },
-            ],
-          },
+          { to: '/talks', label: 'Talks', position: 'left' },
         ],
       },
       footer: {
-        style: 'light',
+        style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} Mo Lotfollahi.`,
       },
       prism: {
