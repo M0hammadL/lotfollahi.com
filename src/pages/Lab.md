@@ -206,6 +206,7 @@ hide_table_of_contents: true
       </div>
     </div>
     <div class="member-meta"><h3>Dabin Jeong</h3></div>
+    <p class="co-note">What I cannot create, I do not understand</p>
   </div>
 
   <div class="member-card">
@@ -444,6 +445,15 @@ hide_table_of_contents: true
     </div>
     <div class="member-meta"><h3>Joseph Clarke</h3></div>
     <p class="co-note">co-supervised with Ben Lehner</p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-media">
+      <img src="/img/people/marwane.png" alt="Marwane Bourdim" loading="lazy" />
+      <div class="role-badge">PhD Candidate</div>
+    </div>
+    <div class="member-meta"><h3>Marwane Bourdim</h3></div>
+    <p class="co-note">One man's struggle to take it easy</p>
   </div>
 
 </div>
