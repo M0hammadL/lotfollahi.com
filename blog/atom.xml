@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lotfollahi.com/blog</id>
     <title>Lotfollahi Blog</title>
-    <updated>2026-04-07T00:00:00.000Z</updated>
+    <updated>2026-10-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lotfollahi.com/blog"/>
     <subtitle>Lotfollahi Blog</subtitle>
     <icon>https://lotfollahi.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Lotfollahi Lab at NeurIPS 2026 with 4 papers]]></title>
+        <id>https://lotfollahi.com/blog/neurips-2026-four-papers</id>
+        <link href="https://lotfollahi.com/blog/neurips-2026-four-papers"/>
+        <updated>2026-10-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Excited to share that our lab will be at #NeurIPS2026 with 4 papers! Huge congratulations to everyone in the lab, and thank you to our wonderful collaborators, including Muzlifah Haniffa, Anshul Kundaje, Manolis Kellis, Ben Lengerich, and Pietro Liò.]]></summary>
+        <content type="html"><![CDATA[<p>Excited to share that our lab will be at <strong>#NeurIPS2026</strong> with <strong>4 papers</strong>! Huge congratulations to everyone in the lab, and thank you to our wonderful collaborators, including <a href="https://haniffalab.com/" target="_blank" rel="noopener noreferrer">Muzlifah Haniffa</a>, <a href="https://kundajelab.stanford.edu/" target="_blank" rel="noopener noreferrer">Anshul Kundaje</a>, <a href="http://compbio.mit.edu/" target="_blank" rel="noopener noreferrer">Manolis Kellis</a>, <a href="https://benlengerich.github.io/" target="_blank" rel="noopener noreferrer">Ben Lengerich</a>, and <a href="https://www.cl.cam.ac.uk/~pl219/" target="_blank" rel="noopener noreferrer">Pietro Liò</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="locality-controlled-ood-guidance-for-robust-regulatory-dna-sequence-design">Locality-Controlled OOD Guidance for Robust Regulatory DNA Sequence Design<a href="#locality-controlled-ood-guidance-for-robust-regulatory-dna-sequence-design" class="hash-link" aria-label="Direct link to Locality-Controlled OOD Guidance for Robust Regulatory DNA Sequence Design" title="Direct link to Locality-Controlled OOD Guidance for Robust Regulatory DNA Sequence Design">​</a></h3><p><strong>Dabin Jeong, Marwane Bourdim, Mo Lotfollahi</strong></p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="muss-a-multi-scale-and-sequence-based-model-for-single-cell-gene-regulation">MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation<a href="#muss-a-multi-scale-and-sequence-based-model-for-single-cell-gene-regulation" class="hash-link" aria-label="Direct link to MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation" title="Direct link to MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation">​</a></h3><p><strong>Kangjie Zheng, Amirhossein Vahidi, Liying Jin, Joseph Clarke, Vijaya Baskar MS, Connor Rogerson, Mengji Zhang, Muzlifah Haniffa, Anshul Kundaje, Mo Lotfollahi</strong></p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="prism-phenotype-resolved-inference-in-single-cell-mixed-models-via-latent-disease-states-and-contextualized-differential-expression">PRISM: Phenotype-Resolved Inference in Single-Cell Mixed Models via Latent Disease States and Contextualized Differential Expression<a href="#prism-phenotype-resolved-inference-in-single-cell-mixed-models-via-latent-disease-states-and-contextualized-differential-expression" class="hash-link" aria-label="Direct link to PRISM: Phenotype-Resolved Inference in Single-Cell Mixed Models via Latent Disease States and Contextualized Differential Expression" title="Direct link to PRISM: Phenotype-Resolved Inference in Single-Cell Mixed Models via Latent Disease States and Contextualized Differential Expression">​</a></h3><p><strong>Andrea Rubbi, Lama M. Salem, Caleb Ellington, Pietro Liò, Mo Lotfollahi, Manolis Kellis, Ben Lengerich</strong></p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="orca-hunting-compositional-failures-in-text-to-image-diffusion">ORCA: Hunting Compositional Failures in Text-to-Image Diffusion<a href="#orca-hunting-compositional-failures-in-text-to-image-diffusion" class="hash-link" aria-label="Direct link to ORCA: Hunting Compositional Failures in Text-to-Image Diffusion" title="Direct link to ORCA: Hunting Compositional Failures in Text-to-Image Diffusion">​</a></h3><p><strong>Arshia Hemmat, Amirhossein Vahidi, Amitis Shidani, Mohammad Vali Sanian, Hesam Asadollahzadeh, Aryan Yazdan Parast, Mo Lotfollahi</strong></p><hr><p>See you in Vancouver! 🇨🇦</p>]]></content>
+        <author>
+            <name>Mo Lotfollahi</name>
+            <uri>https://lotfollahi.com</uri>
+        </author>
+        <category label="Publication" term="Publication"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Many Needles in a Haystack accepted at ICML 2026]]></title>
         <id>https://lotfollahi.com/blog/icml-2026-many-needles-haystack</id>
