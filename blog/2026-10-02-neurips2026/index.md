@@ -7,6 +7,8 @@ tags: [Publication]
 
 Excited to share that our lab will be at **#NeurIPS2026** with **4 papers**! Huge congratulations to everyone in the lab, and thank you to our wonderful collaborators, including [Muzlifah Haniffa](https://haniffalab.com/), [Anshul Kundaje](https://kundajelab.stanford.edu/), [Manolis Kellis](http://compbio.mit.edu/), [Ben Lengerich](https://benlengerich.github.io/), and [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/).
 
+![Lotfollahi lab @ NeurIPS 2026](./neurips2026.png)
+
 <!-- truncate -->
 
 ### Locality-Controlled OOD Guidance for Robust Regulatory DNA Sequence Design
@@ -33,4 +35,4 @@ Excited to share that our lab will be at **#NeurIPS2026** with **4 papers**! Hug
 
 ---
 
-See you in Vancouver! 🇨🇦
+See you in Sydney! 🇦🇺
